@@ -205,7 +205,7 @@
       },
       "id": "25770fee-5084-4c4c-8d72-6444e0dd8744",
       "importId": "",
-      "name": "Achim Pensionsfonds",
+      "name": "Max Pensionsfonds",
       "currency": "EUR",
       "type": "PensionFund"
     },
@@ -467,7 +467,7 @@
       },
       "id": "3d737bff-b25e-4342-89c0-047ecd1f8d4e",
       "importId": "",
-      "name": "Antonia Gesetzliche Rente",
+      "name": "Erika Gesetzliche Rente",
       "currency": "EUR",
       "type": "StatutoryPension"
     },
@@ -588,7 +588,7 @@
       },
       "id": "d27e5c8b-e045-442a-8950-d567b3b9ba1c",
       "importId": "",
-      "name": "Achim Rentenversicherung",
+      "name": "Max Rentenversicherung",
       "currency": "EUR",
       "type": "PrivatePensionInsurance"
     },
@@ -692,7 +692,7 @@
       },
       "id": "ec8bb576-bdd8-4acd-9395-5b51475b721d",
       "importId": "",
-      "name": "Achim Riesterrente",
+      "name": "Max Riesterrente",
       "currency": "EUR",
       "type": "RiesterPension"
     },
@@ -854,7 +854,7 @@
       },
       "id": "e8dcb8d0-d2c9-4086-a232-fcf53a03063d",
       "importId": "",
-      "name": "Antonia Pensionskasse",
+      "name": "Erika Pensionskasse",
       "currency": "EUR",
       "type": "PensionScheme"
     },
@@ -931,7 +931,7 @@
       },
       "id": "f151f893-fe0e-4ce2-a6d4-e79126d45c19",
       "importId": "",
-      "name": "Achim Pensionszusage",
+      "name": "Max Pensionszusage",
       "currency": "EUR",
       "type": "PensionCommitment"
     },
@@ -983,7 +983,7 @@
       },
       "id": "eb9138c2-d6db-40ae-810f-d81acb3e643a",
       "importId": "",
-      "name": "Achim Gesetzliche Rente",
+      "name": "Max Gesetzliche Rente",
       "currency": "EUR",
       "type": "PensionIncome"
     },
@@ -1037,7 +1037,7 @@
       },
       "id": "cbe46324-170f-4ec6-b531-2663ea34afb6",
       "importId": "",
-      "name": "Antonia Gehalt",
+      "name": "Erika Gehalt",
       "currency": "EUR",
       "type": "EmployedIncome"
     }
