@@ -22,18 +22,18 @@ namespace Microsoft.Extensions.DependencyInjection.Extensions {
         /// Die übergebene <see cref="IServiceCollection"/>, sodass mehrere Aufrufe verknüpft werden können
         /// </returns>
         internal static IServiceCollection AddLighthouseApi(this IServiceCollection services, IConfiguration configuration) {
-            services
-                .AddTransient<LighthouseApi>()
-                .AddTransient<ClientCredentialsHandler>();
-
             var settings = new JsonSerializerSettings {
                 ContractResolver = new LighthouseContractResolver(),
                 Converters = { new StringEnumConverter() }
             };
 
+            services
+                .AddTransient<LighthouseApi>()
+                .AddTransient<ClientCredentialsHandler>()
+                .AddSingleton(settings);
+
             foreach (var apiType in new[] { typeof(IReportingApi), typeof(IPlanApi) })
                 services
-                    .AddSingleton(settings)
                     // Financial Lighthouse API Client
                     .AddRefitClient(apiType, new RefitSettings {
                         // Json Konventionen

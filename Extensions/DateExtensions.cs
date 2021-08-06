@@ -1,7 +1,7 @@
 namespace System {
 
     /// <summary>
-    /// Stellt Erqweioterungsmethoden für <see cref="DateTime"/> zur Verfügung
+    /// Stellt Erweiterungsmethoden für <see cref="DateTime"/> zur Verfügung
     /// </summary>
     internal static class DateExtensions {
 

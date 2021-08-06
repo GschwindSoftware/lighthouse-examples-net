@@ -13,7 +13,7 @@ using Microsoft.Extensions.Options;
 namespace Gschwind.Lighthouse.Example.Authentication {
 
     /// <summary>
-    /// Ein <see cref="DelegatingHandler"/>, eine OAuth Authentifizierung nach dem Client Credentials Flow vornimmt und das
+    /// Ein <see cref="DelegatingHandler"/>, der eine OAuth Authentifizierung nach dem Client Credentials Flow vornimmt und das
     /// Access Token zur Autorisierung mit jedem Aufruf übergibt
     /// </summary>
     /// <seealso href="https://datatracker.ietf.org/doc/html/rfc6749#section-4.4"/>
@@ -26,7 +26,7 @@ namespace Gschwind.Lighthouse.Example.Authentication {
         JwtSecurityToken? _accessToken;
 
         /// <summary>
-        /// 
+        /// Erzeugt ein neues Objekt der <see cref="ClientCredentialsHandler"/>-Klasse
         /// </summary>
         /// <param name="clientFactory">Die <see cref="IHttpClientFactory"/> zur Erzeugung von <see cref="HttpClient"/>-Instanzen.</param>
         /// <param name="options">Die Optionen der OAuth-Authentifizierung.</param>
