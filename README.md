@@ -25,7 +25,7 @@ Das Beispiel benötigt einen gültigen Zugang zu Financial Lighthouse und die Zu
 
 Passen Sie dann die Einstellungen in `appsettings.json` an:
 
-```json
+```jsonc
 {
   "OAuth": {
     // Die Werte sind der Detailansicht eines Clients im Entwicklerportal zu entnehmen.
