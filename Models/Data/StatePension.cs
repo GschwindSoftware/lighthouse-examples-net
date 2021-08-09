@@ -32,7 +32,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         }
 
         /// <summary>
-        /// Rentenzahlungen
+        /// Jährliche Steigerung der Rente in %
         /// </summary>
         public double PensionIncrease {
             get;
