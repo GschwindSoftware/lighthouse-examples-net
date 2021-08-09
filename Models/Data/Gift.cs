@@ -54,7 +54,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public bool ChargeLegalPortion {
             get;
             init;
-        } = false;
+        }
 
     }
 

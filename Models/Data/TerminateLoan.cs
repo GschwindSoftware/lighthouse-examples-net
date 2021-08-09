@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double PrepaymentPenalty {
             get;
             init;
-        } = 0.0;
+        }
 
     }
 

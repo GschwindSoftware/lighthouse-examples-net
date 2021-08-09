@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public string Notes {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Noch zu erledigen
@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public string Todo {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Letztes Änderungsdatum
@@ -37,7 +37,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public string LastUser {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
     }
 

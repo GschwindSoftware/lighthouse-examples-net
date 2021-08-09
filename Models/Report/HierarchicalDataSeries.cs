@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Gschwind.Lighthouse.Example.Models.Reports {
@@ -13,7 +14,7 @@ namespace Gschwind.Lighthouse.Example.Models.Reports {
         public string Title {
             get;
             private set;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Beschreibt, wie die Datenpunkte zu interpretieren sind

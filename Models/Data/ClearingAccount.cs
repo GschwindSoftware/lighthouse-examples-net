@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double DebitRate {
             get;
             init;
-        } = 0.0;
+        }
 
         /// <summary>
         /// Erzeugt eine neue Instanz der <see cref="ClearingAccount"/>-Klasse

@@ -47,7 +47,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double Disagio {
             get;
             init;
-        } = 0;
+        }
 
         /// <summary>
         /// Start der Tilgung bei Darlehensbeginn

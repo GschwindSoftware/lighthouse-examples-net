@@ -9,10 +9,8 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Erzeugt eine neue Instanz der <see cref="SavingsBond"/>-Klasse
         /// </summary>
-        public SavingsBond() {
-            IsCumulative = false;
-            InterestPeriod = Period.Yearly;
-        }
+        public SavingsBond() =>
+            (IsCumulative, InterestPeriod) = (false, Period.Yearly);
 
     }
 

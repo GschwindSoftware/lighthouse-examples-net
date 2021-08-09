@@ -29,7 +29,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         public bool DueToAccident {
             get;
             init;
-        } = false;
+        }
 
         /// <summary>
         /// Invalidität

@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public string InsuranceCompany {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Vertragsnummer
@@ -29,7 +29,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public string ContractNumber {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Versicherungsbeginn

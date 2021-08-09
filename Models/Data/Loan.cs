@@ -39,7 +39,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public string Institute {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Kontonummer
@@ -47,7 +47,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public string AccountNumber {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Darlehenstyp
@@ -79,7 +79,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double Disagio {
             get;
             init;
-        } = 0;
+        }
 
         /// <summary>
         /// Annuität in EUR bei Annuitätendarlehen / Tilgung in EUR bei Tilgungsdarlehen
@@ -175,7 +175,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double CommitmentInterestRate {
             get;
             init;
-        } = 0;
+        }
 
         /// <summary>
         /// Anzahl bereitsellungsfreie Monate

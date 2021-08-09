@@ -11,7 +11,7 @@ namespace Gschwind.Lighthouse.Example.Models.Family {
         public bool IsHidden {
             get;
             init;
-        } = false;
+        }
 
     }
 

@@ -72,7 +72,7 @@ namespace Gschwind.Lighthouse.Example.Models.Reports {
         public string Root {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Gibt an, ob Null-Zeilen angezeigt werden sollen

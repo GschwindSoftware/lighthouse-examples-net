@@ -47,7 +47,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public bool ComputeProfit {
             get;
             init;
-        } = false;
+        }
 
         /// <summary>
         /// Manuelle Gewinneingabe, falls ComputeProfit = false

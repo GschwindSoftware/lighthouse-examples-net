@@ -29,7 +29,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public int WeeksAfterDetermination {
             get;
             init;
-        } = 0;
+        }
 
     }
 

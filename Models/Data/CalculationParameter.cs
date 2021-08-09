@@ -29,7 +29,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public int AcquisitionCostsYears {
             get;
             init;
-        } = 0;
+        }
 
         /// <summary>
         /// Verwaltungskosten (int % pro Jahr)
@@ -37,7 +37,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double AdministrationCosts {
             get;
             init;
-        } = 0;
+        }
 
         /// <summary>
         /// Kalkulierte Lebenserwartung in Jahren

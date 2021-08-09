@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public bool MainFamilyResidential {
             get;
             init;
-        } = false;
+        }
 
     }
 

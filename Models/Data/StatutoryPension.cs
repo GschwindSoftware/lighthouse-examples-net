@@ -37,7 +37,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public bool WidowsPensionLimitation {
             get;
             init;
-        } = false;
+        }
 
         /// <summary>
         /// Laufzeit der Witwenrente in Monate

@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double Illness {
             get;
             init;
-        } = 0;
+        }
 
         /// <summary>
         /// Veränderung Pflegefall in %
@@ -29,7 +29,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double NursingCase {
             get;
             init;
-        } = 0;
+        }
 
         /// <summary>
         /// Veränderung Erwerbsunfähigkeit in %
@@ -37,7 +37,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double Disability {
             get;
             init;
-        } = 0;
+        }
 
         /// <summary>
         /// Veränderung Tod in %
@@ -45,7 +45,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double Death {
             get;
             init;
-        } = 0;
+        }
 
     }
 

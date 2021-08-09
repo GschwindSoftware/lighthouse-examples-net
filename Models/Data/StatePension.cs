@@ -45,7 +45,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double WidowsPension {
             get;
             init;
-        } = 0;
+        }
 
         /// <summary>
         /// Waisenrente
@@ -53,7 +53,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public double OrphansPension {
             get;
             init;
-        } = 0;
+        }
 
         /// <summary>
         /// Alter bis zu dem die Waisenrente gezahlt wird (in Jahren)

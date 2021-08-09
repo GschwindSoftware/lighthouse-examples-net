@@ -1,3 +1,5 @@
+using System;
+
 namespace Gschwind.Lighthouse.Example.Models.Family {
 
     /// <summary>
@@ -11,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Family {
         public string InsuranceCompany {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Der Zusatzbeitrag

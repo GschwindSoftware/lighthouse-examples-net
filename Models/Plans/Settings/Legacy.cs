@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         public string PersonName {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Vermächtnistyp

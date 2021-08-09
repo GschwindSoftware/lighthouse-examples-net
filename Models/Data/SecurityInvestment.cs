@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public string Institute {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Kontonummer
@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public string AccountNumber {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Jährliche Gebühr in %

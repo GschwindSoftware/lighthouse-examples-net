@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public string ImportId {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Vorgangsname
@@ -29,7 +29,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public string Name {
             get;
             init;
-        } = "";
+        } = String.Empty;
 
         /// <summary>
         /// Währung

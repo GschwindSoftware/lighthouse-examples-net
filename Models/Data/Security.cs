@@ -87,7 +87,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public bool ReinvestDividends {
             get;
             init;
-        } = false;
+        }
 
         /// <summary>
         /// Die Regionen des Wertpapieres
