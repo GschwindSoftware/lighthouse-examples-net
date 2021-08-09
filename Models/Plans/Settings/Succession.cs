@@ -11,11 +11,11 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         /// <summary>
         /// Berliner Testatment
         /// </summary>
-        Berlin = 1,
+        Berlin,
         /// <summary>
         /// Gewillkürte Erbfolge
         /// </summary>
-        Testamentary = 2
+        Testamentary
     }
 
 }

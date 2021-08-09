@@ -11,11 +11,11 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Kommandit Gesellschaft auf Aktien
         /// </summary>
-        KGaA = 1,
+        KGaA,
         /// <summary>
         /// Aktiengesellschaft
         /// </summary>
-        AG = 2
+        AG
     }
 
 }

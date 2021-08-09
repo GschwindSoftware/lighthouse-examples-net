@@ -178,7 +178,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = 0;
 
         /// <summary>
-        /// Anzahl Bereitsellungsfreie Monate
+        /// Anzahl bereitsellungsfreie Monate
         /// </summary>
         public int FreeCommitmentMonths {
             get;

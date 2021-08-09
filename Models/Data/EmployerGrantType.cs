@@ -11,11 +11,11 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Gesetzlicher Zuschuss
         /// </summary>
-        Legally = 1,
+        Legally,
         /// <summary>
         /// Freiwilliger Zuschuss
         /// </summary>
-        Voluntary = 2
+        Voluntary
     }
 
 }

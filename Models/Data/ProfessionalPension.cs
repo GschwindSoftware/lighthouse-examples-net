@@ -72,7 +72,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = true;
 
         /// <summary>
-        /// Besteuerung der Kapitalleistung mit Fünftelregelung ?
+        /// Besteuerung der Kapitalleistung mit Fünftelregelung?
         /// </summary>
         public bool IsFifthPartRule {
             get;

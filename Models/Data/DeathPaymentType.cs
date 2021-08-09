@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// </summary>
         DeathBenefit = 1,
         /// <summary>
-        /// Hinterbliebenen-Rente
+        /// Hinterbliebenenrente
         /// </summary>
         SurvivorsPension = 5,
         /// <summary>

@@ -11,7 +11,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         /// <summary>
         /// Finanzplanung
         /// </summary>
-        Financial = 2,
+        Financial,
         /// <summary>
         /// Nachfolgeplanung
         /// </summary>

@@ -8,7 +8,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     public record PensionCommitment : CompanyPensionOther {
 
         /// <summary>
-        /// Ist die Rente befristet
+        /// Ist die Rente befristet?
         /// </summary>
         public bool IsPensionLimitated {
             get;

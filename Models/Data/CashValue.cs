@@ -66,7 +66,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = new List<PercentValue>();
 
         /// <summary>
-        /// Werden die Zinsen thesauriert ?
+        /// Werden die Zinsen thesauriert?
         /// </summary>
         public bool IsCumulative {
             get;

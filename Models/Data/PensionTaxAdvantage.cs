@@ -11,7 +11,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Ertragsanteil
         /// </summary>
-        ProfitShare = 2
+        ProfitShare
     }
 
 }

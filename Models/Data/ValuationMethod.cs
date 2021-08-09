@@ -11,11 +11,11 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Ertragswertverfahren
         /// </summary>
-        Profit = 1,
+        Profit,
         /// <summary>
         /// Sachwertverfahren
         /// </summary>
-        Asset = 2
+        Asset
     }
 
 }

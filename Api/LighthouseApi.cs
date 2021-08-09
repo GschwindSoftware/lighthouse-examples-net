@@ -7,14 +7,14 @@ namespace Gschwind.Lighthouse.Example.Api {
     public class LighthouseApi {
 
         /// <summary>
-        /// Schnittstelle der Reporting-Endpunkte der Financial Lighthouse Rechenkern API 
+        /// Schnittstelle der Reporting-Endpunkte der Financial Lighthouse Rechenkern API
         /// </summary>
         public IReportingApi Reports {
             get;
         }
 
         /// <summary>
-        /// Schnittstelle der Finanzplan-Endpunkte der Financial Lighthouse Rechenkern API 
+        /// Schnittstelle der Finanzplan-Endpunkte der Financial Lighthouse Rechenkern API
         /// </summary>
         public IPlanApi Plans {
             get;

@@ -8,6 +8,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// Berufsunfähigkeitszusatzversicherung
     /// </summary>
     public record ComplementaryDisabilityInsurance {
+
         /// <summary>
         /// Ende der Versicherung
         /// </summary>

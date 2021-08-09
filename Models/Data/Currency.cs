@@ -11,131 +11,131 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// US-Dollar
         /// </summary>
-        USD = 2,
+        USD,
         /// <summary>
         /// Schweizer Franken
         /// </summary>
-        CHF = 3,
+        CHF,
         /// <summary>
         /// Neuseeländische Dollar
         /// </summary>
-        NZD = 4,
+        NZD,
         /// <summary>
         /// Australische Dollar
         /// </summary>
-        AUD = 5,
+        AUD,
         /// <summary>
         /// Südafrikanische Rand
         /// </summary>
-        ZAR = 6,
+        ZAR,
         /// <summary>
         /// Kanadische Dollar
         /// </summary>
-        CAD = 7,
+        CAD,
         /// <summary>
         /// Japanische Yen
         /// </summary>
-        JPY = 8,
+        JPY,
         /// <summary>
         /// Britische Pound
         /// </summary>
-        GBP = 9,
+        GBP,
         /// <summary>
         /// Schwedische Kronen
         /// </summary>
-        SEK = 10,
+        SEK,
         /// <summary>
         /// Norwegische Kronen
         /// </summary>
-        NOK = 11,
+        NOK,
         /// <summary>
         /// Dänische Kronen
         /// </summary>
-        DKK = 12,
+        DKK,
         /// <summary>
         /// Ungarische Forint
         /// </summary>
-        HUF = 13,
+        HUF,
         /// <summary>
         /// Polnische Zloty
         /// </summary>
-        PLN = 14,
+        PLN,
         /// <summary>
         /// Türkische Lira
         /// </summary>
-        TRY = 15,
+        TRY,
         /// <summary>
         /// Bulgarische Lew
         /// </summary>
-        BGN = 16,
+        BGN,
         /// <summary>
         /// Tschechische Kronen
         /// </summary>
-        CZK = 17,
+        CZK,
         /// <summary>
         /// Rumänische Leu
         /// </summary>
-        RON = 18,
+        RON,
         /// <summary>
         /// Isländische Kronen
         /// </summary>
-        ISK = 19,
+        ISK,
         /// <summary>
         /// Kroatische Kuna
         /// </summary>
-        HRK = 20,
+        HRK,
         /// <summary>
         /// Russische Rubel
         /// </summary>
-        RUB = 21,
+        RUB,
         /// <summary>
         /// Brasilianische Real
         /// </summary>
-        BRL = 22,
+        BRL,
         /// <summary>
         /// Chinesische Yuan
         /// </summary>
-        CNY = 23,
+        CNY,
         /// <summary>
         /// Honkong-Dollar
         /// </summary>
-        HKD = 24,
+        HKD,
         /// <summary>
         /// Indonesische Rupiah
         /// </summary>
-        IDR = 25,
+        IDR,
         /// <summary>
         /// Israelische Schekel
         /// </summary>
-        ILS = 26,
+        ILS,
         /// <summary>
         /// Indische Rupien
         /// </summary>
-        INR = 27,
+        INR,
         /// <summary>
         /// Südkoreanische Won
         /// </summary>
-        KRW = 28,
+        KRW,
         /// <summary>
         /// Mexikanische Peso
         /// </summary>
-        MXN = 29,
+        MXN,
         /// <summary>
         /// Malaysische Ringgit
         /// </summary>
-        MYR = 30,
+        MYR,
         /// <summary>
         /// Philippinische Peso
         /// </summary>
-        PHP = 31,
+        PHP,
         /// <summary>
         /// Singapur-Dollar
         /// </summary>
-        SGD = 32,
+        SGD,
         /// <summary>
         /// Thailändische Baht
         /// </summary>
-        THB = 33
+        THB
     }
 
 }

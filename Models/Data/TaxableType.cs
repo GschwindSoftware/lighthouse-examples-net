@@ -11,11 +11,11 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Inland
         /// </summary>
-        Domestic = 1,
+        Domestic,
         /// <summary>
         /// Ausland mit Progressionsvorbehalt
         /// </summary>
-        ForeignWithProgressionClause = 2
+        ForeignWithProgressionClause
     }
 
 }

@@ -11,7 +11,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Neuanlage
         /// </summary>
-        NewInvestment = 1
+        NewInvestment
     }
 
 }

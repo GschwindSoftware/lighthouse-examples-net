@@ -11,19 +11,19 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Werbungskosten für Land- und Forstwirtschaft
         /// </summary>
-        Agriculture = 1,
+        Agriculture,
         /// <summary>
         /// Werbungskosten für Gewerbebetrieb
         /// </summary>
-        Business = 2,
+        Business,
         /// <summary>
         /// Werbungskosten für Selbständige Arbeit
         /// </summary>
-        SelfEmployed = 3,
+        SelfEmployed,
         /// <summary>
         /// Werbungskosten für Nichtselbständige Arbeit
         /// </summary>
-        Employed = 4,
+        Employed,
         /// <summary>
         /// Werbungskosten für Kapitalvermögen
         /// </summary>
@@ -31,11 +31,11 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Werbungskosten für Vermietung und Verpachtung
         /// </summary>
-        LettingAndLeasing = 7,
+        LettingAndLeasing,
         /// <summary>
         /// Werbungskosten für Sonstige Einkünfte
         /// </summary>
-        Other = 8,
+        Other,
         /// <summary>
         /// Sonderausgaben
         /// </summary>

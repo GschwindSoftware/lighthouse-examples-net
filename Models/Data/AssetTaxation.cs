@@ -5,13 +5,13 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// </summary>
     public enum AssetTaxation {
         /// <summary>
-        /// -
+        /// Keine steuerliche Anrechnung
         /// </summary>
         None,
         /// <summary>
         /// Einkommenssteuer
         /// </summary>
-        Income = 1,
+        Income,
         /// <summary>
         /// Abgeltungssteuer
         /// </summary>

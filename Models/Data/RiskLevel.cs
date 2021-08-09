@@ -11,23 +11,23 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Risikolos
         /// </summary>
-        NotCritical = 1,
+        NotCritical,
         /// <summary>
         /// Konservativ
         /// </summary>
-        LessCricital = 2,
+        LessCricital,
         /// <summary>
         /// Wachstumsorientiert
         /// </summary>
-        ModeratelyCritical = 3,
+        ModeratelyCritical,
         /// <summary>
         /// Offensiv
         /// </summary>
-        Critical = 4,
+        Critical,
         /// <summary>
         /// Spekulativ
         /// </summary>
-        HighlyCritical = 5
+        HighlyCritical
     }
 
 }

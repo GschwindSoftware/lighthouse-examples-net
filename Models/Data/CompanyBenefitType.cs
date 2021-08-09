@@ -11,11 +11,11 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Regelverschonung (85% steuerfrei)
         /// </summary>
-        RegularExemption = 1,
+        RegularExemption,
         /// <summary>
         /// Verschonungsoption (100% steuerfrei)
         /// </summary>
-        ExemptionOption = 2
+        ExemptionOption
     }
 
 }

@@ -15,23 +15,23 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Offene Handelsgesellschaft
         /// </summary>
-        OHG = 1,
+        OHG,
         /// <summary>
         /// Kommanditgesellschaft
         /// </summary>
-        KG = 2,
+        KG,
         /// <summary>
         /// Partnerschaftsgesellschaft
         /// </summary>
-        Partnership = 3,
+        Partnership,
         /// <summary>
         /// Stille Gesellschaft
         /// </summary>
-        SilentPartnership = 4,
+        SilentPartnership,
         /// <summary>
         /// GmbH und Co. KG
         /// </summary>
-        GmbHCoKG = 5
+        GmbHCoKG
     }
 
 }

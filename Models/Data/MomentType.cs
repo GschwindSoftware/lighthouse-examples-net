@@ -11,11 +11,11 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Nie
         /// </summary>
-        Never = 1,
+        Never,
         /// <summary>
         /// Bei Renteneintritt
         /// </summary>
-        AtRetirement = 2,
+        AtRetirement,
         /// <summary>
         /// Zu einem bestimmten Alter
         /// </summary>

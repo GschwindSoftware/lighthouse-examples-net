@@ -27,7 +27,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         }
 
         /// <summary>
-        /// Ist die Rente befristet
+        /// Ist die Rente befristet?
         /// </summary>
         public bool IsPensionLimitated {
             get;
@@ -92,7 +92,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = true;
 
         /// <summary>
-        /// Parameter zu automatischen Berechnung der Kapitalauszahlung oder Rente
+        /// Parameter zur automatischen Berechnung der Kapitalauszahlung oder Rente
         /// </summary>
         public CalculationParameter CalculationParameter {
             get;

@@ -11,11 +11,11 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Arbeitgeberzuschuss
         /// </summary>
-        EmployerGrant = 1,
+        EmployerGrant,
         /// <summary>
         /// Rentenversicherungsträger
         /// </summary>
-        PensionInsuranceInstitute = 2
+        PensionInsuranceInstitute
     }
 
 }

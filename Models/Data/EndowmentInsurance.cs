@@ -91,4 +91,5 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = new ComplementaryDisabilityInsurance();
 
     }
+
 }

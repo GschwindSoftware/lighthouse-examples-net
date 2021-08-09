@@ -11,11 +11,11 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Endfälliges Darlehen
         /// </summary>
-        Bullet = 1,
+        Bullet,
         /// <summary>
         /// Tilgungsdarlehen
         /// </summary>
-        Amortizing = 2
+        Amortizing
     }
 
 }

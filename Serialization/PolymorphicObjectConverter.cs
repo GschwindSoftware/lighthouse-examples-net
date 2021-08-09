@@ -37,7 +37,7 @@ namespace Gschwind.Lighthouse.Example.Serialization {
             return typeof(T)
                 .Assembly
                 .GetTypes()
-                .Where(t => 
+                .Where(t =>
                     !t.IsAbstract &&
                     typeof(T).IsAssignableFrom(t) &&
                     t.GetConstructor(Array.Empty<Type>()) != null

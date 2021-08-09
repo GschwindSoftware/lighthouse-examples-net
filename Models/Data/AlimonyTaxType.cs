@@ -11,11 +11,11 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Sonderausgabe
         /// </summary>
-        OtherExpenses = 1,
+        OtherExpenses,
         /// <summary>
         /// Steuerlich nicht relevant
         /// </summary>
-        NotTaxable = 2
+        NotTaxable
     }
 
 }

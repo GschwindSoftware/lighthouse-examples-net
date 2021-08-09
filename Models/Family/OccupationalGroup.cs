@@ -11,11 +11,11 @@ namespace Gschwind.Lighthouse.Example.Models.Family {
         /// <summary>
         /// Selbständig
         /// </summary>
-        SelfEmployed = 1,
+        SelfEmployed,
         /// <summary>
         /// Beamter
         /// </summary>
-        CivilServant = 2,
+        CivilServant,
         /// <summary>
         /// Gesellschafter Geschäftsführer
         /// </summary>

@@ -7,11 +7,11 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Fortführen
         /// </summary>
-        Continue = 0,
+        Continue,
         /// <summary>
         /// Beitragsbefreiung
         /// </summary>
-        Contribution = 1,
+        Contribution,
         /// <summary>
         /// Beitragsbefreiung (reduzierte Auszahlung)
         /// </summary>

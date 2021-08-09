@@ -11,7 +11,7 @@ namespace Gschwind.Lighthouse.Example.Models.Family {
         /// <summary>
         /// Weiblich
         /// </summary>
-        Female = 2
+        Female
     }
 
 }

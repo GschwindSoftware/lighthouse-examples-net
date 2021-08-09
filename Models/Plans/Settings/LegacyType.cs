@@ -11,15 +11,15 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         /// <summary>
         /// Geldvermächtnis
         /// </summary>
-        Cash = 2,
+        Cash,
         /// <summary>
         /// Niessbrauchvermächtnis
         /// </summary>
-        Usufruct = 3,
+        Usufruct,
         /// <summary>
         /// Teilungsanordnung
         /// </summary>
-        Division = 4,
+        Division,
     }
 
 }

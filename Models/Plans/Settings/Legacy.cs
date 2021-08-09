@@ -10,7 +10,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         /// <summary>
         /// ID der Person
         /// </summary>
-        public Guid PersonId { 
+        public Guid PersonId {
             get;
             init;
         } = Guid.Empty;
@@ -18,7 +18,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         /// <summary>
         /// Name des Vermächtnisnehmers
         /// </summary>
-        public string PersonName { 
+        public string PersonName {
             get;
             init;
         } = "";
@@ -26,7 +26,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         /// <summary>
         /// Vermächtnistyp
         /// </summary>
-        public LegacyType Type { 
+        public LegacyType Type {
             get;
             init;
         } = LegacyType.Cash;
@@ -34,7 +34,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         /// <summary>
         /// Vorgang bei Stückvermächtnis
         /// </summary>
-        public Guid FinanceId { 
+        public Guid FinanceId {
             get;
             init;
         } = Guid.Empty;
@@ -42,7 +42,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         /// <summary>
         /// Anteil am Vermächtnis
         /// </summary>
-        public double Quote { 
+        public double Quote {
             get;
             init;
         } = 100;
@@ -50,7 +50,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         /// <summary>
         /// Wert beim Geldvermächtnis
         /// </summary>
-        public double Value { 
+        public double Value {
             get;
             init;
         }
@@ -58,7 +58,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         /// <summary>
         /// Kürzung nach §2324 BGB zulässig
         /// </summary>
-        public bool HasReduction { 
+        public bool HasReduction {
             get;
             init;
         } = true;

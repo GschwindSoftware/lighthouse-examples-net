@@ -32,7 +32,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = new CashFlows { Period = Period.Monthly };
 
         /// <summary>
-        /// Versicherungsbeginnn
+        /// Versicherungsbeginn
         /// </summary>
         public DateTime InsuranceStart {
             get;

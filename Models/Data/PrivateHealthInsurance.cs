@@ -16,7 +16,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = GrantPensionType.None;
 
         /// <summary>
-        /// Ist es gleichzeitig eine Pflegeversicherung
+        /// Ist es gleichzeitig eine Pflegeversicherung?
         /// </summary>
         public bool IsNursingCareInsurance {
             get;

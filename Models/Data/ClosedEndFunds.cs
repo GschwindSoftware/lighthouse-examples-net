@@ -32,7 +32,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = Taxation.IncomeTax;
 
         /// <summary>
-        /// Steuersatz für automatische Berechnung der Verkehrswerte in %
+        /// Steuersatz für die automatische Berechnung der Verkehrswerte in %
         /// </summary>
         public double TaxRate {
             get;

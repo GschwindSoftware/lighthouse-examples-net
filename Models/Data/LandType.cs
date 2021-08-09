@@ -11,23 +11,23 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Mietwohnungsgrundstück
         /// </summary>
-        Rented = 1,
+        Rented,
         /// <summary>
         /// Wohnungs- und Teileigentum
         /// </summary>
-        Leasehold = 2,
+        Leasehold,
         /// <summary>
         /// Geschäftsgrundstück
         /// </summary>
-        Business = 3,
+        Business,
         /// <summary>
         /// Gemischt genutztes Grundstück
         /// </summary>
-        Mixed = 4,
+        Mixed,
         /// <summary>
         /// Sonstiges bebautes Grundstück
         /// </summary>
-        Other = 5
+        Other
     }
 
 }

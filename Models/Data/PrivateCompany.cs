@@ -26,7 +26,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = IncomeType.Business;
 
         /// <summary>
-        /// Werden alle Gewinne ausgeschüttet ?
+        /// Werden alle Gewinne ausgeschüttet?
         /// </summary>
         public bool DistributeAllProfit {
             get;

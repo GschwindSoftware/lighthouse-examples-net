@@ -3,7 +3,7 @@ using System;
 namespace Gschwind.Lighthouse.Example.Models.Data {
 
     /// <summary>
-    /// Industry
+    /// Branche
     /// </summary>
     public record Industry {
 
@@ -16,7 +16,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         }
 
         /// <summary>
-        /// Name der Industry
+        /// Name der Branche
         /// </summary>
         public string Name {
             get;

@@ -8,7 +8,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     public record GeneralInsurance : OtherInsurance {
 
         /// <summary>
-        /// Ist es eine Vorsorgeaufwendung
+        /// Ist es eine Vorsorgeaufwendung?
         /// </summary>
         public bool IsProvidentExpense {
             get;

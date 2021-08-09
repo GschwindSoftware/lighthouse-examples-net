@@ -11,7 +11,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Verkaufspreis
         /// </summary>
-        SellingPrice = 2
+        SellingPrice
     }
 
 }

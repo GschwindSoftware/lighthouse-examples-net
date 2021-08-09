@@ -16,7 +16,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = true;
 
         /// <summary>
-        /// Ist es eine Sonderausgabe
+        /// Ist es eine Sonderausgabe?
         /// </summary>
         public bool IsTaxableExpense {
             get;

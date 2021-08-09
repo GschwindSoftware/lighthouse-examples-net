@@ -11,7 +11,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Privat
         /// </summary>
-        Private = 2
+        Private
     }
 
 }
