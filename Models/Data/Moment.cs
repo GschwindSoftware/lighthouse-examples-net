@@ -16,7 +16,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = MomentType.Never;
 
         /// <summary>
-        /// Datum des Zeitpunktes (bei AtDate)
+        /// Datum des Zeitpunktes (bei <see cref="MomentType.AtDate"/>)
         /// </summary>
         public DateTime Date {
             get;
@@ -24,7 +24,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = new(DateTime.Now.Year + 10, 1, 1);
 
         /// <summary>
-        /// Alter des Eigentümers (bei AtAge)
+        /// Alter des Eigentümers (bei <see cref="MomentType.AtAge"/>)
         /// </summary>
         public int Age {
             get;

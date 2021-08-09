@@ -2,7 +2,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
 
     /// <summary>
-    /// Stellt die Daten eines Finanzplans bereit
+    /// Stellt die Einstellungen eines Finanzplans bereit
     /// </summary>
     public record PlanSettings {
 

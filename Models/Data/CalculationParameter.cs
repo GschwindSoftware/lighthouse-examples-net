@@ -32,7 +32,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         }
 
         /// <summary>
-        /// Verwaltungskosten (int % pro Jahr)
+        /// Verwaltungskosten (in % pro Jahr)
         /// </summary>
         public double AdministrationCosts {
             get;

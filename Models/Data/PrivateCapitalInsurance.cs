@@ -18,7 +18,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = Guid.Empty;
 
         /// <summary>
-        /// Art der Leistungsauszahlung (Einmalige Kapitalleistung oder monatliche Rente)
+        /// Art der Leistungsauszahlung (einmalige Kapitalleistung oder monatliche Rente)
         /// </summary>
         public InsurancePayoutType InsurancePayoutType {
             get;

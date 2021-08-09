@@ -11,23 +11,23 @@ namespace Gschwind.Lighthouse.Example.Models.Family {
         /// <summary>
         /// Der Partner bekommt den gesamten Freibetrag
         /// </summary>
-        Partner = 1,
+        Partner,
         /// <summary>
         /// Der Freibetrag wird zwischen Kunde und Partner hälftig aufgeteilt
         /// </summary>
-        Both = 2,
+        Both,
         /// <summary>
         /// Der Kunde bekommt den halben Freibetrag
         /// </summary>
-        ClientHalf = 3,
+        ClientHalf,
         /// <summary>
         /// Der Partner bekommt den halben Freibetrag
         /// </summary>
-        PartnerHalf = 4,
+        PartnerHalf,
         /// <summary>
         /// Es gibt weder für Kunde noch Partner einen Freibetrag
         /// </summary>
-        None = 5
+        None
     }
 
 }

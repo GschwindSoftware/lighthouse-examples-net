@@ -16,7 +16,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         } = Guid.Empty;
 
         /// <summary>
-        /// Name des Begünstigten
+        /// Name der begünstigten Person
         /// </summary>
         public string PersonName {
             get;

@@ -11,7 +11,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Bis zum Tod
         /// </summary>
-        Death = 1
+        Death
     }
 
 }

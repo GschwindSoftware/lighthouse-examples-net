@@ -11,15 +11,15 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         /// <summary>
         /// Partner
         /// </summary>
-        Partner = 1,
+        Partner,
         /// <summary>
         /// Kunde + Partner
         /// </summary>
-        Both = 2,
+        Both,
         /// <summary>
         /// Sonstige Person
         /// </summary>
-        Other = 3,
+        Other,
         /// <summary>
         /// Individuell
         /// </summary>

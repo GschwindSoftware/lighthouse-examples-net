@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans {
     /// </summary>
     public enum PlanType {
         /// <summary>
-        /// Finanz - und Nachfolgeplanung
+        /// Finanz- und Nachfolgeplanung
         /// </summary>
         FinancialEstate,
         /// <summary>

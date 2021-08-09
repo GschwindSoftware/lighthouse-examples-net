@@ -32,7 +32,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         }
 
         /// <summary>
-        /// Sind Namen und Geburtsdaten verschlüsselt
+        /// Sind Namen und Geburtsdaten verschlüsselt?
         /// </summary>
         public bool UseEncryption {
             get;

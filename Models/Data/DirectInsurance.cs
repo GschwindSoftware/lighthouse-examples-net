@@ -7,7 +7,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     public record DirectInsurance : CompanyCapitalInsurance {
 
         /// <summary>
-        /// Steuerbegünstigung von Beiträgen zur bAV
+        /// Steuerbegünstigung von Beiträgen zur betrireblichen Altersvorsorge
         /// </summary>
         public InsuranceTaxType InsuranceTaxType {
             get;

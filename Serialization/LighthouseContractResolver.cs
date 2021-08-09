@@ -6,7 +6,7 @@ using Newtonsoft.Json.Serialization;
 namespace Gschwind.Lighthouse.Example.Serialization {
 
     /// <summary>
-    /// Implementier einen <see cref="IContractResolver"/>, der Konventionen der Lighthouse API anwendet
+    /// Implementiert einen <see cref="IContractResolver"/>, der Konventionen der Lighthouse API anwendet
     /// </summary>
     internal class LighthouseContractResolver : CamelCasePropertyNamesContractResolver {
 

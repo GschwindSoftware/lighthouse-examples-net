@@ -13,7 +13,7 @@ using Refit;
 namespace Gschwind.Lighthouse.Example {
 
     /// <summary>
-    /// Beispielanwendung für Nutzung des Financial Lighthouse Rechenkerns
+    /// Beispielanwendung für die Nutzung des Financial Lighthouse Rechenkerns
     /// </summary>
     internal class Quickstart {
 

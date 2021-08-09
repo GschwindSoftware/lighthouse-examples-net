@@ -8,7 +8,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     public record PrivateNursingCareInsurance : PrivateSocialInsurance {
 
         /// <summary>
-        /// Fällt der Zuschuss im Rentenalter weg??
+        /// Fällt der Zuschuss im Rentenalter weg?
         /// </summary>
         public bool GrantEndsAtPension {
             get;

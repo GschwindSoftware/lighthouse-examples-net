@@ -16,7 +16,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = SavingEndType.AtMinimumBalance;
 
         /// <summary>
-        /// Datum des Zeitpunktes (bei AtDate)
+        /// Datum des Zeitpunktes (bei <see cref="MomentType.AtDate"/>)
         /// </summary>
         public DateTime Date {
             get;

@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
 
     /// <summary>
-    /// Der Erbe
+    /// Der Erbe / die Erbin
     /// </summary>
     public record Heritage : Beneficiary {
 

@@ -48,7 +48,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         }
 
         /// <summary>
-        /// Art der Leistungsauszahlung (Einmalige Kapitalleistung oder monatliche Rente)
+        /// Art der Leistungsauszahlung (einmalige Kapitalleistung oder monatliche Rente)
         /// </summary>
         public InsurancePayoutType InsurancePayoutType {
             get;
@@ -96,7 +96,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         }
 
         /// <summary>
-        /// Wird die Altersrente reduziert
+        /// Wird die Altersrente reduziert?
         /// </summary>
         public bool HasReducedPension {
             get;

@@ -24,7 +24,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = Guid.Empty;
 
         /// <summary>
-        /// Der Verkaufspreis wird automatisch berechnet (Kann nur bei Sachwerten geändert werden)
+        /// Der Verkaufspreis wird automatisch berechnet (kann nur bei Sachwerten geändert werden)
         /// </summary>
         public bool AutomaticCalculation {
             get;

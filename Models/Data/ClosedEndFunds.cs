@@ -48,7 +48,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         } = 5;
 
         /// <summary>
-        /// Bareinlage in % (Nachrichtlich)
+        /// Bareinlage in % (nachrichtlich)
         /// </summary>
         public double CashContribution {
             get;

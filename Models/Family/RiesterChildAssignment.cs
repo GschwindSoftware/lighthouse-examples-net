@@ -11,15 +11,15 @@ namespace Gschwind.Lighthouse.Example.Models.Family {
         /// <summary>
         /// Partner
         /// </summary>
-        Partner = 1,
+        Partner,
         /// <summary>
         /// Automatisch
         /// </summary>
-        Automatic = 2,
+        Automatic,
         /// <summary>
         /// Keiner
         /// </summary>
-        None = 3
+        None
     }
 
 }

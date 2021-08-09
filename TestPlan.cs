@@ -275,7 +275,7 @@ namespace Gschwind.Lighthouse.Example {
         /// falls dieser nicht existiert
         /// </returns>
         internal async Task<Plan?> FromApiAsync(int planId) {
-            var response = await _api.Plans.GetAsync(2352);
+            var response = await _api.Plans.GetAsync(planId);
             return response.IsSuccessStatusCode ?
                 response.Content : null;
         }
