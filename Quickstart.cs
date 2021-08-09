@@ -1,3 +1,6 @@
+// Copyright 2021 🔵🔵🔴🔵 Gschwind Software GmbH All rights reserved.
+// Licensed under the Apache License, Version 2.0. See LICENSE file.
+
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
