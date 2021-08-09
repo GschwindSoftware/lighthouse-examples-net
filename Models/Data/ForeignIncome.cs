@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Ausländische Einkunft
     /// </summary>
-    public record ForeignIncome : IncomeBase {
+    public record ForeignIncome : CashFlowBase {
 
         /// <summary>
         /// Einkunftsart

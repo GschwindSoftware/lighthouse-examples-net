@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Geldwerter Vorteil
     /// </summary>
-    public record MonetaryAdvantage : SubData {
+    public record MonetaryAdvantage : PlanData {
 
         /// <summary>
         /// Bonuszahlungen

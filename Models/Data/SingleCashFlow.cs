@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Einzelner Cashflow
     /// </summary>
-    public abstract record SingleCashFlow : LiquidityBase {
+    public abstract record SingleCashFlow : PlanData {
 
         /// <summary>
         /// Datum

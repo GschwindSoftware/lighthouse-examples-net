@@ -7,7 +7,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Zeitwertkonto
     /// </summary>
-    public record TimeAccount : IncomeBase {
+    public record TimeAccount : CashFlowBase {
 
         /// <summary>
         /// Risikostufe

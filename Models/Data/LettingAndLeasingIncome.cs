@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Einkunft aus Vermietung und Verpachtung
     /// </summary>
-    public record LettingAndLeasingIncome : IncomeBase {
+    public record LettingAndLeasingIncome : CashFlowBase {
 
         /// <summary>
         /// Erzeugt eine neue Instanz der <see cref="LettingAndLeasingIncome"/>-Klasse

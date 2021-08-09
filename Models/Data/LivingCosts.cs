@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Lebenshaltungskosten
     /// </summary>
-    public record LivingCosts : ExpenseBase {
+    public record LivingCosts : CashFlowBase {
 
         /// <summary>
         /// Erzeugt eine neue Instanz der <see cref="LivingCosts"/>-Klasse

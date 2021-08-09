@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Haushaltsnahe Leistung
     /// </summary>
-    public record HouseholdService : ExpenseBase {
+    public record HouseholdService : CashFlowBase {
 
         /// <summary>
         /// Steuerliche Berücksichtigung

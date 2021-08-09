@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Vorgang Geschlossener Fond
     /// </summary>
-    public record ClosedEndFunds : RootData {
+    public record ClosedEndFunds : PlanData {
 
         /// <summary>
         /// Beteiligungssumme

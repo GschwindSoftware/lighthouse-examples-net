@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Private Altersvorsorge
     /// </summary>
-    public abstract record EndowmentInsurance : PensionInsurance {
+    public abstract record EndowmentInsurance : PlanData {
 
         /// <summary>
         /// Name der Versicherungsgesellschaft

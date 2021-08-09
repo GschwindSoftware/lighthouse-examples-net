@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Einkunft aus Gewerbebetrieb
     /// </summary>
-    public record BusinessIncome : IncomeBase {
+    public record BusinessIncome : CashFlowBase {
 
         /// <summary>
         /// Gewerbesteuerhebesatz in %

@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Dienstwagen
     /// </summary>
-    public record CompanyCar : SubData {
+    public record CompanyCar : PlanData {
 
         /// <summary>
         /// Neuwert

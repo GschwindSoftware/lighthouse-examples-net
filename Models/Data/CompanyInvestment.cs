@@ -7,7 +7,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Untervorgang Investition bei Betriebsvermögen
     /// </summary>
-    public record CompanyInvestment : SubData {
+    public record CompanyInvestment : PlanData {
 
         /// <summary>
         /// Investition

@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Miete
     /// </summary>
-    public record Rent : ExpenseBase {
+    public record Rent : CashFlowBase {
 
         /// <summary>
         /// Erzeugt eine neue Instanz der <see cref="Rent"/>-Klasse

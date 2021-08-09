@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Gesetzliche Altersvorsorge
     /// </summary>
-    public abstract record StatePension : PensionInsurance {
+    public abstract record StatePension : PlanData {
 
         /// <summary>
         /// Beginn der Rentenzahlungen

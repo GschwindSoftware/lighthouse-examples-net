@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Sonstiges Vermögen
     /// </summary>
-    public record OtherAsset : OtherRealValue {
+    public record OtherAsset : RealValue {
 
         /// <summary>
         /// Einkunftsart für den Verkauf

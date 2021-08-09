@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Versicherung
     /// </summary>
-    public abstract record Insurance : RootData {
+    public abstract record Insurance : PlanData {
 
         /// <summary>
         /// Name der Versicherungsgesellschaft

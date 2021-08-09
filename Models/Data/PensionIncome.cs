@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Rentenbezug
     /// </summary>
-    public record PensionIncome : IncomeBase {
+    public record PensionIncome : CashFlowBase {
 
         /// <summary>
         /// Steuerliche Begünstigung

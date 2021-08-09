@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Einkunft aus Kapitalvermögen
     /// </summary>
-    public record CapitalIncome : IncomeBase {
+    public record CapitalIncome : CashFlowBase {
 
         /// <summary>
         /// Art der Besteuerung

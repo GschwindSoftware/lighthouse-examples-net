@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Berufsausbildung
     /// </summary>
-    public record VocationalTraining : ExpenseBase {
+    public record VocationalTraining : CashFlowBase {
 
         /// <summary>
         /// Besteuerung

@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Spende
     /// </summary>
-    public record Donation : ExpenseBase {
+    public record Donation : CashFlowBase {
 
         /// <summary>
         /// Steuerliche Begünstigung

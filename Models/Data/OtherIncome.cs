@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Sonstige Einkunft
     /// </summary>
-    public record OtherIncome : IncomeBase {
+    public record OtherIncome : CashFlowBase {
 
         /// <summary>
         /// Liquiditätswirksam

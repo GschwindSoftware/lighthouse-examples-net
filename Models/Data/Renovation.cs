@@ -7,7 +7,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Sanierung einer Immobilie
     /// </summary>
-    public record Renovation : SubData {
+    public record Renovation : PlanData {
 
         /// <summary>
         /// Abschreibungsart

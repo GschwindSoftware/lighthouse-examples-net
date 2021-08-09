@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Allgemeine Versicherung
     /// </summary>
-    public record GeneralInsurance : OtherInsurance {
+    public record GeneralInsurance : Insurance {
 
         /// <summary>
         /// Ist es eine Vorsorgeaufwendung?

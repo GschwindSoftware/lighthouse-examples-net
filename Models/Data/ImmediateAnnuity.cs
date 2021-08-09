@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Sofortrente
     /// </summary>
-    public record ImmediateAnnuity : PensionInsurance {
+    public record ImmediateAnnuity : PlanData {
 
         /// <summary>
         /// Versicherte Person

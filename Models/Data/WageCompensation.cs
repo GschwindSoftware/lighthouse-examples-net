@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Entgeltersatzleistung
     /// </summary>
-    public record WageCompensation : IncomeBase {
+    public record WageCompensation : CashFlowBase {
 
         /// <summary>
         /// Erzeugt eine neue Instanz der <see cref="WageCompensation"/>-Klasse

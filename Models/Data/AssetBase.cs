@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Vermögen
     /// </summary>
-    public abstract record AssetBase : RootData {
+    public abstract record AssetBase : PlanData {
 
         /// <summary>
         /// Risikostufe

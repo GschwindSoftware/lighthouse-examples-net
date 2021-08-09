@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Werbungskosten
     /// </summary>
-    public record AdvertisingCosts : ExpenseBase {
+    public record AdvertisingCosts : CashFlowBase {
 
         /// <summary>
         /// Einkunftsart

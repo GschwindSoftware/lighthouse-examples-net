@@ -7,7 +7,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Ausgabe für Lebensführung
     /// </summary>
-    public record HouseholdCosts : LiquidityBase {
+    public record HouseholdCosts : PlanData {
 
         /// <summary>
         /// Konsumgruppen

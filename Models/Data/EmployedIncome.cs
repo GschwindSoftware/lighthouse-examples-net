@@ -7,7 +7,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Einkunft aus nichtselbständiger Arbeit
     /// </summary>
-    public record EmployedIncome : IncomeBase {
+    public record EmployedIncome : CashFlowBase {
 
         /// <summary>
         /// Sozialversicherungspflichtig

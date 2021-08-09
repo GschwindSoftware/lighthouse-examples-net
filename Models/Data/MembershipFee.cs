@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Mitgliedsbeitrag
     /// </summary>
-    public record MembershipFee : ExpenseBase {
+    public record MembershipFee : CashFlowBase {
 
         /// <summary>
         /// Steuerliche Begünstigung

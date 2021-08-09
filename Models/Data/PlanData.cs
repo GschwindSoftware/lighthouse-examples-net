@@ -39,6 +39,22 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
             init;
         } = Currency.EUR;
 
+        /// <summary>
+        /// Nachrichtliche Informationen
+        /// </summary>
+        public Informations Informations {
+            get;
+            init;
+        } = new();
+
+        /// <summary>
+        /// Besitzer
+        /// </summary>
+        public Owner Owner {
+            get;
+            init;
+        } = new();
+
     }
 
 }

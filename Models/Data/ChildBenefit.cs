@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Verrechnungskonto
     /// </summary>
-    public record ChildBenefit : SystemFinance {
+    public record ChildBenefit : PlanData {
     }
 
 }

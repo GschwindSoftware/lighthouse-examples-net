@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Vorgang beenden
     /// </summary>
-    public record Termination : RootData {
+    public record Termination : PlanData {
 
         /// <summary>
         /// Zeitpunkt der Beendigung

@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Minijob
     /// </summary>
-    public record MiniJob : IncomeBase {
+    public record MiniJob : CashFlowBase {
 
         /// <summary>
         /// Rentenversicherungspflichtig

@@ -7,7 +7,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Anlageklasse
     /// </summary>
-    public record AssetClass : SubData {
+    public record AssetClass : PlanData {
 
         /// <summary>
         /// Ausschüttungen

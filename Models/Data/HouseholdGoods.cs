@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Vorgang Hausrat
     /// </summary>
-    public record HouseholdGoods : OtherRealValue {
+    public record HouseholdGoods : RealValue {
     }
 
 }

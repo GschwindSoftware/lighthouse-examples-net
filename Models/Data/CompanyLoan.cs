@@ -7,7 +7,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Untervorgang Betriebsdarlehen
     /// </summary>
-    public record CompanyLoan : SubData {
+    public record CompanyLoan : PlanData {
 
         /// <summary>
         /// Darlehensnominalbetrag

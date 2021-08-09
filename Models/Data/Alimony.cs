@@ -4,7 +4,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Unterhaltszahlung
     /// </summary>
-    public record Alimony : ExpenseBase {
+    public record Alimony : CashFlowBase {
 
         /// <summary>
         /// Art der Unterhaltszahlung

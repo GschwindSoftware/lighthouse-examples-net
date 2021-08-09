@@ -5,7 +5,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// <summary>
     /// Kinderbetreuungskosten
     /// </summary>
-    public record ChildCareCosts : ExpenseBase {
+    public record ChildCareCosts : CashFlowBase {
 
         /// <summary>
         /// Bis zum Alter des Kindes
