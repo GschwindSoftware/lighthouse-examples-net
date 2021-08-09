@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Payouts {
             get;
             init;
-        } = new CashFlows { Period = Period.Yearly };
+        } = new() { Period = Period.Yearly };
 
         /// <summary>
         /// Gesellschaftsform

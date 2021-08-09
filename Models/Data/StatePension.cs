@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Moment PayoutMoment {
             get;
             init;
-        } = new Moment { Type = MomentType.AtRetirement };
+        } = new() { Type = MomentType.AtRetirement };
 
         /// <summary>
         /// Stand

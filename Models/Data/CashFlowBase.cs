@@ -12,7 +12,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows CashFlows {
             get;
             init;
-        } = new CashFlows { Period = Period.Yearly };
+        } = new() { Period = Period.Yearly };
 
         /// <summary>
         /// Ende der Zahlungen
@@ -20,7 +20,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Moment Termination {
             get;
             init;
-        } = new Moment();
+        } = new();
 
         /// <summary>
         /// Risiko-Szenario
@@ -28,7 +28,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public ScenarioParameter ScenarioParameter {
             get;
             init;
-        } = new ScenarioParameter();
+        } = new();
 
     }
 

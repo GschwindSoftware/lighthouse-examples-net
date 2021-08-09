@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Moment Moment {
             get;
             init;
-        } = new Moment();
+        } = new();
 
         /// <summary>
         /// Verkaufsmethode

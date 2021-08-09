@@ -133,7 +133,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime Maturity {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year + 10, 1, 1);
+        } = new(DateTime.Now.Year + 10, 1, 1);
 
         /// <summary>
         /// Verlaufsdaten
@@ -141,7 +141,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public FundsDataTable CourseData {
             get;
             init;
-        } = new FundsDataTable();
+        } = new();
 
         /// <summary>
         /// Prospektdaten
@@ -149,7 +149,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public FundsDataTable BrochureData {
             get;
             init;
-        } = new FundsDataTable();
+        } = new();
 
     }
 

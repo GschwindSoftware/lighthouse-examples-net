@@ -39,7 +39,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows ProfitDistribution {
             get;
             init;
-        } = new CashFlows { Period = Period.Yearly };
+        } = new() { Period = Period.Yearly };
 
         /// <summary>
         /// Kontokorrentkonto
@@ -47,7 +47,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public AccountParticipation CurrentAccount {
             get;
             init;
-        } = new AccountParticipation();
+        } = new();
 
         /// <summary>
         /// Besteuerung des Verkaufs
@@ -87,7 +87,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Profit {
             get;
             init;
-        } = new CashFlows();
+        } = new();
 
         /// <summary>
         /// Einkünfte der Gesellschaft

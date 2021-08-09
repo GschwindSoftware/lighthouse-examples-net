@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime Maturity {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year + 4, 12, 31);
+        } = new(DateTime.Now.Year + 4, 12, 31);
 
         /// <summary>
         /// Wiederanlage nach Fälligkeit

@@ -23,7 +23,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateValue RemainingDebt {
             get;
             init;
-        } = new DateValue();
+        } = new();
 
         /// <summary>
         /// Nominalbetrag oder Restschuld
@@ -55,7 +55,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public TimePeriod TimePeriod {
             get;
             init;
-        } = new TimePeriod();
+        } = new();
 
         /// <summary>
         /// Darlehenstyp
@@ -71,7 +71,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime RepaymentStart {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+        } = new(DateTime.Now.Year, DateTime.Now.Month, 1);
 
         /// <summary>
         /// Laufzeit des Darlehens automatisch berechnen

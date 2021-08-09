@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime StartDate {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year, 1, 1);
+        } = new(DateTime.Now.Year, 1, 1);
 
         /// <summary>
         /// Ende des Zeitraums: Typ
@@ -29,7 +29,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime EndDate {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year + 10, 1, 1);
+        } = new(DateTime.Now.Year + 10, 1, 1);
 
         /// <summary>
         /// Ende des Zeitraums: Alter des Eigentümers (bei AtAge)

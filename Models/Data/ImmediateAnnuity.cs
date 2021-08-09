@@ -37,7 +37,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime InceptionDate {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year, 1, 1);
+        } = new(DateTime.Now.Year, 1, 1);
 
         /// <summary>
         /// Risikostufe
@@ -93,7 +93,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime PensionLimitation {
             get;
             init;
-        } = new DateTime(2027, 12, 31);
+        } = new(2027, 12, 31);
 
         /// <summary>
         /// Soll die Leistung automatisch berechnet werden?
@@ -109,7 +109,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CalculationParameter CalculationParameter {
             get;
             init;
-        } = new CalculationParameter();
+        } = new();
 
         /// <summary>
         /// Art der Leistungen im Todesfall

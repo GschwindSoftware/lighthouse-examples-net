@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime PurchaseDate {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year, 1, 1);
+        } = new(DateTime.Now.Year, 1, 1);
 
         /// <summary>
         /// Kaufpreis

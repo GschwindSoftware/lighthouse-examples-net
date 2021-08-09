@@ -15,7 +15,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateValue Investment {
             get;
             init;
-        } = new DateValue();
+        } = new();
 
         /// <summary>
         /// Abschreibungstyp

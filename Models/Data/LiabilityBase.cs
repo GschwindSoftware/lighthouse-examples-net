@@ -12,7 +12,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public TimePeriod TimePeriod {
             get;
             init;
-        } = new TimePeriod();
+        } = new();
 
     }
 

@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public MarketValues Liabilities {
             get;
             init;
-        } = new MarketValues();
+        } = new();
 
     }
 

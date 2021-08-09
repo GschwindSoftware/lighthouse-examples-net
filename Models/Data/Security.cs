@@ -135,7 +135,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime MaturityDate {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year+10, 12, 31);
+        } = new(DateTime.Now.Year+10, 12, 31);
 
         /// <summary>
         /// Kauf
@@ -143,7 +143,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Buying Buying {
             get;
             init;
-        } = new Buying();
+        } = new();
 
         /// <summary>
         /// Dividendenausschüttung
@@ -151,7 +151,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime DividendPayout {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year, 12, 31);
+        } = new(DateTime.Now.Year, 12, 31);
 
         /// <summary>
         /// Einzahlungen
@@ -159,7 +159,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Savings {
             get;
             init;
-        } = new CashFlows { Period = Period.Yearly };
+        } = new() { Period = Period.Yearly };
 
         /// <summary>
         /// Sondereinzahlungen

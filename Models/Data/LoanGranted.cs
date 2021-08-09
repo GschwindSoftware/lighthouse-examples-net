@@ -31,7 +31,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public TimePeriod TimePeriod {
             get;
             init;
-        } = new TimePeriod { EndType = MomentType.AtDate };
+        } = new() { EndType = MomentType.AtDate };
 
         /// <summary>
         /// Restschuld
@@ -39,7 +39,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateValue RemainingDebt {
             get;
             init;
-        } = new DateValue();
+        } = new();
 
         /// <summary>
         /// Disagio

@@ -12,7 +12,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows CashFlows {
             get;
             init;
-        } = new CashFlows();
+        } = new();
 
         /// <summary>
         /// Ende der Zahlungen
@@ -20,7 +20,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Moment Termination {
             get;
             init;
-        } = new Moment();
+        } = new();
 
     }
 

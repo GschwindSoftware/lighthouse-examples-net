@@ -23,7 +23,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateValue RemainingDebt {
             get;
             init;
-        } = new DateValue();
+        } = new();
 
         /// <summary>
         /// Nominalbetrag oder Restschuld

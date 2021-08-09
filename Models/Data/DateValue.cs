@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime Date {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+        } = new(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
 
         /// <summary>
         /// Betrag

@@ -47,7 +47,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Moment Termination {
             get;
             init;
-        } = new Moment();
+        } = new();
 
     }
 

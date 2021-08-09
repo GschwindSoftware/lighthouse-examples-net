@@ -12,7 +12,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public MarketValues MarketValues {
             get;
             init;
-        } = new MarketValues();
+        } = new();
 
         /// <summary>
         /// Kauf
@@ -20,7 +20,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Buying Buying {
             get;
             init;
-        } = new Buying();
+        } = new();
 
         /// <summary>
         /// Verkauf
@@ -28,7 +28,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Selling Selling {
             get;
             init;
-        } = new Selling();
+        } = new();
 
     }
 

@@ -40,7 +40,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime PensionLimitation {
             get;
             init;
-        } = new DateTime(2027, 12, 31);
+        } = new(2027, 12, 31);
 
         /// <summary>
         /// Witwenrente
@@ -97,7 +97,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CalculationParameter CalculationParameter {
             get;
             init;
-        } = new CalculationParameter();
+        } = new();
 
         /// <summary>
         /// Rückkaufwerte

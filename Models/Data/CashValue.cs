@@ -31,7 +31,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime ValueDate {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+        } = new(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
 
         /// <summary>
         /// Kontostand
@@ -47,7 +47,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public TimePeriod TimePeriod {
             get;
             init;
-        } = new TimePeriod();
+        } = new();
 
         /// <summary>
         /// Habenzinsen

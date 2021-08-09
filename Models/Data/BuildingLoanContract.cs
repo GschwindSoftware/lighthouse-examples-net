@@ -37,7 +37,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Fees {
             get;
             init;
-        } = new CashFlows { Period = Period.Yearly };
+        } = new() { Period = Period.Yearly };
 
         /// <summary>
         /// Sparende
@@ -45,7 +45,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public SavingEnd SavingEnd {
             get;
             init;
-        } = new SavingEnd();
+        } = new();
 
         /// <summary>
         /// Auszahlung des Bonus

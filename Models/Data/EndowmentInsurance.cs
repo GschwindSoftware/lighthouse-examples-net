@@ -30,7 +30,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime InceptionDate {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year, 1, 1);
+        } = new(DateTime.Now.Year, 1, 1);
 
         /// <summary>
         /// Risikobeiträge
@@ -38,7 +38,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Premium {
             get;
             init;
-        } = new CashFlows { Period = Period.Monthly };
+        } = new() { Period = Period.Monthly };
 
         /// <summary>
         /// Risikostufe
@@ -55,7 +55,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows CapitalPremium {
             get;
             init;
-        } = new CashFlows { Period = Period.Monthly };
+        } = new() { Period = Period.Monthly };
 
         /// <summary>
         /// Leistungszeitpunkt
@@ -63,7 +63,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Moment PayoutMoment {
             get;
             init;
-        } = new Moment { Type = MomentType.AtRetirement };
+        } = new() { Type = MomentType.AtRetirement };
 
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public ComplementaryDisabilityInsurance DisabilityInsurance {
             get;
             init;
-        } = new ComplementaryDisabilityInsurance();
+        } = new();
 
     }
 

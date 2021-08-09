@@ -12,7 +12,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CompanyValuation CompanyValuation {
             get;
             init;
-        } = new CompanyValuation();
+        } = new();
 
     }
 

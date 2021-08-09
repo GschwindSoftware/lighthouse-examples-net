@@ -55,7 +55,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Profit {
             get;
             init;
-        } = new CashFlows();
+        } = new();
 
         /// <summary>
         /// Betriebskosten
@@ -79,7 +79,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public PropertyValuation PropertyValuation {
             get;
             init;
-        } = new PropertyValuation();
+        } = new();
 
         /// <summary>
         /// Wohnfläche

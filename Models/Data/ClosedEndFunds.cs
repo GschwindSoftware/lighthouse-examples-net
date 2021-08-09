@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public FundsMasterData MasterData {
             get;
             init;
-        } = new FundsMasterData();
+        } = new();
 
         /// <summary>
         /// Besteuerung des Verkaufserlöses

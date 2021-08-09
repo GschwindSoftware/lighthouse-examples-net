@@ -37,7 +37,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public GroundValuation GroundValuation {
             get;
             init;
-        } = new GroundValuation();
+        } = new();
 
         /// <summary>
         /// Bewertung des Gebäudes
@@ -45,7 +45,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public BuildingValuation BuildingValuation {
             get;
             init;
-        } = new BuildingValuation();
+        } = new();
 
         /// <summary>
         /// Ertragswert des Gebäudes
@@ -53,7 +53,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public ProfitValuation ProfitValuation {
             get;
             init;
-        } = new ProfitValuation();
+        } = new();
 
         /// <summary>
         /// Vergleichswert
@@ -61,7 +61,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CompareValuation CompareValuation {
             get;
             init;
-        } = new CompareValuation();
+        } = new();
 
         /// <summary>
         /// Erbbau
@@ -69,7 +69,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public LeaseholdValuation LeaseholdValuation {
             get;
             init;
-        } = new LeaseholdValuation();
+        } = new();
 
         /// <summary>
         /// Gesamtnutzungsdauer

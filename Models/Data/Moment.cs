@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime Date {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year + 10, 1, 1);
+        } = new(DateTime.Now.Year + 10, 1, 1);
 
         /// <summary>
         /// Alter des Eigentümers (bei AtAge)

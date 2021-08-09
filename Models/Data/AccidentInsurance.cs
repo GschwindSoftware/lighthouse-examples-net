@@ -43,7 +43,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public MarketValues Refunds {
             get;
             init;
-        } = new MarketValues();
+        } = new();
 
         /// <summary>
         /// Todesfallleistung

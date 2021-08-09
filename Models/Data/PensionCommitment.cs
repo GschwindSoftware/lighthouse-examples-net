@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime PensionLimitation {
             get;
             init;
-        } = new DateTime(2027, 12, 31);
+        } = new(2027, 12, 31);
 
     }
 

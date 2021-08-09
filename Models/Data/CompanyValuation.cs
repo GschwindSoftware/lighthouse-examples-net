@@ -29,7 +29,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public SimplifiedProfitValuation SimplifiedProfitValuation {
             get;
             init;
-        } = new SimplifiedProfitValuation();
+        } = new();
 
         /// <summary>
         /// Manuelle Bewertung
@@ -37,7 +37,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CompareValuation CompareValuation {
             get;
             init;
-        } = new CompareValuation();
+        } = new();
 
         /// <summary>
         /// Netto-Verwaltungsvermögen

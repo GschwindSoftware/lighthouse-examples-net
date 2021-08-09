@@ -14,7 +14,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Withdrawals {
             get;
             init;
-        } = new CashFlows();
+        } = new();
 
         /// <summary>
         /// Sonderauszahlungen

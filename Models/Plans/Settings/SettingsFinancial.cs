@@ -35,7 +35,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         public DisabilitySettings DisabilitySettings {
             get;
             init;
-        } = new DisabilitySettings();
+        } = new();
 
 
         /// <summary>

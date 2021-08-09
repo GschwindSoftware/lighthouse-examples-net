@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime StartDate {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year, 1, 1);
+        } = new(DateTime.Now.Year, 1, 1);
 
         /// <summary>
         /// Enddatum der Rentenzahlung
@@ -21,7 +21,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime EndDate {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year + 10, 1, 1);
+        } = new(DateTime.Now.Year + 10, 1, 1);
 
         /// <summary>
         /// Endeart der Rentenzahlung

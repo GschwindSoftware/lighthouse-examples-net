@@ -14,7 +14,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Savings {
             get;
             init;
-        } = new CashFlows { Period = Period.Yearly };
+        } = new() { Period = Period.Yearly };
 
         /// <summary>
         /// Sondereinzahlungen
@@ -30,7 +30,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Withdrawals {
             get;
             init;
-        } = new CashFlows { Period = Period.Yearly };
+        } = new() { Period = Period.Yearly };
 
         /// <summary>
         /// Sonderauszahlungen
@@ -46,7 +46,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public PeriodValues Fees {
             get;
             init;
-        } = new PeriodValues { Period = Period.Yearly };
+        } = new() { Period = Period.Yearly };
 
     }
 

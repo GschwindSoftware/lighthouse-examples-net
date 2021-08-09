@@ -29,7 +29,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Premium {
             get;
             init;
-        } = new CashFlows { Period = Period.Monthly };
+        } = new() { Period = Period.Monthly };
 
         /// <summary>
         /// Versicherungsbeginn
@@ -37,7 +37,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime InceptionDate {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year, 1, 1);
+        } = new(DateTime.Now.Year, 1, 1);
 
         /// <summary>
         /// Kapitalleistung

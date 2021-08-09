@@ -55,7 +55,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Savings {
             get;
             init;
-        } = new CashFlows();
+        } = new();
 
         /// <summary>
         /// Sondereinzahlungen
@@ -71,7 +71,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Withdrawals {
             get;
             init;
-        } = new CashFlows();
+        } = new();
 
         /// <summary>
         /// Sonderentnahmen
@@ -103,7 +103,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Buying Buying {
             get;
             init;
-        } = new Buying();
+        } = new();
 
         /// <summary>
         /// Liquiditätskonto
@@ -111,7 +111,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public AssetManagementLiquidity AssetManagementLiquidity {
             get;
             init;
-        } = new AssetManagementLiquidity();
+        } = new();
 
     }
 

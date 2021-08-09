@@ -12,7 +12,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows Pension {
             get;
             init;
-        } = new CashFlows { Period = Period.Monthly };
+        } = new() { Period = Period.Monthly };
 
         /// <summary>
         /// Rentenende
@@ -20,7 +20,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Moment PensionEnd {
             get;
             init;
-        } = new Moment { Type = MomentType.AtRetirement };
+        } = new() { Type = MomentType.AtRetirement };
 
 
         /// <summary>

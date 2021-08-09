@@ -13,7 +13,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public CashFlows HullPremium {
             get;
             init;
-        } = new CashFlows();
+        } = new();
 
     }
 

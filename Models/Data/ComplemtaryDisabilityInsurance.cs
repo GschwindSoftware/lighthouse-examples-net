@@ -15,7 +15,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Moment InsuranceEnd {
             get;
             init;
-        } = new Moment();
+        } = new();
 
         /// <summary>
         /// Ende der Leistungen
@@ -23,7 +23,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Moment PremiumEnd {
             get;
             init;
-        } = new Moment();
+        } = new();
 
         /// <summary>
         /// Leistung erfolgt nach x Wochen

@@ -12,7 +12,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Informations Informations {
             get;
             init;
-        } = new Informations();
+        } = new();
 
         /// <summary>
         /// Besitzer
@@ -20,7 +20,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public Owner Owner {
             get;
             init;
-        } = new Owner();
+        } = new();
 
     }
 

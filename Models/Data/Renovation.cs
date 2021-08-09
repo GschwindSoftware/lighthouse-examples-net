@@ -39,7 +39,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         public DateTime CompletionDate {
             get;
             init;
-        } = new DateTime(DateTime.Now.Year, 1, 1);
+        } = new(DateTime.Now.Year, 1, 1);
 
         /// <summary>
         /// Liquiditätswirksam

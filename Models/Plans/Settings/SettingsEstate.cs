@@ -70,7 +70,7 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
         public Testament Testament {
             get;
             init;
-        } = new Testament();
+        } = new();
 
     }
 
