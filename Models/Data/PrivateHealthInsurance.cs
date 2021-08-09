@@ -23,7 +23,6 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
             init;
         } = true;
 
-
         /// <summary>
         /// Krankentagegeld
         /// </summary>

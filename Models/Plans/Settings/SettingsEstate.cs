@@ -63,7 +63,6 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
             init;
         } = true;
 
-
         /// <summary>
         /// Testament
         /// </summary>

@@ -103,7 +103,6 @@ namespace Gschwind.Lighthouse.Example.Models.Family {
         public IEnumerable<Relationship> IsChildOf(FamilyMember parent1, FamilyMember parent2) =>
             new[] { IsChildOf(parent1), IsChildOf(parent2) };
 
-
         /// <summary>
         /// Gibt eine <see cref="Relationship"/> zurück, in der dieses <see cref="FamilyMember"/> Lebenspartner des
         /// übergebenen <see cref="FamilyMember"/> ist

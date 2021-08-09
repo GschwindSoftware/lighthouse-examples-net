@@ -81,7 +81,6 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
             init;
         } = new(2027, 12, 31);
 
-
         /// <summary>
         /// Art der Leistungen im Todesfall
         /// </summary>

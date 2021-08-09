@@ -47,7 +47,6 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
             init;
         } = RiskLevel.None;
 
-
         /// <summary>
         /// Kapitalbeiträge
         /// </summary>
@@ -63,7 +62,6 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
             get;
             init;
         } = new() { Type = MomentType.AtRetirement };
-
 
         /// <summary>
         /// Monatliche Rente

@@ -37,7 +37,6 @@ namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
             init;
         } = new();
 
-
         /// <summary>
         /// Anzeige der Szenarien
         /// </summary>

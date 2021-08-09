@@ -17,7 +17,6 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
             init;
         } = new List<DateValue>();
 
-
         /// <summary>
         /// Rentengarantiezeit in Jahren
         /// </summary>
@@ -65,7 +64,6 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
             get;
             init;
         } = 27;
-
 
         /// <summary>
         /// Einzahlungen bis zum Leistungszeitraum

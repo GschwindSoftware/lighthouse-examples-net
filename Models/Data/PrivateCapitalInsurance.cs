@@ -97,7 +97,6 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
             init;
         } = Guid.Empty;
 
-
     }
 
 }

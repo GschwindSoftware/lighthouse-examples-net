@@ -47,7 +47,6 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
             init;
         } = true;
 
-
         /// <summary>
         /// Anrechnung auf den Pflichtteil
         /// </summary>

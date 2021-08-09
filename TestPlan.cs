@@ -280,7 +280,6 @@ namespace Gschwind.Lighthouse.Example {
                 response.Content : null;
         }
 
-
     }
 
 }

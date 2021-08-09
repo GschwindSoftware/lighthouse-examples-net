@@ -7,7 +7,6 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
     /// </summary>
     public record TerminateClosedEndFunds : Termination {
 
-
         /// <summary>
         /// Besteuerung
         /// </summary>

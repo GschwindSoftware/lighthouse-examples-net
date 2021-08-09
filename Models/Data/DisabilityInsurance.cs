@@ -22,7 +22,6 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
             init;
         } = new() { Type = MomentType.AtRetirement };
 
-
         /// <summary>
         /// Leistungsbeginn verschiebt sich um x Wochen
         /// </summary>
