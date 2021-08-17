@@ -50,9 +50,9 @@ namespace Gschwind.Lighthouse.Example.Models.Data {
         }
 
         /// <summary>
-        /// Der Modus
+        /// Bestand oder Neuanlage
         /// </summary>
-        public int Mode {
+        public InvestmentType InvestmentType {
             get;
             init;
         }
