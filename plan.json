@@ -1,0 +1,1046 @@
+{
+  "settings": {
+    "general": {
+      "planType": "FinancialEstate",
+      "description": "Beispiel Ruhestandsplanung",
+      "planningDate": "2021-07-13T00:00:00Z",
+      "useEncryption": true,
+      "startYear": 2030,
+      "duration": 20,
+      "locked": false
+    },
+    "estate": {
+      "timeOfDeath": "0001-01-01T00:00:00Z",
+      "succession": "Law",
+      "matrimonialRegime": "GainCommunity",
+      "wedding": "1980-01-01T00:00:00Z",
+      "initialAssetClient": 0.0,
+      "initialAssetPartner": 0.0,
+      "includeCumulatedLiquidity": true,
+      "testament": {
+        "heirs": [],
+        "legacies": []
+      }
+    }
+  },
+  "family": {
+    "members": [
+      {
+        "isMarried": true,
+        "jointTaxation": true,
+        "stateInsurances": {
+          "health": true,
+          "pension": true,
+          "unemployment": true
+        },
+        "healthInsurance": {
+          "insuranceCompany": "",
+          "additionalRate": 0.9,
+          "hasDailyBenefitsInsurance": true
+        },
+        "churchTaxDuty": false,
+        "occupationalGroup": "Employee",
+        "retirementAge": 67.0,
+        "lifeExpection": 79.28,
+        "id": "0000000000000-0000-0000-000000000001",
+        "gender": "Male",
+        "title": null,
+        "firstName": "Max",
+        "lastName": "Mustermann",
+        "birthday": "1975-05-03T00:00:00Z",
+        "isDead": false,
+        "mandatoryPartialWaiver": false,
+        "livesInFamilyResidence": false,
+        "type": "Customer"
+      },
+      {
+        "isHidden": false,
+        "stateInsurances": {
+          "health": true,
+          "pension": true,
+          "unemployment": true
+        },
+        "healthInsurance": {
+          "insuranceCompany": "",
+          "additionalRate": 0.9,
+          "hasDailyBenefitsInsurance": true
+        },
+        "churchTaxDuty": false,
+        "occupationalGroup": "Employee",
+        "retirementAge": 67.0,
+        "lifeExpection": 83.42,
+        "id": "0000000000000-0000-0000-000000000002",
+        "gender": "Female",
+        "title": "",
+        "firstName": "Erika",
+        "lastName": "Mustermann",
+        "birthday": "1986-10-08T00:00:00Z",
+        "isDead": false,
+        "mandatoryPartialWaiver": false,
+        "livesInFamilyResidence": false,
+        "type": "Partner"
+      }
+    ],
+    "relationships": [
+      {
+        "member": "0000000000000-0000-0000-000000000002",
+        "is": "Partner",
+        "of": "0000000000000-0000-0000-000000000001"
+      }
+    ]
+  },
+  "finances": [
+    {
+      "insuredPerson": "636952da-b059-49f6-9c9c-6c2c01c40970",
+      "additionalPremium": [],
+      "calculatePayout": true,
+      "calculationParameter": {
+        "capitalInterest": 3.8,
+        "acquisitionCosts": 0.0,
+        "acquisitionCostsYears": 0,
+        "administrationCosts": 0.0,
+        "lifeExpectation": 80
+      },
+      "repurchaseValues": [
+        {
+          "date": "2018-01-01T00:00:00Z",
+          "value": 15550.0,
+          "interval": "Single",
+          "count": 1
+        }
+      ],
+      "additionalPayments": [],
+      "pensionGaranteeYears": 0,
+      "isPensionLimitated": false,
+      "pensionLimitation": "2027-12-31T00:00:00Z",
+      "deathPaymentType": "None",
+      "deathBenefit": [
+        {
+          "date": "1970-01-01T00:00:00Z",
+          "value": 0.0,
+          "interval": "Single",
+          "count": 1
+        }
+      ],
+      "beneficiary1": "00000000-0000-0000-0000-000000000000",
+      "beneficiary2": "00000000-0000-0000-0000-000000000000",
+      "beneficiary3": "00000000-0000-0000-0000-000000000000",
+      "beneficiary4": "00000000-0000-0000-0000-000000000000",
+      "widowsPension": 0.0,
+      "orphansPension": 0.0,
+      "orphansPensionAge": 27,
+      "premiumPayment": "Employee",
+      "insurancePayoutType": "CapitalPayment",
+      "capitalPayment": 63932.50153,
+      "insuranceCompany": "Telekom",
+      "contractNumber": "",
+      "inceptionDate": "2018-03-01T00:00:00Z",
+      "premium": {
+        "period": "Yearly",
+        "values": [
+          {
+            "date": "2018-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": [
+          {
+            "date": "2021-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ]
+      },
+      "riskLevel": "None",
+      "capitalPremium": {
+        "period": "Yearly",
+        "values": [
+          {
+            "date": "2018-03-02T00:00:00Z",
+            "value": 80.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": []
+      },
+      "payoutMoment": {
+        "type": "AtDate",
+        "date": "2039-01-01T00:00:00Z",
+        "age": 65
+      },
+      "pension": 412.471737,
+      "pensionIncrease": 1.0,
+      "disabilityInsurance": {
+        "insuranceEnd": {
+          "type": "Never",
+          "date": "2031-01-01T00:00:00Z",
+          "age": 65
+        },
+        "premiumEnd": {
+          "type": "Never",
+          "date": "2031-01-01T00:00:00Z",
+          "age": 65
+        },
+        "premiumWeeks": 0,
+        "pension": 0.0,
+        "increase": 0.0,
+        "furtherPremiumType": "Continue",
+        "reducedPension": 0.0,
+        "reducedCapitalPayment": 0.0
+      },
+      "informations": {
+        "notes": "Vergangene Entwicklung 3,80% p.a. Dementsprechend angenommen\nREntenleistung von Software schätzen lassen.\nSteigerung von 1,00% p.a. angenommen",
+        "todo": "",
+        "lastChanged": "2018-07-09T00:00:00Z",
+        "lastUser": ""
+      },
+      "owner": {
+        "type": "Client",
+        "clientRate": 100.0,
+        "partnerRate": 0.0
+      },
+      "id": "25770fee-5084-4c4c-8d72-6444e0dd8744",
+      "importId": "",
+      "name": "Max Pensionsfonds",
+      "currency": "EUR",
+      "type": "PensionFund"
+    },
+    {
+      "savings": {
+        "period": "Monthly",
+        "values": [
+          {
+            "date": "2018-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": [
+          {
+            "date": "1970-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ]
+      },
+      "additionalSavings": [],
+      "withdrawals": {
+        "period": "Yearly",
+        "values": [
+          {
+            "date": "2018-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": [
+          {
+            "date": "1970-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ]
+      },
+      "additionalWithdrawals": [],
+      "fees": {
+        "values": [
+          {
+            "date": "2018-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "period": "Yearly"
+      },
+      "institute": "",
+      "accountNumber": "",
+      "valueDate": "2018-05-01T00:00:00Z",
+      "accountBalance": 3500.0,
+      "timePeriod": {
+        "startDate": "2018-01-01T00:00:00Z",
+        "endType": "Never",
+        "endDate": "2031-01-01T00:00:00Z",
+        "endAge": 65
+      },
+      "creditRates": [
+        {
+          "date": "2021-01-01T00:00:00Z",
+          "value": 0.0,
+          "interval": "Single",
+          "count": 1
+        }
+      ],
+      "debitRates": [
+        {
+          "date": "2021-01-01T00:00:00Z",
+          "value": 0.0,
+          "interval": "Single",
+          "count": 1
+        }
+      ],
+      "isCumulative": true,
+      "isTaxable": true,
+      "interestPeriod": "Quarterly",
+      "investmentType": "Stock",
+      "riskLevel": "NotCritical",
+      "informations": {
+        "notes": "",
+        "todo": "",
+        "lastChanged": "2021-07-13T00:00:00Z",
+        "lastUser": "Gschwind, M."
+      },
+      "owner": {
+        "type": "Both",
+        "clientRate": 50.0,
+        "partnerRate": 50.0
+      },
+      "id": "ef66f634-e22c-4665-8082-8c576dfc8cb6",
+      "importId": "",
+      "name": "Girokonto",
+      "currency": "EUR",
+      "type": "CheckingAccount"
+    },
+    {
+      "securities": [
+        {
+          "securityType": "Stock",
+          "isin": "DE0005140008",
+          "valueDate": "2021-07-13T00:00:00Z",
+          "quantity": 500.0,
+          "securityPrice": 10.48,
+          "depotName": "Depot",
+          "dividends": [
+            {
+              "date": "2021-01-01T00:00:00Z",
+              "value": 2.0,
+              "interval": "Single",
+              "count": 1
+            }
+          ],
+          "appreciations": [
+            {
+              "date": "2021-01-01T00:00:00Z",
+              "value": 3.0,
+              "interval": "Single",
+              "count": 1
+            }
+          ],
+          "isTaxable": true,
+          "reinvestDividends": true,
+          "regions": [
+            {
+              "quote": 100.0,
+              "name": "Deutschland"
+            }
+          ],
+          "industries": [
+            {
+              "quote": 100.0,
+              "name": "Finanzwesen"
+            }
+          ],
+          "riskLevel": "NotCritical",
+          "rating": null,
+          "agio": 0.0,
+          "maturityDate": "2081-12-31T00:00:00Z",
+          "buying": {
+            "doBuy": false,
+            "purchaseDate": "2021-01-01T00:00:00Z",
+            "purchasePrice": 0.0
+          },
+          "dividendPayout": "2018-12-31T00:00:00Z",
+          "savings": {
+            "period": "Yearly",
+            "values": [
+              {
+                "date": "1970-01-01T00:00:00Z",
+                "value": 0.0,
+                "interval": "Single",
+                "count": 1
+              }
+            ],
+            "increases": [
+              {
+                "date": "1970-01-01T00:00:00Z",
+                "value": 0.0,
+                "interval": "Single",
+                "count": 1
+              }
+            ]
+          },
+          "additionalSavings": [],
+          "selling": {
+            "moment": {
+              "type": "Never",
+              "date": "2031-01-01T00:00:00Z",
+              "age": 65
+            },
+            "sellingMode": "MarketValue",
+            "sellingPrice": 0.0
+          },
+          "informations": {
+            "notes": "",
+            "todo": "",
+            "lastChanged": "2018-05-18T00:00:00Z",
+            "lastUser": ""
+          },
+          "owner": {
+            "type": "Client",
+            "clientRate": 100.0,
+            "partnerRate": 0.0
+          },
+          "id": "af8ea2bd-51fe-40fa-bd85-7aa01a56ccb8",
+          "importId": "",
+          "name": "Deutsche Bank Aktiengesellschaft",
+          "currency": "EUR",
+          "type": "Security"
+        }
+      ],
+      "institute": "",
+      "accountNumber": "",
+      "annualFeeRate": 0.0,
+      "annualFeeMaximum": 0.0,
+      "isFeeTaxable": false,
+      "taxableFeeRate": 50.0,
+      "selling": {
+        "moment": {
+          "type": "Never",
+          "date": "2031-01-01T00:00:00Z",
+          "age": 65
+        },
+        "sellingMode": "MarketValue",
+        "sellingPrice": 0.0
+      },
+      "informations": {
+        "notes": "",
+        "todo": "",
+        "lastChanged": "2021-07-13T00:00:00Z",
+        "lastUser": "Gschwind, M."
+      },
+      "owner": {
+        "type": "Client",
+        "clientRate": 100.0,
+        "partnerRate": 0.0
+      },
+      "id": "211a031a-8302-41e9-ad3c-eef5ae5b6345",
+      "importId": "",
+      "name": "Depot",
+      "currency": "EUR",
+      "type": "Deposit"
+    },
+    {
+      "disabilityPension": 0.0,
+      "hasReducedPension": false,
+      "reducedPension": 0.0,
+      "widowsPensionLimitation": false,
+      "widowsPensionDuration": 24,
+      "payoutMoment": {
+        "type": "AtDate",
+        "date": "2053-11-01T00:00:00Z",
+        "age": 65
+      },
+      "valueDate": "2018-05-01T00:00:00Z",
+      "pensionValue": 2080.0,
+      "pensionIncrease": 1.5,
+      "widowsPension": 0.0,
+      "orphansPension": 0.0,
+      "orphansPensionAge": 27,
+      "informations": {
+        "notes": "",
+        "todo": "",
+        "lastChanged": "2018-07-09T00:00:00Z",
+        "lastUser": ""
+      },
+      "owner": {
+        "type": "Partner",
+        "clientRate": 0.0,
+        "partnerRate": 100.0
+      },
+      "id": "3d737bff-b25e-4342-89c0-047ecd1f8d4e",
+      "importId": "",
+      "name": "Erika Gesetzliche Rente",
+      "currency": "EUR",
+      "type": "StatutoryPension"
+    },
+    {
+      "insuredPerson": "636952da-b059-49f6-9c9c-6c2c01c40970",
+      "insurancePayoutType": "MonthlyPension",
+      "capitalPayment": 0.0,
+      "additionalPayments": [
+        {
+          "date": "2065-05-03T00:00:00Z",
+          "value": 43777.0,
+          "interval": "Single",
+          "count": 1
+        }
+      ],
+      "reference": "00000000-0000-0000-0000-000000000000",
+      "deathPaymentType": "None",
+      "deathBenefit": [
+        {
+          "date": "1970-01-01T00:00:00Z",
+          "value": 0.0,
+          "interval": "Single",
+          "count": 1
+        }
+      ],
+      "beneficiary1": "00000000-0000-0000-0000-000000000000",
+      "beneficiary2": "00000000-0000-0000-0000-000000000000",
+      "beneficiary3": "00000000-0000-0000-0000-000000000000",
+      "beneficiary4": "00000000-0000-0000-0000-000000000000",
+      "additionalPremium": [],
+      "pensionGaranteeYears": 0,
+      "isPensionLimitated": true,
+      "pensionLimitation": "2065-05-02T00:00:00Z",
+      "widowsPension": 0.0,
+      "orphansPension": 0.0,
+      "orphansPensionAge": 27,
+      "premiumUntilPayout": true,
+      "premiumYears": 12,
+      "calculatePayout": false,
+      "calculationParameter": {
+        "capitalInterest": 0.0,
+        "acquisitionCosts": 0.0,
+        "acquisitionCostsYears": 0,
+        "administrationCosts": 0.0,
+        "lifeExpectation": 90
+      },
+      "repurchaseValues": [],
+      "insuranceCompany": "Debeka",
+      "contractNumber": "",
+      "inceptionDate": "2018-01-01T00:00:00Z",
+      "premium": {
+        "period": "HalfYearly",
+        "values": [
+          {
+            "date": "2018-05-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": [
+          {
+            "date": "2021-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ]
+      },
+      "riskLevel": "None",
+      "capitalPremium": {
+        "period": "Quarterly",
+        "values": [
+          {
+            "date": "2018-05-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": []
+      },
+      "payoutMoment": {
+        "type": "AtDate",
+        "date": "2040-12-01T00:00:00Z",
+        "age": 65
+      },
+      "pension": 241.62,
+      "pensionIncrease": 0.0,
+      "disabilityInsurance": {
+        "insuranceEnd": {
+          "type": "Never",
+          "date": "2031-01-01T00:00:00Z",
+          "age": 65
+        },
+        "premiumEnd": {
+          "type": "Never",
+          "date": "2031-01-01T00:00:00Z",
+          "age": 65
+        },
+        "premiumWeeks": 0,
+        "pension": 0.0,
+        "increase": 0.0,
+        "furtherPremiumType": "Continue",
+        "reducedPension": 0.0,
+        "reducedCapitalPayment": 0.0
+      },
+      "informations": {
+        "notes": "Todesfallleistung 114.843 abzüglich gezahlter Renten",
+        "todo": "",
+        "lastChanged": "2018-07-09T00:00:00Z",
+        "lastUser": ""
+      },
+      "owner": {
+        "type": "Client",
+        "clientRate": 100.0,
+        "partnerRate": 0.0
+      },
+      "id": "d27e5c8b-e045-442a-8950-d567b3b9ba1c",
+      "importId": "",
+      "name": "Max Rentenversicherung",
+      "currency": "EUR",
+      "type": "PrivatePensionInsurance"
+    },
+    {
+      "alreadyReceivedBonus": [
+        {
+          "date": "2018-01-01T00:00:00Z",
+          "value": 0.0,
+          "interval": "Single",
+          "count": 1
+        }
+      ],
+      "additionalPremium": [],
+      "pensionGaranteeYears": 0,
+      "isPensionLimitated": true,
+      "pensionLimitation": "2065-05-02T00:00:00Z",
+      "widowsPension": 0.0,
+      "orphansPension": 0.0,
+      "orphansPensionAge": 27,
+      "premiumUntilPayout": true,
+      "premiumYears": 12,
+      "calculatePayout": false,
+      "calculationParameter": {
+        "capitalInterest": 0.0,
+        "acquisitionCosts": 0.0,
+        "acquisitionCostsYears": 0,
+        "administrationCosts": 0.0,
+        "lifeExpectation": 90
+      },
+      "repurchaseValues": [],
+      "insuranceCompany": "Debeka",
+      "contractNumber": "",
+      "inceptionDate": "2018-01-01T00:00:00Z",
+      "premium": {
+        "period": "HalfYearly",
+        "values": [
+          {
+            "date": "2018-05-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": [
+          {
+            "date": "2021-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ]
+      },
+      "riskLevel": "None",
+      "capitalPremium": {
+        "period": "Quarterly",
+        "values": [
+          {
+            "date": "2018-05-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": []
+      },
+      "payoutMoment": {
+        "type": "AtDate",
+        "date": "2042-06-01T00:00:00Z",
+        "age": 65
+      },
+      "pension": 333.59,
+      "pensionIncrease": 0.0,
+      "disabilityInsurance": {
+        "insuranceEnd": {
+          "type": "Never",
+          "date": "2031-01-01T00:00:00Z",
+          "age": 65
+        },
+        "premiumEnd": {
+          "type": "Never",
+          "date": "2031-01-01T00:00:00Z",
+          "age": 65
+        },
+        "premiumWeeks": 0,
+        "pension": 0.0,
+        "increase": 0.0,
+        "furtherPremiumType": "Continue",
+        "reducedPension": 0.0,
+        "reducedCapitalPayment": 0.0
+      },
+      "informations": {
+        "notes": "Bezugsberechtigter? Im Antrag Mutter!",
+        "todo": "",
+        "lastChanged": "2018-07-09T00:00:00Z",
+        "lastUser": ""
+      },
+      "owner": {
+        "type": "Client",
+        "clientRate": 100.0,
+        "partnerRate": 0.0
+      },
+      "id": "ec8bb576-bdd8-4acd-9395-5b51475b721d",
+      "importId": "",
+      "name": "Max Riesterrente",
+      "currency": "EUR",
+      "type": "RiesterPension"
+    },
+    {
+      "cashFlows": {
+        "period": "Yearly",
+        "values": [
+          {
+            "date": "1970-01-01T00:00:00Z",
+            "value": 36000.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": [
+          {
+            "date": "1970-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ]
+      },
+      "termination": {
+        "type": "AtDate",
+        "date": "2065-05-02T00:00:00Z",
+        "age": 65
+      },
+      "scenarioParameter": {
+        "normalCase": 100.0,
+        "illness": 100.0,
+        "nursingCase": 100.0,
+        "disability": 100.0,
+        "death": 100.0
+      },
+      "informations": {
+        "notes": "",
+        "todo": "",
+        "lastChanged": "2021-07-13T00:00:00Z",
+        "lastUser": "Gschwind, M."
+      },
+      "owner": {
+        "type": "Both",
+        "clientRate": 50.0,
+        "partnerRate": 50.0
+      },
+      "id": "6fd69e4a-bc64-4e35-aab9-c6e37c9bfe18",
+      "importId": "",
+      "name": "Liquiditätsbedarf im Ruhestand",
+      "currency": "EUR",
+      "type": "LivingCosts"
+    },
+    {
+      "insuranceTaxType": "Allowance",
+      "insuredPerson": "66189072-8c2f-497a-ad1e-95a7abe620e2",
+      "additionalPremium": [],
+      "calculatePayout": false,
+      "calculationParameter": {
+        "capitalInterest": 0.0,
+        "acquisitionCosts": 0.0,
+        "acquisitionCostsYears": 0,
+        "administrationCosts": 0.0,
+        "lifeExpectation": 90
+      },
+      "repurchaseValues": [],
+      "additionalPayments": [],
+      "pensionGaranteeYears": 0,
+      "isPensionLimitated": false,
+      "pensionLimitation": "2080-12-31T00:00:00Z",
+      "deathPaymentType": "None",
+      "deathBenefit": [
+        {
+          "date": "1970-01-01T00:00:00Z",
+          "value": 0.0,
+          "interval": "Single",
+          "count": 1
+        }
+      ],
+      "beneficiary1": "00000000-0000-0000-0000-000000000000",
+      "beneficiary2": "00000000-0000-0000-0000-000000000000",
+      "beneficiary3": "00000000-0000-0000-0000-000000000000",
+      "beneficiary4": "00000000-0000-0000-0000-000000000000",
+      "widowsPension": 0.0,
+      "orphansPension": 0.0,
+      "orphansPensionAge": 27,
+      "premiumPayment": "Employee",
+      "insurancePayoutType": "MonthlyPension",
+      "capitalPayment": 0.0,
+      "insuranceCompany": "BVV",
+      "contractNumber": "",
+      "inceptionDate": "2018-01-01T00:00:00Z",
+      "premium": {
+        "period": "HalfYearly",
+        "values": [
+          {
+            "date": "2018-05-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": [
+          {
+            "date": "2021-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ]
+      },
+      "riskLevel": "None",
+      "capitalPremium": {
+        "period": "Yearly",
+        "values": [
+          {
+            "date": "2018-05-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": []
+      },
+      "payoutMoment": {
+        "type": "AtDate",
+        "date": "2049-11-01T00:00:00Z",
+        "age": 65
+      },
+      "pension": 158.42,
+      "pensionIncrease": 1.0,
+      "disabilityInsurance": {
+        "insuranceEnd": {
+          "type": "Never",
+          "date": "2031-01-01T00:00:00Z",
+          "age": 65
+        },
+        "premiumEnd": {
+          "type": "Never",
+          "date": "2031-01-01T00:00:00Z",
+          "age": 65
+        },
+        "premiumWeeks": 0,
+        "pension": 0.0,
+        "increase": 0.0,
+        "furtherPremiumType": "Continue",
+        "reducedPension": 0.0,
+        "reducedCapitalPayment": 0.0
+      },
+      "informations": {
+        "notes": "Abschlag Rente 65 auf 63 11,6%\nAnwartschaft mit 65 2017 € 32,67 gar. + € 4,48 Überschüsse\nzukünftige Anwartschaft mit OnlineRechner BVV kalkuliert € 149,19 gar. + € 65,17 Überschüsse\n67 -> 168,66 gar.\n65 -> 149,19 gar. (-11,54%) -> 214,36 inkl. Überschüsse\n63 -> 131.85 gar. (-11,62%) -> 189,49 inkl. Überschüsse (geschätzt)\n60 -> 108,92 gar. (geschätzt) -> 158,42 inkl. Überschüsse (geschätzt)\nWert 60 wird für 63 angenommen",
+        "todo": "",
+        "lastChanged": "2018-07-09T00:00:00Z",
+        "lastUser": ""
+      },
+      "owner": {
+        "type": "Client",
+        "clientRate": 100.0,
+        "partnerRate": 0.0
+      },
+      "id": "e8dcb8d0-d2c9-4086-a232-fcf53a03063d",
+      "importId": "",
+      "name": "Erika Pensionskasse",
+      "currency": "EUR",
+      "type": "PensionScheme"
+    },
+    {
+      "isPensionLimitated": false,
+      "pensionLimitation": "2080-12-31T00:00:00Z",
+      "isFifthPartRule": true,
+      "premiumPayment": "Employer",
+      "insurancePayoutType": "CapitalPayment",
+      "capitalPayment": 135138.0,
+      "insuranceCompany": "Telekom",
+      "contractNumber": "",
+      "inceptionDate": "2017-09-01T00:00:00Z",
+      "premium": {
+        "period": "Yearly",
+        "values": [
+          {
+            "date": "2017-09-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": [
+          {
+            "date": "2017-09-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ]
+      },
+      "riskLevel": "None",
+      "capitalPremium": {
+        "period": "Monthly",
+        "values": [],
+        "increases": []
+      },
+      "payoutMoment": {
+        "type": "AtRetirement",
+        "date": "2031-01-01T00:00:00Z",
+        "age": 65
+      },
+      "pension": 1000.0,
+      "pensionIncrease": 0.0,
+      "disabilityInsurance": {
+        "insuranceEnd": {
+          "type": "Never",
+          "date": "2031-01-01T00:00:00Z",
+          "age": 65
+        },
+        "premiumEnd": {
+          "type": "Never",
+          "date": "2031-01-01T00:00:00Z",
+          "age": 65
+        },
+        "premiumWeeks": 0,
+        "pension": 0.0,
+        "increase": 0.0,
+        "furtherPremiumType": "Continue",
+        "reducedPension": 0.0,
+        "reducedCapitalPayment": 0.0
+      },
+      "informations": {
+        "notes": "Hochrechnung laut Angaben\nVersteuerung per Fünftel Regelung",
+        "todo": "",
+        "lastChanged": "2018-07-09T00:00:00Z",
+        "lastUser": ""
+      },
+      "owner": {
+        "type": "Client",
+        "clientRate": 100.0,
+        "partnerRate": 0.0
+      },
+      "id": "f151f893-fe0e-4ce2-a6d4-e79126d45c19",
+      "importId": "",
+      "name": "Max Pensionszusage",
+      "currency": "EUR",
+      "type": "PensionCommitment"
+    },
+    {
+      "taxAdvantage": 0,
+      "yearlyAllowance": 0.0,
+      "pensionAllowance": 100.0,
+      "cashFlows": {
+        "period": "Yearly",
+        "values": [
+          {
+            "date": "1970-01-01T00:00:00Z",
+            "value": 3400.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": [
+          {
+            "date": "1970-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ]
+      },
+      "termination": {
+        "type": "AtDate",
+        "date": "2065-05-02T00:00:00Z",
+        "age": 65
+      },
+      "scenarioParameter": {
+        "normalCase": 100.0,
+        "illness": 100.0,
+        "nursingCase": 0.0,
+        "disability": 0.0,
+        "death": 0.0
+      },
+      "informations": {
+        "notes": "",
+        "todo": "",
+        "lastChanged": "2018-07-09T00:00:00Z",
+        "lastUser": ""
+      },
+      "owner": {
+        "type": "Client",
+        "clientRate": 100.0,
+        "partnerRate": 0.0
+      },
+      "id": "eb9138c2-d6db-40ae-810f-d81acb3e643a",
+      "importId": "",
+      "name": "Max Gesetzliche Rente",
+      "currency": "EUR",
+      "type": "PensionIncome"
+    },
+    {
+      "isStateInsuranceDuty": true,
+      "numberOfPayments": 12,
+      "companyCars": [],
+      "bonuses": [],
+      "monetaryAdvantages": [],
+      "cashFlows": {
+        "period": "Monthly",
+        "values": [
+          {
+            "date": "1970-01-01T00:00:00Z",
+            "value": 410.083333333333,
+            "interval": "Single",
+            "count": 1
+          }
+        ],
+        "increases": [
+          {
+            "date": "1970-01-01T00:00:00Z",
+            "value": 0.0,
+            "interval": "Single",
+            "count": 1
+          }
+        ]
+      },
+      "termination": {
+        "type": "AtDate",
+        "date": "2046-11-01T00:00:00Z",
+        "age": 65
+      },
+      "scenarioParameter": {
+        "normalCase": 100.0,
+        "illness": 0.0,
+        "nursingCase": 0.0,
+        "disability": 0.0,
+        "death": 0.0
+      },
+      "informations": {
+        "notes": "",
+        "todo": "",
+        "lastChanged": "2018-07-09T00:00:00Z",
+        "lastUser": ""
+      },
+      "owner": {
+        "type": "Partner",
+        "clientRate": 0.0,
+        "partnerRate": 100.0
+      },
+      "id": "cbe46324-170f-4ec6-b531-2663ea34afb6",
+      "importId": "",
+      "name": "Erika Gehalt",
+      "currency": "EUR",
+      "type": "EmployedIncome"
+    }
+  ],
+  "type": "Plan"
+}
