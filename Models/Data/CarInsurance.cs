@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace Gschwind.Lighthouse.Example.Models.Data {
 
     /// <summary>

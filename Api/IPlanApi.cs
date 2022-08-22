@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using Gschwind.Lighthouse.Example.Models.Plans;
 using Refit;
 

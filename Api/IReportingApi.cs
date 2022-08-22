@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using Gschwind.Lighthouse.Example.Models.Report;
 using Gschwind.Lighthouse.Example.Models.Reports;
 using Refit;

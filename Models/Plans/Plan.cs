@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Gschwind.Lighthouse.Example.Models.Data;
 using Gschwind.Lighthouse.Example.Models.Plans.Settings;
 

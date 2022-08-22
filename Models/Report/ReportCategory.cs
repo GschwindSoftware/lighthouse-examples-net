@@ -1,4 +1,3 @@
-using System;
 using Gschwind.Lighthouse.Example.Models.Plans.Settings;
 
 namespace Gschwind.Lighthouse.Example.Models.Reports {

@@ -1,4 +1,3 @@
-
 namespace Gschwind.Lighthouse.Example.Models.Data {
 
     /// <summary>

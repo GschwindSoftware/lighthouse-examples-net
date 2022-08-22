@@ -1,8 +1,5 @@
 #pragma warning disable CA1822
 
-using System;
-using System.IO;
-using System.Threading.Tasks;
 using Gschwind.Lighthouse.Example.Api;
 using Gschwind.Lighthouse.Example.Models.Data;
 using Gschwind.Lighthouse.Example.Models.Family;

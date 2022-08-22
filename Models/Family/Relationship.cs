@@ -1,4 +1,3 @@
-using System;
 using Newtonsoft.Json;
 
 namespace Gschwind.Lighthouse.Example.Models.Family {
