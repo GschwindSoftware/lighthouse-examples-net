@@ -1,5 +1,4 @@
 using System.Diagnostics.CodeAnalysis;
-using System.Linq.Expressions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -16,35 +15,21 @@ namespace Gschwind.Lighthouse.Example.Serialization;
 /// <typeparam name="T">Der abstrakte Basistyp.</typeparam>
 internal class PolymorphicObjectConverter<T> : JsonConverter<T> {
 
-    readonly static IReadOnlyDictionary<string, Func<T>> _factories = GenerateFactories();
+    readonly static IReadOnlyDictionary<string, Type> _concreteTypes = typeof(T)
+        .Assembly
+        .GetTypes()
+        .Where(t =>
+            !t.IsAbstract &&
+            typeof(T).IsAssignableFrom(t)
+        )
+        .ToDictionary(
+            t => t.Name,
+            t => t,
+            StringComparer.OrdinalIgnoreCase
+        );
 
     /// <inheritdoc/>
     public override bool CanWrite => false;
-
-    static IReadOnlyDictionary<string, Func<T>> GenerateFactories() {
-        // Eine Factorymethode für einen Typen kompilieren
-        static Func<T> createFactoryMethod(Type concreteType) {
-            var ctor = concreteType.GetConstructor(Array.Empty<Type>())!;
-
-            return Expression
-                .Lambda<Func<T>>(Expression.New(ctor))
-                .Compile();
-        }
-
-        return typeof(T)
-            .Assembly
-            .GetTypes()
-            .Where(t =>
-                !t.IsAbstract &&
-                typeof(T).IsAssignableFrom(t) &&
-                t.GetConstructor(Array.Empty<Type>()) != null
-            )
-            .ToDictionary(
-                t => t.Name,
-                t => createFactoryMethod(t),
-                StringComparer.OrdinalIgnoreCase
-            );
-    }
 
     /// <inheritdoc/>
     public override T ReadJson(JsonReader reader, Type objectType, [AllowNull] T existingValue, bool hasExistingValue, JsonSerializer serializer) {
@@ -54,14 +39,10 @@ internal class PolymorphicObjectConverter<T> : JsonConverter<T> {
         if (jObj.Property("type") is not { Value: JValue { Value: string { Length: > 0  } discriminator } })
             throw new JsonReaderException();
 
-        if (!_factories.TryGetValue(discriminator, out var createObject))
+        if (!_concreteTypes.TryGetValue(discriminator, out var concreteType))
             throw new TypeAccessException();
 
-        var obj = createObject();
-        using var jr = jObj.CreateReader();
-        serializer.Populate(jr, obj!);
-
-        return obj;
+        return (T)jObj.ToObject(concreteType, serializer)!;
     }
 
     /// <inheritdoc/>

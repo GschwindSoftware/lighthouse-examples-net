@@ -34,7 +34,7 @@ internal static class ApiServiceCollectionExtensions {
 
         foreach (var apiType in new[] { typeof(IReportingApi), typeof(IPlanApi) })
             services
-                // Financial Lighthouse API Client
+                // Financial Lighthouse API Client (Finanzservice)
                 .AddRefitClient(apiType, new RefitSettings {
                     // Json Konventionen
                     ContentSerializer = new NewtonsoftJsonContentSerializer(settings)
@@ -43,6 +43,17 @@ internal static class ApiServiceCollectionExtensions {
                 .ConfigureHttpClient((services, client) =>
                     client.BaseAddress = new("https://api.financial-lighthouse.de/fin")
                 );
+
+        services
+            // Financial Lighthouse API Client (CRM-Service)
+            .AddRefitClient<ICrmApi>(new RefitSettings {
+                // Json Konventionen
+                ContentSerializer = new NewtonsoftJsonContentSerializer(settings)
+            })
+            .AddHttpMessageHandler<ClientCredentialsHandler>()
+            .ConfigureHttpClient((services, client) =>
+                client.BaseAddress = new("https://api.financial-lighthouse.de/crm")
+            );
 
         // Authentifizierung mit OAuth
         services
