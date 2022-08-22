@@ -1,26 +1,24 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Sachwertverfahren
+/// </summary>
+public record BuildingValuation {
 
     /// <summary>
-    /// Sachwertverfahren
+    /// Grundfläche des Gebäudes
     /// </summary>
-    public record BuildingValuation {
+    public int BuildingArea {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Grundfläche des Gebäudes
-        /// </summary>
-        public int BuildingArea {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Herstellungskosten pro qm
-        /// </summary>
-        public double ProductionCosts {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Herstellungskosten pro qm
+    /// </summary>
+    public double ProductionCosts {
+        get;
+        init;
     }
 
 }

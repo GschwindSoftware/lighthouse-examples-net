@@ -1,34 +1,32 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Verkauf
+/// </summary>
+public record Selling {
 
     /// <summary>
-    /// Verkauf
+    /// Zeitpunkt des Verkaufs
     /// </summary>
-    public record Selling {
+    public Moment Moment {
+        get;
+        init;
+    } = new();
 
-        /// <summary>
-        /// Zeitpunkt des Verkaufs
-        /// </summary>
-        public Moment Moment {
-            get;
-            init;
-        } = new();
+    /// <summary>
+    /// Verkaufsmethode
+    /// </summary>
+    public SellingMode SellingMode {
+        get;
+        init;
+    } = SellingMode.MarketValue;
 
-        /// <summary>
-        /// Verkaufsmethode
-        /// </summary>
-        public SellingMode SellingMode {
-            get;
-            init;
-        } = SellingMode.MarketValue;
-
-        /// <summary>
-        /// Verkaufspreis
-        /// </summary>
-        public double SellingPrice {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Verkaufspreis
+    /// </summary>
+    public double SellingPrice {
+        get;
+        init;
     }
 
 }

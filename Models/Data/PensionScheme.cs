@@ -1,17 +1,15 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Pensionskasse
+/// </summary>
+public record PensionScheme : CompanyCapitalInsurance {
 
     /// <summary>
-    /// Pensionskasse
+    /// Steuerbegünstigung von Beiträgen zur bAV
     /// </summary>
-    public record PensionScheme : CompanyCapitalInsurance {
-
-        /// <summary>
-        /// Steuerbegünstigung von Beiträgen zur bAV
-        /// </summary>
-        public InsuranceTaxType InsuranceTaxType {
-            get;
-            init;
-        } = InsuranceTaxType.Allowance;
-    }
-
+    public InsuranceTaxType InsuranceTaxType {
+        get;
+        init;
+    } = InsuranceTaxType.Allowance;
 }

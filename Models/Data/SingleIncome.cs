@@ -1,34 +1,32 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Einmalige Einkunft
+/// </summary>
+public record SingleIncome : SingleCashFlow {
 
     /// <summary>
-    /// Einmalige Einkunft
+    /// Einkunftsart
     /// </summary>
-    public record SingleIncome : SingleCashFlow {
+    public IncomeType IncomeType {
+        get;
+        init;
+    } = IncomeType.Other;
 
-        /// <summary>
-        /// Einkunftsart
-        /// </summary>
-        public IncomeType IncomeType {
-            get;
-            init;
-        } = IncomeType.Other;
-
-        /// <summary>
-        /// Zu versteuern
-        /// </summary>
-        public double Taxable {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Art der Besteuerung
-        /// </summary>
-        public Taxation Taxation {
-            get;
-            init;
-        } = Taxation.IncomeTax;
-
+    /// <summary>
+    /// Zu versteuern
+    /// </summary>
+    public double Taxable {
+        get;
+        init;
     }
+
+    /// <summary>
+    /// Art der Besteuerung
+    /// </summary>
+    public Taxation Taxation {
+        get;
+        init;
+    } = Taxation.IncomeTax;
 
 }

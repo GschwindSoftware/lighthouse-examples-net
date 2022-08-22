@@ -1,26 +1,24 @@
-namespace Gschwind.Lighthouse.Example.Models.Family {
+namespace Gschwind.Lighthouse.Example.Models.Family;
+
+/// <summary>
+/// Der Stammbaum eines Kunden
+/// </summary>
+public record Family {
 
     /// <summary>
-    /// Der Stammbaum eines Kunden
+    /// Auflistung der Familienmitglieder
     /// </summary>
-    public record Family {
+    public ICollection<FamilyMember> Members {
+        get;
+        init;
+    } = new List<FamilyMember>();
 
-        /// <summary>
-        /// Auflistung der Familienmitglieder
-        /// </summary>
-        public ICollection<FamilyMember> Members {
-            get;
-            init;
-        } = new List<FamilyMember>();
-
-        /// <summary>
-        /// Auflistung der Beziehungen zwischen Familienmitgliedern
-        /// </summary>
-        public ICollection<Relationship> Relationships {
-            get;
-            init;
-        } = new List<Relationship>();
-
-    }
+    /// <summary>
+    /// Auflistung der Beziehungen zwischen Familienmitgliedern
+    /// </summary>
+    public ICollection<Relationship> Relationships {
+        get;
+        init;
+    } = new List<Relationship>();
 
 }

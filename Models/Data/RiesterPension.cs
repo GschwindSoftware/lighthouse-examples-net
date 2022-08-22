@@ -1,18 +1,16 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Riesterrente
+/// </summary>
+public record RiesterPension : PrivatePension {
 
     /// <summary>
-    /// Riesterrente
+    /// Bereits erhaltene Zulagen
     /// </summary>
-    public record RiesterPension : PrivatePension {
-
-        /// <summary>
-        /// Bereits erhaltene Zulagen
-        /// </summary>
-        public ICollection<DateValue> AlreadyReceivedBonus {
-            get;
-            init;
-        } = new List<DateValue>();
-
-    }
+    public ICollection<DateValue> AlreadyReceivedBonus {
+        get;
+        init;
+    } = new List<DateValue>();
 
 }

@@ -1,66 +1,64 @@
-namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
+namespace Gschwind.Lighthouse.Example.Models.Plans.Settings;
+
+/// <summary>
+/// Allgmeine Einstellungen für einen Finanzplan
+/// </summary>
+public record SettingsGeneral {
 
     /// <summary>
-    /// Allgmeine Einstellungen für einen Finanzplan
+    /// Plantyp
     /// </summary>
-    public record SettingsGeneral {
+    public PlanType PlanType {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Plantyp
-        /// </summary>
-        public PlanType PlanType {
-            get;
-            init;
-        }
+    /// <summary>
+    /// Die Beschreibung
+    /// </summary>
+    public string? Description {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Die Beschreibung
-        /// </summary>
-        public string? Description {
-            get;
-            init;
-        }
+    /// <summary>
+    /// Das Planungsdatum
+    /// </summary>
+    public DateTime PlanningDate {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Das Planungsdatum
-        /// </summary>
-        public DateTime PlanningDate {
-            get;
-            init;
-        }
+    /// <summary>
+    /// Sind Namen und Geburtsdaten verschlüsselt?
+    /// </summary>
+    public bool UseEncryption {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Sind Namen und Geburtsdaten verschlüsselt?
-        /// </summary>
-        public bool UseEncryption {
-            get;
-            init;
-        }
+    /// <summary>
+    /// Auswertestart
+    /// </summary>
+    public int StartYear {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Auswertestart
-        /// </summary>
-        public int StartYear {
-            get;
-            init;
-        }
+    /// <summary>
+    /// Auswertedauer
+    /// </summary>
+    public int Duration {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Auswertedauer
-        /// </summary>
-        public int Duration {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Schreibgeschützt
-        /// </summary>
-        public bool Locked {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Schreibgeschützt
+    /// </summary>
+    public bool Locked {
+        get;
+        init;
     }
 
 }

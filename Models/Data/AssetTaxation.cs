@@ -1,21 +1,19 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
+/// <summary>
+/// Steuerliche Anrechnung
+/// </summary>
+public enum AssetTaxation {
     /// <summary>
-    /// Steuerliche Anrechnung
+    /// Keine steuerliche Anrechnung
     /// </summary>
-    public enum AssetTaxation {
-        /// <summary>
-        /// Keine steuerliche Anrechnung
-        /// </summary>
-        None,
-        /// <summary>
-        /// Einkommenssteuer
-        /// </summary>
-        Income,
-        /// <summary>
-        /// Abgeltungssteuer
-        /// </summary>
-        FlatRateWitholding = 1000
-    }
-
+    None,
+    /// <summary>
+    /// Einkommenssteuer
+    /// </summary>
+    Income,
+    /// <summary>
+    /// Abgeltungssteuer
+    /// </summary>
+    FlatRateWitholding = 1000
 }

@@ -1,25 +1,23 @@
-namespace Gschwind.Lighthouse.Example.Models.Family {
+namespace Gschwind.Lighthouse.Example.Models.Family;
 
+/// <summary>
+/// Zuordnung eines Kindes zu einem Riestervertrag
+/// </summary>
+public enum RiesterChildAssignment {
     /// <summary>
-    /// Zuordnung eines Kindes zu einem Riestervertrag
+    /// Kunde
     /// </summary>
-    public enum RiesterChildAssignment {
-        /// <summary>
-        /// Kunde
-        /// </summary>
-        Client,
-        /// <summary>
-        /// Partner
-        /// </summary>
-        Partner,
-        /// <summary>
-        /// Automatisch
-        /// </summary>
-        Automatic,
-        /// <summary>
-        /// Keiner
-        /// </summary>
-        None
-    }
-
+    Client,
+    /// <summary>
+    /// Partner
+    /// </summary>
+    Partner,
+    /// <summary>
+    /// Automatisch
+    /// </summary>
+    Automatic,
+    /// <summary>
+    /// Keiner
+    /// </summary>
+    None
 }

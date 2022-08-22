@@ -1,50 +1,48 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Steuerliche Bewertung von Betriebsvermögen in der Erbschaftsteuer
+/// </summary>
+public record CompanyValuation {
 
     /// <summary>
-    /// Steuerliche Bewertung von Betriebsvermögen in der Erbschaftsteuer
+    /// Bewertungsmethode
     /// </summary>
-    public record CompanyValuation {
+    public CompanyValuationMethod ValuationMethod {
+        get;
+        init;
+    } = CompanyValuationMethod.Manual;
 
-        /// <summary>
-        /// Bewertungsmethode
-        /// </summary>
-        public CompanyValuationMethod ValuationMethod {
-            get;
-            init;
-        } = CompanyValuationMethod.Manual;
+    /// <summary>
+    /// Grundstücksart
+    /// </summary>
+    public CompanyBenefitType BenefitType {
+        get;
+        init;
+    } = CompanyBenefitType.None;
 
-        /// <summary>
-        /// Grundstücksart
-        /// </summary>
-        public CompanyBenefitType BenefitType {
-            get;
-            init;
-        } = CompanyBenefitType.None;
+    /// <summary>
+    /// Vereinfachtes Ertragswertverfahren
+    /// </summary>
+    public SimplifiedProfitValuation SimplifiedProfitValuation {
+        get;
+        init;
+    } = new();
 
-        /// <summary>
-        /// Vereinfachtes Ertragswertverfahren
-        /// </summary>
-        public SimplifiedProfitValuation SimplifiedProfitValuation {
-            get;
-            init;
-        } = new();
+    /// <summary>
+    /// Manuelle Bewertung
+    /// </summary>
+    public CompareValuation CompareValuation {
+        get;
+        init;
+    } = new();
 
-        /// <summary>
-        /// Manuelle Bewertung
-        /// </summary>
-        public CompareValuation CompareValuation {
-            get;
-            init;
-        } = new();
-
-        /// <summary>
-        /// Netto-Verwaltungsvermögen
-        /// </summary>
-        public double AdministrativeAssets {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Netto-Verwaltungsvermögen
+    /// </summary>
+    public double AdministrativeAssets {
+        get;
+        init;
     }
 
 }

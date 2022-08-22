@@ -1,26 +1,24 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Marktwerte sind eine Reihe von Werten zu einem bestimmten Zeitpunkt (Stützstellen). Werte zwischen den Stützstellen werden interpoliert
+/// </summary>
+public record MarketValues {
 
     /// <summary>
-    /// Marktwerte sind eine Reihe von Werten zu einem bestimmten Zeitpunkt (Stützstellen). Werte zwischen den Stützstellen werden interpoliert
+    /// Liste von Zahlungsflüssen
     /// </summary>
-    public record MarketValues {
+    public ICollection<DateValue> Values {
+        get;
+        init;
+    } = new List<DateValue>();
 
-        /// <summary>
-        /// Liste von Zahlungsflüssen
-        /// </summary>
-        public ICollection<DateValue> Values {
-            get;
-            init;
-        } = new List<DateValue>();
-
-        /// <summary>
-        /// Wertsteigerung nach dem letzten eingetragenen Verkehrswert
-        /// </summary>
-        public double Increase {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Wertsteigerung nach dem letzten eingetragenen Verkehrswert
+    /// </summary>
+    public double Increase {
+        get;
+        init;
     }
 
 }

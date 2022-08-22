@@ -1,18 +1,16 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Vorgang Arztpraxis
+/// </summary>
+public record MedicalPractice : Partnership {
 
     /// <summary>
-    /// Vorgang Arztpraxis
+    /// Regelleistungen
     /// </summary>
-    public record MedicalPractice : Partnership {
-
-        /// <summary>
-        /// Regelleistungen
-        /// </summary>
-        public ICollection<StandardBenefit> StandardBenefits {
-            get;
-            init;
-        } = new List<StandardBenefit>();
-
-    }
+    public ICollection<StandardBenefit> StandardBenefits {
+        get;
+        init;
+    } = new List<StandardBenefit>();
 
 }

@@ -1,26 +1,24 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Ende des Sparvorgangs
+/// </summary>
+public record SavingEnd {
 
     /// <summary>
-    /// Ende des Sparvorgangs
+    /// Art des Zeitpunktes
     /// </summary>
-    public record SavingEnd {
+    public SavingEndType Type {
+        get;
+        init;
+    } = SavingEndType.AtMinimumBalance;
 
-        /// <summary>
-        /// Art des Zeitpunktes
-        /// </summary>
-        public SavingEndType Type {
-            get;
-            init;
-        } = SavingEndType.AtMinimumBalance;
-
-        /// <summary>
-        /// Datum des Zeitpunktes (bei <see cref="MomentType.AtDate"/>)
-        /// </summary>
-        public DateTime Date {
-            get;
-            init;
-        } = new(DateTime.Now.Year + 10, 1, 1);
-
-    }
+    /// <summary>
+    /// Datum des Zeitpunktes (bei <see cref="MomentType.AtDate"/>)
+    /// </summary>
+    public DateTime Date {
+        get;
+        init;
+    } = new(DateTime.Now.Year + 10, 1, 1);
 
 }

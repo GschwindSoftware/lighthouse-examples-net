@@ -1,17 +1,15 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
+/// <summary>
+/// Typ aus Betriebseinnahmen
+/// </summary>
+public enum CompanyIncomeType {
     /// <summary>
-    /// Typ aus Betriebseinnahmen
+    /// Umsatz
     /// </summary>
-    public enum CompanyIncomeType {
-        /// <summary>
-        /// Umsatz
-        /// </summary>
-        Sales,
-        /// <summary>
-        /// Sonstige Einnahme
-        /// </summary>
-        OtherIncome = 1
-    }
-
+    Sales,
+    /// <summary>
+    /// Sonstige Einnahme
+    /// </summary>
+    OtherIncome = 1
 }

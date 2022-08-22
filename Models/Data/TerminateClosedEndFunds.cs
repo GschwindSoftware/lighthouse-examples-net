@@ -1,26 +1,24 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Geschlossenen Fonds verkaufen
+/// </summary>
+public record TerminateClosedEndFunds : Termination {
 
     /// <summary>
-    /// Geschlossenen Fonds verkaufen
+    /// Besteuerung
     /// </summary>
-    public record TerminateClosedEndFunds : Termination {
+    public Taxation SaleTaxation {
+        get;
+        init;
+    } = Taxation.IncomeTax;
 
-        /// <summary>
-        /// Besteuerung
-        /// </summary>
-        public Taxation SaleTaxation {
-            get;
-            init;
-        } = Taxation.IncomeTax;
-
-        /// <summary>
-        /// Steuerpflichtig in %
-        /// </summary>
-        public double Taxable {
-            get;
-            init;
-        } = 100.0;
-
-    }
+    /// <summary>
+    /// Steuerpflichtig in %
+    /// </summary>
+    public double Taxable {
+        get;
+        init;
+    } = 100.0;
 
 }

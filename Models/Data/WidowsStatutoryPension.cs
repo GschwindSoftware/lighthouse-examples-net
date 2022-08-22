@@ -1,42 +1,40 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Gesetzliche Witwenrente
+/// </summary>
+public record WidowsStatutoryPension : PlanData {
 
     /// <summary>
-    /// Gesetzliche Witwenrente
+    /// Start der Rentenzahlung
     /// </summary>
-    public record WidowsStatutoryPension : PlanData {
+    public DateTime StartDate {
+        get;
+        init;
+    } = new(DateTime.Now.Year, 1, 1);
 
-        /// <summary>
-        /// Start der Rentenzahlung
-        /// </summary>
-        public DateTime StartDate {
-            get;
-            init;
-        } = new(DateTime.Now.Year, 1, 1);
+    /// <summary>
+    /// Enddatum der Rentenzahlung
+    /// </summary>
+    public DateTime EndDate {
+        get;
+        init;
+    } = new(DateTime.Now.Year + 10, 1, 1);
 
-        /// <summary>
-        /// Enddatum der Rentenzahlung
-        /// </summary>
-        public DateTime EndDate {
-            get;
-            init;
-        } = new(DateTime.Now.Year + 10, 1, 1);
+    /// <summary>
+    /// Endeart der Rentenzahlung
+    /// </summary>
+    public PensionEnd PensionEnd {
+        get;
+        init;
+    } = PensionEnd.Death;
 
-        /// <summary>
-        /// Endeart der Rentenzahlung
-        /// </summary>
-        public PensionEnd PensionEnd {
-            get;
-            init;
-        } = PensionEnd.Death;
-
-        /// <summary>
-        /// Monatliche Rente
-        /// </summary>
-        public double MonthlyPension {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Monatliche Rente
+    /// </summary>
+    public double MonthlyPension {
+        get;
+        init;
     }
 
 }

@@ -1,9 +1,7 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-    /// <summary>
-    /// Vorgang Kunstobjekt
-    /// </summary>
-    public record ArtObject : RealValue {
-    }
-
+/// <summary>
+/// Vorgang Kunstobjekt
+/// </summary>
+public record ArtObject : RealValue {
 }

@@ -1,17 +1,15 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
+/// <summary>
+/// Ende der Rentenzahlungen
+/// </summary>
+public enum PensionEnd {
     /// <summary>
-    /// Ende der Rentenzahlungen
+    /// Bis Datum
     /// </summary>
-    public enum PensionEnd {
-        /// <summary>
-        /// Bis Datum
-        /// </summary>
-        Date,
-        /// <summary>
-        /// Bis zum Tod
-        /// </summary>
-        Death
-    }
-
+    Date,
+    /// <summary>
+    /// Bis zum Tod
+    /// </summary>
+    Death
 }

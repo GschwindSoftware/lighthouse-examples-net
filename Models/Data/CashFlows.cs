@@ -1,34 +1,32 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Klasse zur Erfassung von Zahlungsströmen
+/// </summary>
+public record CashFlows {
 
     /// <summary>
-    /// Klasse zur Erfassung von Zahlungsströmen
+    /// Zahlungsintervall
     /// </summary>
-    public record CashFlows {
-
-        /// <summary>
-        /// Zahlungsintervall
-        /// </summary>
-        public Period Period {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Liste von Zahlungsflüssen
-        /// </summary>
-        public ICollection<CashFlow> Values {
-            get;
-            init;
-        } = new List<CashFlow>();
-
-        /// <summary>
-        /// Liste von Steigerungen
-        /// </summary>
-        public ICollection<PercentValue> Increases {
-            get;
-            init;
-        } = new List<PercentValue>();
-
+    public Period Period {
+        get;
+        init;
     }
+
+    /// <summary>
+    /// Liste von Zahlungsflüssen
+    /// </summary>
+    public ICollection<CashFlow> Values {
+        get;
+        init;
+    } = new List<CashFlow>();
+
+    /// <summary>
+    /// Liste von Steigerungen
+    /// </summary>
+    public ICollection<PercentValue> Increases {
+        get;
+        init;
+    } = new List<PercentValue>();
 
 }

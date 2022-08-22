@@ -1,25 +1,23 @@
-namespace Gschwind.Lighthouse.Example.Models.Reports {
+namespace Gschwind.Lighthouse.Example.Models.Reports;
 
+/// <summary>
+/// Typ eines biometrischer Risikoszenarios
+/// </summary>
+public enum ScenarioType {
     /// <summary>
-    /// Typ eines biometrischer Risikoszenarios
+    /// Normalfall
     /// </summary>
-    public enum ScenarioType {
-        /// <summary>
-        /// Normalfall
-        /// </summary>
-        Standard,
-        /// <summary>
-        /// Krankheit
-        /// </summary>
-        Illness,
-        /// <summary>
-        /// Erwerbsunfähigkeit
-        /// </summary>
-        Disability,
-        /// <summary>
-        /// Todesfall
-        /// </summary>
-        Death
-    }
-
+    Standard,
+    /// <summary>
+    /// Krankheit
+    /// </summary>
+    Illness,
+    /// <summary>
+    /// Erwerbsunfähigkeit
+    /// </summary>
+    Disability,
+    /// <summary>
+    /// Todesfall
+    /// </summary>
+    Death
 }

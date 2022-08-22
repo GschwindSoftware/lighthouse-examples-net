@@ -1,9 +1,7 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-    /// <summary>
-    /// Einkunft aus Land- und Forstwirtschaft
-    /// </summary>
-    public record AgricultureIncome : CashFlowBase {
-    }
-
+/// <summary>
+/// Einkunft aus Land- und Forstwirtschaft
+/// </summary>
+public record AgricultureIncome : CashFlowBase {
 }

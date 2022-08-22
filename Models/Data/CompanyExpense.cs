@@ -1,18 +1,16 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Untervorgang Betriebsausgabe
+/// </summary>
+public record CompanyExpense : CashflowSubFinance {
 
     /// <summary>
-    /// Untervorgang Betriebsausgabe
+    /// Kostenart
     /// </summary>
-    public record CompanyExpense : CashflowSubFinance {
-
-        /// <summary>
-        /// Kostenart
-        /// </summary>
-        public CompanyExpenseType CompanyExpenseType {
-            get;
-            init;
-        }
-
+    public CompanyExpenseType CompanyExpenseType {
+        get;
+        init;
     }
 
 }

@@ -1,16 +1,14 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Vorgang Festgeld
+/// </summary>
+public record TimeMoney : TimeDeposit {
 
     /// <summary>
-    /// Vorgang Festgeld
+    /// Erzeugt eine neue Instanz der <see cref="TimeMoney"/>-Klasse
     /// </summary>
-    public record TimeMoney : TimeDeposit {
-
-        /// <summary>
-        /// Erzeugt eine neue Instanz der <see cref="TimeMoney"/>-Klasse
-        /// </summary>
-        public TimeMoney() =>
-            (IsCumulative, InterestPeriod) = (false, Period.Yearly);
-
-    }
+    public TimeMoney() =>
+        (IsCumulative, InterestPeriod) = (false, Period.Yearly);
 
 }

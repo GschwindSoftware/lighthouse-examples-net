@@ -1,26 +1,24 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Vorgang Entnahmeplan
+/// </summary>
+public record WithdrawalPlan : CashValue {
 
     /// <summary>
-    /// Vorgang Entnahmeplan
+    /// Auszahlungen
     /// </summary>
-    public record WithdrawalPlan : CashValue {
+    public CashFlows Withdrawals {
+        get;
+        init;
+    } = new();
 
-        /// <summary>
-        /// Auszahlungen
-        /// </summary>
-        public CashFlows Withdrawals {
-            get;
-            init;
-        } = new();
-
-        /// <summary>
-        /// Sonderauszahlungen
-        /// </summary>
-        public ICollection<DateValue> AdditionalWithdrawals {
-            get;
-            init;
-        } = new List<DateValue>();
-
-    }
+    /// <summary>
+    /// Sonderauszahlungen
+    /// </summary>
+    public ICollection<DateValue> AdditionalWithdrawals {
+        get;
+        init;
+    } = new List<DateValue>();
 
 }

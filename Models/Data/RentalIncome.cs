@@ -1,9 +1,7 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-    /// <summary>
-    /// Untervorgang Mieteinnnahmen
-    /// </summary>
-    public record RentalIncome : CashflowSubFinance {
-    }
-
+/// <summary>
+/// Untervorgang Mieteinnnahmen
+/// </summary>
+public record RentalIncome : CashflowSubFinance {
 }

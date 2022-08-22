@@ -1,32 +1,30 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Haushaltsnahe Leistung
+/// </summary>
+public record HouseholdService : CashFlowBase {
 
     /// <summary>
-    /// Haushaltsnahe Leistung
+    /// Steuerliche Berücksichtigung
     /// </summary>
-    public record HouseholdService : CashFlowBase {
-
-        /// <summary>
-        /// Steuerliche Berücksichtigung
-        /// </summary>
-        public HousehouldServiceType ServiceType {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Lohnanteil
-        /// </summary>
-        public double WageShare {
-            get;
-            init;
-        } = 100;
-
-        /// <summary>
-        /// Erzeugt eine neue Instanz der <see cref="HouseholdService"/>-Klasse
-        /// </summary>
-        public HouseholdService() =>
-            ScenarioParameter = ScenarioParameter with { Death = 100 };
-
+    public HousehouldServiceType ServiceType {
+        get;
+        init;
     }
+
+    /// <summary>
+    /// Lohnanteil
+    /// </summary>
+    public double WageShare {
+        get;
+        init;
+    } = 100;
+
+    /// <summary>
+    /// Erzeugt eine neue Instanz der <see cref="HouseholdService"/>-Klasse
+    /// </summary>
+    public HouseholdService() =>
+        ScenarioParameter = ScenarioParameter with { Death = 100 };
 
 }

@@ -1,18 +1,16 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Werbungskosten
+/// </summary>
+public record AdvertisingCosts : CashFlowBase {
 
     /// <summary>
-    /// Werbungskosten
+    /// Einkunftsart
     /// </summary>
-    public record AdvertisingCosts : CashFlowBase {
-
-        /// <summary>
-        /// Einkunftsart
-        /// </summary>
-        public TaxableExpenseType TaxableExpenseType {
-            get;
-            init;
-        } = TaxableExpenseType.None;
-
-    }
+    public TaxableExpenseType TaxableExpenseType {
+        get;
+        init;
+    } = TaxableExpenseType.None;
 
 }

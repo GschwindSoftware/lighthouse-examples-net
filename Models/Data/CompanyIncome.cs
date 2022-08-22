@@ -1,18 +1,16 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
+
+/// <summary>
+/// Untervorgang Betriebseinnahme
+/// </summary>
+public record CompanyIncome : CashflowSubFinance {
 
     /// <summary>
-    /// Untervorgang Betriebseinnahme
+    /// Typ der Einnahmen
     /// </summary>
-    public record CompanyIncome : CashflowSubFinance {
-
-        /// <summary>
-        /// Typ der Einnahmen
-        /// </summary>
-        public CompanyIncomeType CompanyIncomeType {
-            get;
-            init;
-        }
-
+    public CompanyIncomeType CompanyIncomeType {
+        get;
+        init;
     }
 
 }
