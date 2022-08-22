@@ -45,4 +45,28 @@ public abstract record DemandDeposit : CashValue {
         init;
     } = new() { Period = Period.Yearly };
 
+    /// <summary>
+    /// Automatischer Liquiditätsausgleich
+    /// </summary>
+    public bool LiquidityBalancing {
+        get;
+        init;
+    }
+
+    /// <summary>
+    /// Sparrate des Liquiditätsausgleichs
+    /// </summary>
+    public ICollection<PercentValue> LiquidityBalancingRates {
+        get;
+        init;
+    } = new List<PercentValue>();
+
+    /// <summary>
+    /// Liquiditätsunterdeckung ausgleichen
+    /// </summary>
+    public bool CompensateDeficit {
+        get;
+        init;
+    }
+
 }

@@ -46,6 +46,14 @@ public record RentalProperty : PropertyBase {
     } = AmortizationType.Auto;
 
     /// <summary>
+    /// Abschreibungswerte für manuelle Eingaben in %
+    /// </summary>
+    public ICollection<PercentValue> ManualAmortizationValues {
+        get;
+        init;
+    } = new List<PercentValue>();
+
+    /// <summary>
     /// Start der Abschreibung
     /// </summary>
     public DateTime AmortizationStart {

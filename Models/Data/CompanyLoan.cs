@@ -62,14 +62,6 @@ public record CompanyLoan : PlanData {
     } = LoanType.Annuity;
 
     /// <summary>
-    /// Start der Tilgung
-    /// </summary>
-    public DateTime RepaymentStart {
-        get;
-        init;
-    } = new(DateTime.Now.Year, DateTime.Now.Month, 1);
-
-    /// <summary>
     /// Laufzeit des Darlehens automatisch berechnen
     /// </summary>
     public bool DurationAutomated {
@@ -144,7 +136,7 @@ public record CompanyLoan : PlanData {
     /// <summary>
     /// Auszahlung zu Darlehensbeginn
     /// </summary>
-    public bool PayoutAutomated {
+    public bool PayoutAtLoanStart {
         get;
         init;
     } = true;

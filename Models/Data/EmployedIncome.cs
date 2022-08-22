@@ -16,10 +16,10 @@ public record EmployedIncome : CashFlowBase {
     /// <summary>
     /// Anzahl Monatsgehälter
     /// </summary>
-    public int NumberOfPayments {
+    public PaymentsPerYear PaymentsPerYear {
         get;
         init;
-    } = 12;
+    } = PaymentsPerYear.Twelve;
 
     /// <summary>
     /// Dienstwagen

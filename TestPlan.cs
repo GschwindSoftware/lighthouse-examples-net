@@ -150,7 +150,7 @@ internal class TestPlan {
                             },
                             ReinvestDividends = true,
                             RiskLevel = RiskLevel.NotCritical,
-                            SecurityPrice = 10.48,
+                            Quote = 10.48,
                             SecurityType = SecurityType.Stock,
                             ValueDate = new(2021, 07, 13)
                         }

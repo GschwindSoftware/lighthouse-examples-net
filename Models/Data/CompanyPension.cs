@@ -29,4 +29,12 @@ public abstract record CompanyPension : EndowmentInsurance {
         init;
     }
 
+    /// <summary>
+    /// Kürzt den Versorgungsfreibetrag oder ist erbschaftsteuerpflichtig
+    /// </summary>
+    public InheritanceTaxType InheritanceTaxType {
+        get;
+        init;
+    } = InheritanceTaxType.PensionAllowanceReduction;
+
 }

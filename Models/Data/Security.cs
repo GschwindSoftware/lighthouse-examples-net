@@ -40,7 +40,15 @@ public record Security : SecurityBase {
     /// <summary>
     /// Kurs
     /// </summary>
-    public double SecurityPrice {
+    public double Quote {
+        get;
+        init;
+    }
+
+    /// <summary>
+    /// Bisherige Dividenden
+    /// </summary>
+    public double PreviousDividends {
         get;
         init;
     }

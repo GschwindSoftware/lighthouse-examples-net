@@ -62,14 +62,6 @@ public record Loan : LiabilityBase {
     } = true;
 
     /// <summary>
-    /// Laufzeit des Darlehens automatisch berechnen
-    /// </summary>
-    public bool DurationAutomated {
-        get;
-        init;
-    } = true;
-
-    /// <summary>
     /// Disagio
     /// </summary>
     public double Disagio {

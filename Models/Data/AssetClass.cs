@@ -77,4 +77,12 @@ public record AssetClass : PlanData {
         init;
     } = RiskLevel.NotCritical;
 
+    /// <summary>
+    /// Rating
+    /// </summary>
+    public string? Rating {
+        get;
+        init;
+    }
+
 }
