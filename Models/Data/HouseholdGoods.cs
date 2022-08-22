@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Vorgang Hausrat
+/// Hausrat
 /// </summary>
 public record HouseholdGoods : RealValue {
 }

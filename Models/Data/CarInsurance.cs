@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Bildet den Vorgang einer Kfz-Versicherung ab
+/// Kfz-Versicherung
 /// </summary>
 public record CarInsurance : PropertyInsurance {
 

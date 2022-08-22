@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Enumeration zur Darstellung einer Periode
+/// Eine Zeitperiode
 /// </summary>
 public enum Period {
     /// <summary>

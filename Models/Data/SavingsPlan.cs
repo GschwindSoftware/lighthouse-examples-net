@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Vorgang Sparplan
+/// Sparplan
 /// </summary>
 public record SavingsPlan : SavingDeposit {
 

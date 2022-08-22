@@ -1,6 +1,6 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Vorgang Edelmetall
+/// Edelmetall
 /// </summary>
 public record PreciousMetal : RealValue { }

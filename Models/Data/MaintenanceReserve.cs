@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Untervorgang Rücklage
+/// Rücklage
 /// </summary>
 public record MaintenanceReserve : CashflowSubFinance {
 }

@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Vorgang Basisrente
+/// Basisrente
 /// </summary>
 public record BasicPension : PrivatePension {
 }

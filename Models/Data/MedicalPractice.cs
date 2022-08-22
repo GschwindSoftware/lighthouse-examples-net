@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Vorgang Arztpraxis
+/// Arztpraxis
 /// </summary>
 public record MedicalPractice : Partnership {
 

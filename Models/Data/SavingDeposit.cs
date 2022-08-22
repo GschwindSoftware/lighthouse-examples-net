@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Vorgang Spareinlage
+/// Spareinlage
 /// </summary>
 public abstract record SavingDeposit : CashValue {
 

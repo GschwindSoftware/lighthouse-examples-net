@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Vorgang Festgeld
+/// Festgeld
 /// </summary>
 public record TimeMoney : TimeDeposit {
 

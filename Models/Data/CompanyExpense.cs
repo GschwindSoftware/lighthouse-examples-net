@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Untervorgang Betriebsausgabe
+/// Betriebsausgabe
 /// </summary>
 public record CompanyExpense : CashflowSubFinance {
 

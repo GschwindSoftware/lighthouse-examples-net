@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Dread Disease Versicherung
+/// Dread-Disease-Versicherung
 /// </summary>
 public record DreadDiseaseInsurance : PersonalInsurance {
 

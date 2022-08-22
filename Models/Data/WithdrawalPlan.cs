@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Vorgang Entnahmeplan
+/// Entnahmeplan
 /// </summary>
 public record WithdrawalPlan : CashValue {
 

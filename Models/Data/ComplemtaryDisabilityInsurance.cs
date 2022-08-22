@@ -1,9 +1,6 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Abfindung
-/// </summary>
-/// <summary>
 /// Berufsunfähigkeitszusatzversicherung
 /// </summary>
 public record ComplementaryDisabilityInsurance {

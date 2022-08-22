@@ -2,7 +2,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Vorgang Wohngebäude-Versicherung
+/// Wohngebäude-Versicherung
 /// </summary>
 public record BuildingInsurance : PropertyInsurance {
 

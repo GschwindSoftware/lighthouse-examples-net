@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Enumeration zur Darstellung einer Wiederholungsrate
+/// Eine Wiederholungsrate
 /// </summary>
 public enum RepeatType {
     /// <summary>

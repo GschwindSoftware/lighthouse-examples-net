@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Untervorgang Investition bei Betriebsvermögen
+/// Investition bei Betriebsvermögen
 /// </summary>
 public record CompanyInvestment : PlanData {
 
