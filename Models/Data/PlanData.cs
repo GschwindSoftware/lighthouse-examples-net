@@ -1,9 +1,15 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
 /// Basis für alle Vorgänge
 /// </summary>
 public abstract record PlanData {
+
+    [JsonExtensionData]
+    Dictionary<string, JToken> _additionalData = new();
 
     /// <summary>
     /// Die eindeutige Id des Vorgangs
