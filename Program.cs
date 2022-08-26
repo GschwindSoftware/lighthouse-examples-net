@@ -22,6 +22,7 @@ var services = new ServiceCollection()
     )
     .AddSingleton<Quickstart>()
     .AddSingleton<TestPlan>()
+    .AddSingleton<ExternalClientDataProvider>()
     .BuildServiceProvider();
 
 // Beispielanwendung ausführen

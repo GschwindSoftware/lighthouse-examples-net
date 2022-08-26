@@ -19,18 +19,36 @@ internal class Quickstart {
 
     readonly LighthouseApi _api;
     readonly TestPlan _testPlan;
+    readonly ExternalClientDataProvider _clients;
     readonly ILogger<Quickstart> _logger;
 
-    public Quickstart(LighthouseApi api, TestPlan testPlan, ILogger<Quickstart> logger) =>
-        (_api, _testPlan, _logger) = (api, testPlan, logger);
+    public Quickstart(
+        LighthouseApi api,
+        TestPlan testPlan,
+        ExternalClientDataProvider clients,
+        ILogger<Quickstart> logger
+    ) =>
+        (_api, _testPlan, _clients, _logger) = (api, testPlan, clients, logger);
 
     #endregion
 
     #region Beispiele
 
     internal async Task RunAsync() {
-        // Möglichkeiten einen Finanzplan zu laden:
+    }
 
+    /// <summary>
+    /// 💡 Beispiel: Laden eines Plans und Erzeugung einer Auswertung
+    /// </summary>
+    /// <remarks>
+    /// In diesem Beispiel werden die Möglichkeiten demonstiert, einen <see cref="Models.Plans.Plan">Finanzplan</see>
+    /// eines Kunden zu laden. Sie können hierzu einen vorhandenen, in der Kundenmappe abgespeicherten
+    /// Plan nutzen oder die gesamten Plandaten ad hoc generieren.
+    ///
+    /// Der Finanzplan dient als Datengrundlage zur Erzeugung von <see cref="Report">Auswertungen</see>.
+    /// Hierbei erhalten Sie die Zeitreihe mit den Auswertedaten und dazugehörige Metadaten der Auswertung zurück.
+    /// </remarks>
+    async Task GenerateReport() {
         // Über die API abrufen
         var plan = await _testPlan.FromApiAsync(1);
         // Oder aus Datei laden
@@ -41,6 +59,25 @@ internal class Quickstart {
         // Eine Auswertung - hier z.B. Versorgungslücke - erzeugen
         var response = await _api.Reports.GenerateRetirementGapReportAsync(new(plan), RetirementReportType.SupplyGap);
         PrintReport(response.EnsureSuccess());
+    }
+
+    /// <summary>
+    /// 💡 Beispiel: Einen Status Quo aktualisieren.
+    /// </summary>
+    /// <remarks>
+    /// Hier wird die Vorgehensweise illustriert, um den Status Quo eines Kunden zu aksutalisieren. Der Status Quo
+    /// ist ein spezieller <see cref="Models.Plans.Plan">Finanzplan</see>, der die aktuelle Situation eines Kunden
+    /// wie in der Kundenmappe der Oberfläche dargestellt festhält.
+    ///
+    /// Teil eines Finanzplans sind <see cref="Models.Data.PlanData">Vorgänge</see>, mit denen Berater die
+    /// Finanzsituation des Kunden erfassen (Einkünfte, Ausgaben, Vermögenswerte usw.).
+    ///
+    /// In diesem Beispiel wird davon ausgegangen, dass die Werpapierdepots von Kunden und deren Inhalte in einem
+    /// Zweitsystem vorliegen und mit Financial Lighthouse synchronisiert werden sollen.
+    /// </remarks>
+    async Task SynchronizeStatusQuo() {
+        var externalData = await _clients.GetProtfoliosAsync() ?? throw new ApplicationException();
+        await Task.CompletedTask;
     }
 
     #endregion

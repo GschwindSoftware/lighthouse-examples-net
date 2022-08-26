@@ -1,0 +1,43 @@
+[
+  {
+    "clientId": "123456",
+    "accounts": [
+      {
+        "iban": "DE71500105174719557779",
+        "securities": [
+          {
+            "isin": "DE0009807016",
+            "quantity": 10
+          },
+          {
+            "isin": "DE000BAY0017",
+            "quantity": 23.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clientId": "654321",
+    "accounts": [
+      {
+        "iban": "DE33500105173241248878",
+        "securities": [
+          {
+            "isin": "IE00B4L5Y983",
+            "quantity": 12
+          }
+        ]
+      },
+      {
+        "iban": "DE33500105173241248878",
+        "securities": [
+          {
+            "isin": "US88160R1014",
+            "quantity": 50
+          }
+        ]
+      }
+    ]
+  }
+]
