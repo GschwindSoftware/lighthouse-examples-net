@@ -9,6 +9,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <Description>Beispiele für die Nutzung der Financial Lighthouse API</Description>
+    <Company>Gschwind Software GmbH</Company>
+    <Authors>$(Company)</Authors>
+    <Copyright>Copyright © $([System.DateTime]::Now.ToString(yyyy)) $(Company)</Copyright>
+    <RepositoryUrl>https://github.com/GschwindSoftware/lighthouse-examples-net</RepositoryUrl>
+    <Version>6.0.0</Version>
+  </PropertyGroup>
+
   <ItemGroup>
     <Content Include="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
