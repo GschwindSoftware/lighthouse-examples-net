@@ -69,4 +69,8 @@ public enum SecurityType {
     /// Zerobonds
     /// </summary>
     Zerobond = 18,
+    /// <summary>
+    /// Alternative Investments
+    /// </summary>
+    AlternativeInvestments = 19
 }

@@ -46,14 +46,6 @@ public record Security : SecurityBase {
     }
 
     /// <summary>
-    /// Bisherige Dividenden
-    /// </summary>
-    public double PreviousDividends {
-        get;
-        init;
-    }
-
-    /// <summary>
     /// Name des Depots
     /// </summary>
     public string DepotName {
@@ -139,7 +131,7 @@ public record Security : SecurityBase {
     public DateTime MaturityDate {
         get;
         init;
-    } = new(DateTime.Now.Year+10, 12, 31);
+    } = new(DateTime.Now.Year + 10, 12, 31);
 
     /// <summary>
     /// Kauf
@@ -169,6 +161,14 @@ public record Security : SecurityBase {
     /// Sondereinzahlungen
     /// </summary>
     public ICollection<DateValue> AdditionalSavings {
+        get;
+        init;
+    } = new List<DateValue>();
+
+    /// <summary>
+    /// Bisherige Dividenden
+    /// </summary>
+    public ICollection<DateValue> PreviousDividends {
         get;
         init;
     } = new List<DateValue>();
