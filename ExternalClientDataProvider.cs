@@ -3,9 +3,29 @@ using Newtonsoft.Json;
 
 namespace Gschwind.Lighthouse.Example;
 
-record ExternalSecurity(string Isin, double Quantity);
+/// <summary>
+/// Ein Wertpapier aus externer Quelle
+/// </summary>
+/// <param name="Isin">Die ISIN</param>
+/// <param name="Quantity">Die Stückzahl</param>
+/// <param name="Quote">Der aktuelle Kurs</param>
+/// <seealso cref="ExternalSecuritiesAccount"/>
+record ExternalSecurity(string Isin, double Quantity, double Quote);
+
+/// <summary>
+/// Ein Wertpapierdepot aus externer Quelle
+/// </summary>
+/// <param name="Iban">Die IBAN</param>
+/// <param name="Securities">Der Inhalt des Depots</param>
+/// <seealso cref="ExternalClientPortfolio"/>
 record ExternalSecuritiesAccount(string Iban, IEnumerable<ExternalSecurity> Securities);
-record ExternalClientPortfolio(string clientId, IEnumerable<ExternalSecuritiesAccount> Accounts);
+
+/// <summary>
+/// Ein Kundenportfolio aus externer Quelle
+/// </summary>
+/// <param name="ClientId">Die Kundennummer</param>
+/// <param name="Accounts">Die Wertpapierdepots des Kunden</param>
+record ExternalClientPortfolio(string ClientId, IEnumerable<ExternalSecuritiesAccount> Accounts);
 
 /// <summary>
 /// Deutet eine externe Quelle für Kundendaten an
@@ -28,7 +48,7 @@ internal class ExternalClientDataProvider {
     /// <returns>
     /// Eine <see cref="Task{TResult}"/>, die die Wertpapierdeopts enthält.
     /// </returns>
-    internal async Task<IEnumerable<ExternalClientPortfolio>?> GetProtfoliosAsync() {
+    internal async Task<IEnumerable<ExternalClientPortfolio>?> GetPortfoliosAsync() {
         try {
             var json = await File.ReadAllTextAsync("portfolios.json");
             return JsonConvert.DeserializeObject<IEnumerable<ExternalClientPortfolio>>(json, _jsonSettings);

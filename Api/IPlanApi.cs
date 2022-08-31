@@ -41,7 +41,7 @@ public interface IPlanApi {
     /// <param name="clientId">Die vom System vergebene Id des Kunden</param>
     /// <param name="data">Die neuen Vorgangsdaten</param>
     /// <returns>Eine Aufgabe, die die Antwort der Abfrage enthält</returns>
-    [Get("/plans/byClient/{clientId}/statusQuo/data")]
+    [Put("/plans/byClient/{clientId}/statusQuo/data")]
     Task<IApiResponse> UpdateStatusQuoDataAsync(Guid clientId, IEnumerable<PlanData> data);
 
     /// <summary>
@@ -50,7 +50,7 @@ public interface IPlanApi {
     /// <param name="clientNumber">Die benutzerdefinierte Kundennummer des Kunden</param>
     /// <param name="data">Die neuen Vorgangsdaten</param>
     /// <returns>Eine Aufgabe, die die Antwort der Abfrage enthält</returns>
-    [Get("/plans/byClient/no:{clientNumber}/statusQuo/data")]
+    [Put("/plans/byClient/no:{clientNumber}/statusQuo/data")]
     Task<IApiResponse> UpdateStatusQuoDataAsync(string clientNumber, IEnumerable<PlanData> data);
 
 }

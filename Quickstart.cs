@@ -3,10 +3,12 @@
 
 using ConsoleTables;
 using Gschwind.Lighthouse.Example.Api;
+using Gschwind.Lighthouse.Example.Models;
+using Gschwind.Lighthouse.Example.Models.Crm;
+using Gschwind.Lighthouse.Example.Models.Data;
 using Gschwind.Lighthouse.Example.Models.Report;
 using Gschwind.Lighthouse.Example.Models.Reports;
 using Microsoft.Extensions.Logging;
-using Refit;
 
 namespace Gschwind.Lighthouse.Example;
 
@@ -35,6 +37,8 @@ internal class Quickstart {
     #region Beispiele
 
     internal async Task RunAsync() {
+        await GenerateReport();
+        await SynchronizeStatusQuo();
     }
 
     /// <summary>
@@ -58,7 +62,8 @@ internal class Quickstart {
 
         // Eine Auswertung - hier z.B. Versorgungslücke - erzeugen
         var response = await _api.Reports.GenerateRetirementGapReportAsync(new(plan), RetirementReportType.SupplyGap);
-        PrintReport(response.EnsureSuccess());
+        await response.EnsureSuccessStatusCodeAsync();
+        PrintReport(response.Content ?? throw new InvalidDataException());
     }
 
     /// <summary>
@@ -76,8 +81,115 @@ internal class Quickstart {
     /// Zweitsystem vorliegen und mit Financial Lighthouse synchronisiert werden sollen.
     /// </remarks>
     async Task SynchronizeStatusQuo() {
-        var externalData = await _clients.GetProtfoliosAsync() ?? throw new ApplicationException();
-        await Task.CompletedTask;
+        // Wertpapierdepotdaten aus einem externen System
+        var externalClientData = await _clients.GetPortfoliosAsync() ?? throw new InvalidDataException();
+
+        // Kontakte in Financial Lighthouse, die eine Kundennummer besitzen
+        var resp = await _api.Crm.QueryContactsAsync(new() {
+            Filter =
+                Term.Ne<Contact>(c => c.ClientNumber, null) &
+                Term.Ne<Contact>(c => c.ClientNumber, String.Empty)
+        });
+        await resp.EnsureSuccessStatusCodeAsync();
+
+        var clientNumbersInLighthouse = resp
+            .Content?
+            .Select(c => c.ClientNumber!)
+            .ToHashSet()
+            ?? new();
+
+        // Update des Status Quo jeder dieser Kunden
+        foreach (var clientNumber in clientNumbersInLighthouse)
+            try {
+                await UpdateClientStatusQuo(clientNumber, externalClientData);
+            } catch (Exception e) {
+                _logger.LogError(e, "Fehler beim Update des Status Quos");
+            }
+    }
+
+    /// <seealso cref="SynchronizeStatusQuo"/>
+    async Task UpdateClientStatusQuo(string clientNumber, IEnumerable<ExternalClientPortfolio> externalClientData) {
+        // Im externen System bekannte Wertpapierdepots
+        var externalSecurityAccounts = externalClientData
+            .Where(c => String.Equals(c.ClientId, clientNumber))
+            .SelectMany(c => c.Accounts)
+            .ToArray();
+
+        if (!externalSecurityAccounts.Any())
+            return;
+
+        // Vorgänge des Status Quo des Kunden abfragen. Korrelation über die Kundennummer
+        var respGet = await _api.Plans.GetStatusQuoDataAsync(clientNumber);
+        await respGet.EnsureSuccessStatusCodeAsync();
+        var data = (respGet.Content ?? throw new InvalidDataException()).ToList();
+
+        // Vorgänge für Wertpapierdepots um externe Daten ergänzen
+        EnrichSecurityAccount(data, externalSecurityAccounts);
+
+        // Status Quo aktualisieren
+        var respUpdate = await _api.Plans.UpdateStatusQuoDataAsync(clientNumber, data);
+        if (!respUpdate.IsSuccessStatusCode)
+            throw new HttpRequestException();
+    }
+
+    /// <seealso cref="SynchronizeStatusQuo"/>
+    void EnrichSecurityAccount(List<PlanData> data, IEnumerable<ExternalSecuritiesAccount> externalSecurityAccounts) {
+        foreach (var account in externalSecurityAccounts) {
+            // Die vor Nutzern versteckte ImportId kann verwendet werden, um eine Korrelation zwischen dem Vorgang
+            // und dem Datensatz im externen Datensatz herzustellen. Hier wird die IBAN als Schlüssel genutzt
+            var entry = data
+                .OfType<Deposit>()
+                .SingleOrDefault(d => account.Iban.Equals(d.ImportId));
+
+            if (entry != null)
+                // Zuvor bereits importiert
+                data.Remove(entry);
+            else
+                // Bisher unbekannt
+                entry = new() {
+                    ImportId = account.Iban,
+                    Name = $"Depot {account.Iban}"
+                };
+
+            // Wertpapiere auf Grundlage des externen Datenbestands aktualisieren.
+            // Die Korrelation findet anhand der ISIN statt
+            entry = entry with {
+                Securities = account
+                    .Securities
+                    .GroupJoin(
+                        entry.Securities.DefaultIfEmpty(),
+                        s => s.Isin,
+                        s => s?.Isin,
+                        (external, matches) => {
+                            var existing = matches.FirstOrDefault();
+
+                            existing ??= new Security {
+                                Name = "Wertpapier",
+                                Isin = external.Isin,
+                                Quantity = external.Quantity,
+                                Quote = external.Quote
+                            };
+
+                            return existing with {
+                                Quantity = external.Quantity,
+                                Quote = external.Quote,
+                                Savings = new() {
+                                    Increases = new PercentValue[] {
+                                        new()
+                                    }
+                                },
+                                Informations = existing.Informations with {
+                                    LastChanged = DateTime.Now,
+                                    LastUser = String.Empty
+                                }
+                            };
+                        }
+                    )
+                    .ToList()
+            };
+
+            data.Add(entry);
+        }
     }
 
     #endregion
