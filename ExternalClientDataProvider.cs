@@ -15,10 +15,10 @@ record ExternalSecurity(string Isin, double Quantity, double Quote);
 /// <summary>
 /// Ein Wertpapierdepot aus externer Quelle
 /// </summary>
-/// <param name="Iban">Die IBAN</param>
+/// <param name="AccountNumber">Die Depotnummer</param>
 /// <param name="Securities">Der Inhalt des Depots</param>
 /// <seealso cref="ExternalClientPortfolio"/>
-record ExternalSecuritiesAccount(string Iban, IEnumerable<ExternalSecurity> Securities);
+record ExternalSecuritiesAccount(string AccountNumber, IEnumerable<ExternalSecurity> Securities);
 
 /// <summary>
 /// Ein Kundenportfolio aus externer Quelle

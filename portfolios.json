@@ -3,7 +3,7 @@
     "clientId": "123456",
     "accounts": [
       {
-        "iban": "DE71500105174719557779",
+        "accountNumber": "1111111111",
         "securities": [
           {
             "isin": "DE0009807016",
@@ -23,7 +23,7 @@
     "clientId": "654321",
     "accounts": [
       {
-        "iban": "DE33500105173241248878",
+        "accountNumber": "2222222222",
         "securities": [
           {
             "isin": "IE00B4L5Y983",
@@ -38,7 +38,7 @@
         ]
       },
       {
-        "iban": "DE82500105179342854322",
+        "accountNumber": "3333333333",
         "securities": [
           {
             "isin": "US88160R1014",

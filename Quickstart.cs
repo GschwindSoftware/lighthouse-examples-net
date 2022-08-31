@@ -136,10 +136,10 @@ internal class Quickstart {
     void EnrichSecurityAccount(List<PlanData> data, IEnumerable<ExternalSecuritiesAccount> externalSecurityAccounts) {
         foreach (var account in externalSecurityAccounts) {
             // Die vor Nutzern versteckte ImportId kann verwendet werden, um eine Korrelation zwischen dem Vorgang
-            // und dem Datensatz im externen Datensatz herzustellen. Hier wird die IBAN als Schlüssel genutzt
+            // und dem Datensatz im externen Datensatz herzustellen. Hier wird die Depotnummer als Schlüssel genutzt
             var entry = data
                 .OfType<Deposit>()
-                .SingleOrDefault(d => account.Iban.Equals(d.ImportId));
+                .SingleOrDefault(d => account.AccountNumber.Equals(d.ImportId));
 
             if (entry != null)
                 // Zuvor bereits importiert
@@ -147,8 +147,8 @@ internal class Quickstart {
             else
                 // Bisher unbekannt
                 entry = new() {
-                    ImportId = account.Iban,
-                    Name = $"Depot {account.Iban}"
+                    ImportId = account.AccountNumber,
+                    Name = $"Depot {account.AccountNumber}"
                 };
 
             // Wertpapiere auf Grundlage des externen Datenbestands aktualisieren.
