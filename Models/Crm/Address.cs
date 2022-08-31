@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Crm;
 
 /// <summary>
-/// 
+/// Die Adresse eines Kontakts
 /// </summary>
 /// <param name="Id">Der eindeutige Schlüssel der Adresse</param>
 /// <param name="Street">Die Straße der Adresse</param>
