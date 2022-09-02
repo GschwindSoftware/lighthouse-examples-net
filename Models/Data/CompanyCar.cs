@@ -1,28 +1,24 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Dienstwagen
+/// </summary>
+public record CompanyCar : PlanData {
 
     /// <summary>
-    /// Dienstwagen
+    /// Neuwert
     /// </summary>
-    public record CompanyCar : PlanData {
+    public double OriginalValue {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Neuwert
-        /// </summary>
-        public double OriginalValue {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Entfernung zum Arbeitsplatz in km
-        /// </summary>
-        public int DistanceToWork {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Entfernung zum Arbeitsplatz in km
+    /// </summary>
+    public int DistanceToWork {
+        get;
+        init;
     }
 
 }

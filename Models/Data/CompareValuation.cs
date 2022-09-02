@@ -1,28 +1,24 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Manuelle Bewertung
+/// </summary>
+public record CompareValuation {
 
     /// <summary>
-    /// Manuelle Bewertung
+    /// Verkehrswert ist Vergleichswert
     /// </summary>
-    public record CompareValuation {
+    public bool CompareMarketValue {
+        get;
+        init;
+    } = true;
 
-        /// <summary>
-        /// Verkehrswert ist Vergleichswert
-        /// </summary>
-        public bool CompareMarketValue {
-            get;
-            init;
-        } = true;
-
-        /// <summary>
-        /// Vergleichswert
-        /// </summary>
-        public double CompareValue {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Vergleichswert
+    /// </summary>
+    public double CompareValue {
+        get;
+        init;
     }
 
 }

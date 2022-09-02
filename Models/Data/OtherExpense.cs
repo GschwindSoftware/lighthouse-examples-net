@@ -1,34 +1,30 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Sonstige Ausgabe
+/// </summary>
+public record OtherExpense : CashFlowBase {
 
     /// <summary>
-    /// Sonstige Ausgabe
+    /// Liquiditätswirksam
     /// </summary>
-    public record OtherExpense : CashFlowBase {
+    public bool IsLiquidityRelevant {
+        get;
+        init;
+    } = true;
 
-        /// <summary>
-        /// Liquiditätswirksam
-        /// </summary>
-        public bool IsLiquidityRelevant {
-            get;
-            init;
-        } = true;
+    /// <summary>
+    /// Besteuerung
+    /// </summary>
+    public TaxableExpenseType TaxableExpenseType {
+        get;
+        init;
+    } = TaxableExpenseType.None;
 
-        /// <summary>
-        /// Besteuerung
-        /// </summary>
-        public TaxableExpenseType TaxableExpenseType {
-            get;
-            init;
-        } = TaxableExpenseType.None;
-
-        /// <summary>
-        /// Erzeugt eine neue Instanz der <see cref="OtherExpense"/>-Klasse
-        /// </summary>
-        public OtherExpense() =>
-            ScenarioParameter = ScenarioParameter with { Death = 100 };
-
-    }
+    /// <summary>
+    /// Erzeugt eine neue Instanz der <see cref="OtherExpense"/>-Klasse
+    /// </summary>
+    public OtherExpense() =>
+        ScenarioParameter = ScenarioParameter with { Death = 100 };
 
 }

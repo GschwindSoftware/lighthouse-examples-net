@@ -1,10 +1,7 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
-
-    /// <summary>
-    /// Verrechnungskonto
-    /// </summary>
-    public record ChildBenefit : PlanData {
-    }
-
+/// <summary>
+/// Verrechnungskonto
+/// </summary>
+public record ChildBenefit : PlanData {
 }

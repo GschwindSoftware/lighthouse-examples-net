@@ -1,36 +1,32 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Kauf eines Vorgangs
+/// </summary>
+public record Buying {
 
     /// <summary>
-    /// Kauf eines Vorgangs
+    /// Wird gekauft?
     /// </summary>
-    public record Buying {
+    public bool DoBuy {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Wird gekauft?
-        /// </summary>
-        public bool DoBuy {
-            get;
-            init;
-        }
+    /// <summary>
+    /// Kaufdatum
+    /// </summary>
+    public DateTime PurchaseDate {
+        get;
+        init;
+    } = new(DateTime.Now.Year, 1, 1);
 
-        /// <summary>
-        /// Kaufdatum
-        /// </summary>
-        public DateTime PurchaseDate {
-            get;
-            init;
-        } = new(DateTime.Now.Year, 1, 1);
-
-        /// <summary>
-        /// Kaufpreis
-        /// </summary>
-        public double PurchasePrice {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Kaufpreis
+    /// </summary>
+    public double PurchasePrice {
+        get;
+        init;
     }
 
 }

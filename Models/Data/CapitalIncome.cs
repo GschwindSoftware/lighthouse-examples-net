@@ -1,25 +1,22 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Einkunft aus Kapitalvermögen
+/// </summary>
+public record CapitalIncome : CashFlowBase {
 
     /// <summary>
-    /// Einkunft aus Kapitalvermögen
+    /// Art der Besteuerung
     /// </summary>
-    public record CapitalIncome : CashFlowBase {
+    public Taxation Taxation {
+        get;
+        init;
+    } = Taxation.WithholdingTax;
 
-        /// <summary>
-        /// Art der Besteuerung
-        /// </summary>
-        public Taxation Taxation {
-            get;
-            init;
-        } = Taxation.WithholdingTax;
-
-        /// <summary>
-        /// Erzeugt eine neue Instanz der <see cref="CapitalIncome"/>-Klasse
-        /// </summary>
-        public CapitalIncome() =>
-            ScenarioParameter = ScenarioParameter with { Death = 100 };
-
-    }
+    /// <summary>
+    /// Erzeugt eine neue Instanz der <see cref="CapitalIncome"/>-Klasse
+    /// </summary>
+    public CapitalIncome() =>
+        ScenarioParameter = ScenarioParameter with { Death = 100 };
 
 }

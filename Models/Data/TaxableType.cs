@@ -1,21 +1,19 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
+/// <summary>
+/// Art der Besteuerung
+/// </summary>
+public enum TaxableType {
     /// <summary>
-    /// Art der Besteuerung
+    /// Ausland ohne Besteuerung
     /// </summary>
-    public enum TaxableType {
-        /// <summary>
-        /// Ausland ohne Besteuerung
-        /// </summary>
-        ForeignTaxFree,
-        /// <summary>
-        /// Inland
-        /// </summary>
-        Domestic,
-        /// <summary>
-        /// Ausland mit Progressionsvorbehalt
-        /// </summary>
-        ForeignWithProgressionClause
-    }
-
+    ForeignTaxFree,
+    /// <summary>
+    /// Inland
+    /// </summary>
+    Domestic,
+    /// <summary>
+    /// Ausland mit Progressionsvorbehalt
+    /// </summary>
+    ForeignWithProgressionClause
 }

@@ -1,28 +1,24 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Liquiditätskonto
+/// </summary>
+public record AssetManagementLiquidity : PlanData {
 
     /// <summary>
-    /// Liquiditätskonto
+    /// Zuordnung zur Bilanz
     /// </summary>
-    public record AssetManagementLiquidity : PlanData {
+    public AssetBalanceType BalanceType {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Zuordnung zur Bilanz
-        /// </summary>
-        public AssetBalanceType BalanceType {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Zinssatz Haben in %
-        /// </summary>
-        public double DebitRate {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Zinssatz Haben in %
+    /// </summary>
+    public double DebitRate {
+        get;
+        init;
     }
 
 }

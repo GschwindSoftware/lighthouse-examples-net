@@ -1,10 +1,7 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
-
-    /// <summary>
-    /// Untervorgang Betriebskosten
-    /// </summary>
-    public record OperatingCost : CashflowSubFinance {
-    }
-
+/// <summary>
+/// Betriebskosten
+/// </summary>
+public record OperatingCost : CashflowSubFinance {
 }

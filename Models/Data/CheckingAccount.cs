@@ -1,17 +1,14 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Girokonto
+/// </summary>
+public record CheckingAccount : DemandDeposit {
 
     /// <summary>
-    /// Girokonto
+    /// Erzeugt eine neue Instanz der <see cref="CheckingAccount"/>-Klasse
     /// </summary>
-    public record CheckingAccount : DemandDeposit {
-
-        /// <summary>
-        /// Erzeugt eine neue Instanz der <see cref="CheckingAccount"/>-Klasse
-        /// </summary>
-        public CheckingAccount() =>
-            InterestPeriod = Period.Quarterly;
-
-    }
+    public CheckingAccount() =>
+        InterestPeriod = Period.Quarterly;
 
 }

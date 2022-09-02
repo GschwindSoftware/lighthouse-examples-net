@@ -1,10 +1,7 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
-
-    /// <summary>
-    /// Vorgang Private Haftpflichtversicherung
-    /// </summary>
-    public record PersonalLiabilityInsurance : PropertyInsurance {
-    }
-
+/// <summary>
+/// Private Haftpflichtversicherung
+/// </summary>
+public record PersonalLiabilityInsurance : PropertyInsurance {
 }

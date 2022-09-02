@@ -1,36 +1,32 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Allgemeine Versicherung
+/// </summary>
+public record GeneralInsurance : Insurance {
 
     /// <summary>
-    /// Allgemeine Versicherung
+    /// Ist es eine Vorsorgeaufwendung?
     /// </summary>
-    public record GeneralInsurance : Insurance {
+    public bool IsProvidentExpense {
+        get;
+        init;
+    } = true;
 
-        /// <summary>
-        /// Ist es eine Vorsorgeaufwendung?
-        /// </summary>
-        public bool IsProvidentExpense {
-            get;
-            init;
-        } = true;
+    /// <summary>
+    /// Deckungssumme
+    /// </summary>
+    public double InsuredSum {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Deckungssumme
-        /// </summary>
-        public double InsuredSum {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Unbegrenzte Deckungssumme
-        /// </summary>
-        public bool IsUnlimitedInsuredSum {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Unbegrenzte Deckungssumme
+    /// </summary>
+    public bool IsUnlimitedInsuredSum {
+        get;
+        init;
     }
 
 }

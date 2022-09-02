@@ -1,36 +1,32 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Basis für die private Kranken- und Pflegeversicherung
+/// </summary>
+public abstract record PrivateSocialInsurance : PersonalInsurance {
 
     /// <summary>
-    /// Basis für die private Kranken- und Pflegeversicherung
+    /// Basisanteil in %
     /// </summary>
-    public abstract record PrivateSocialInsurance : PersonalInsurance {
+    public double BasicRate {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Basisanteil in %
-        /// </summary>
-        public double BasicRate {
-            get;
-            init;
-        }
+    /// <summary>
+    /// Art des Arbeitgeberzuschusses
+    /// </summary>
+    public EmployerGrantType EmployerGrantType {
+        get;
+        init;
+    } = EmployerGrantType.Legally;
 
-        /// <summary>
-        /// Art des Arbeitgeberzuschusses
-        /// </summary>
-        public EmployerGrantType EmployerGrantType {
-            get;
-            init;
-        } = EmployerGrantType.Legally;
-
-        /// <summary>
-        /// Freiwilliger Arbeitgeberzuschuss in %
-        /// </summary>
-        public double EmployerGrantRate {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Freiwilliger Arbeitgeberzuschuss in %
+    /// </summary>
+    public double EmployerGrantRate {
+        get;
+        init;
     }
 
 }

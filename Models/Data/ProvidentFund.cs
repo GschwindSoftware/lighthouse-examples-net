@@ -1,10 +1,7 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
-
-    /// <summary>
-    /// Unterstützungskasse
-    /// </summary>
-    public record ProvidentFund : CompanyPensionOther {
-    }
-
+/// <summary>
+/// Unterstützungskasse
+/// </summary>
+public record ProvidentFund : CompanyPensionOther {
 }

@@ -1,21 +1,19 @@
-namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
+namespace Gschwind.Lighthouse.Example.Models.Plans.Settings;
 
+/// <summary>
+/// Güterstand
+/// </summary>
+public enum MatrimonialRegime {
     /// <summary>
-    /// Güterstand
+    /// Zugewinngemeinschaft
     /// </summary>
-    public enum MatrimonialRegime {
-        /// <summary>
-        /// Zugewinngemeinschaft
-        /// </summary>
-        GainCommunity,
-        /// <summary>
-        /// Gütergemeinschaft
-        /// </summary>
-        JointProperty = 2,
-        /// <summary>
-        /// Gütertrennung
-        /// </summary>
-        SeperateEstate = 3
-    }
-
+    GainCommunity,
+    /// <summary>
+    /// Gütergemeinschaft
+    /// </summary>
+    JointProperty = 2,
+    /// <summary>
+    /// Gütertrennung
+    /// </summary>
+    SeperateEstate = 3
 }

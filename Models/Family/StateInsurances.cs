@@ -1,34 +1,32 @@
-namespace Gschwind.Lighthouse.Example.Models.Family {
+namespace Gschwind.Lighthouse.Example.Models.Family;
+
+/// <summary>
+/// Stellt den Versicherungsstatus eines Kontaktes dar
+/// </summary>
+public record StateInsurances {
 
     /// <summary>
-    /// Stellt den Versicherungsstatus eines Kontaktes dar
+    /// Kennung, ob Krankenversicherung bei Kontakt vorhanden
     /// </summary>
-    public record StateInsurances {
+    public bool Health {
+        get;
+        init;
+    } = true;
 
-        /// <summary>
-        /// Kennung, ob Krankenversicherung bei Kontakt vorhanden
-        /// </summary>
-        public bool Health {
-            get;
-            init;
-        } = true;
+    /// <summary>
+    /// Kennung, ob Rentenversicherung bei Kontakt vorhanden
+    /// </summary>
+    public bool Pension {
+        get;
+        init;
+    } = true;
 
-        /// <summary>
-        /// Kennung, ob Rentenversicherung bei Kontakt vorhanden
-        /// </summary>
-        public bool Pension {
-            get;
-            init;
-        } = true;
-
-        /// <summary>
-        /// Kennung, ob Arbeitslosenversicherung bei Kontakt vorhanden
-        /// </summary>
-        public bool Unemployment {
-            get;
-            init;
-        } = true;
-
-    }
+    /// <summary>
+    /// Kennung, ob Arbeitslosenversicherung bei Kontakt vorhanden
+    /// </summary>
+    public bool Unemployment {
+        get;
+        init;
+    } = true;
 
 }

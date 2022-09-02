@@ -1,10 +1,7 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
-
-    /// <summary>
-    /// Außergewöhnliche Belastung
-    /// </summary>
-    public record ExceptionalCost : CashFlowBase {
-    }
-
+/// <summary>
+/// Außergewöhnliche Belastung
+/// </summary>
+public record ExceptionalCost : CashFlowBase {
 }

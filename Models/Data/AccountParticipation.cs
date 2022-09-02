@@ -1,10 +1,7 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
-
-    /// <summary>
-    /// Kontokorrentkonto
-    /// </summary>
-    public record AccountParticipation : PlanData {
-    }
-
+/// <summary>
+/// Kontokorrentkonto
+/// </summary>
+public record AccountParticipation : PlanData {
 }

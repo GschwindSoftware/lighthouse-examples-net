@@ -1,10 +1,7 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
-
-    /// <summary>
-    /// Vorgang Fahrzeug
-    /// </summary>
-    public record Vehicle : RealValue {
-    }
-
+/// <summary>
+/// Fahrzeug
+/// </summary>
+public record Vehicle : RealValue {
 }

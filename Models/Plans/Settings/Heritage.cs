@@ -1,26 +1,24 @@
-namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
+namespace Gschwind.Lighthouse.Example.Models.Plans.Settings;
+
+/// <summary>
+/// Der Erbe / die Erbin
+/// </summary>
+public record Heritage : Beneficiary {
 
     /// <summary>
-    /// Der Erbe / die Erbin
+    /// Erbquote
     /// </summary>
-    public record Heritage : Beneficiary {
+    public double Quote {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Erbquote
-        /// </summary>
-        public double Quote {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Liefert die Quote als Enum
-        /// </summary>
-        public HeritageQuote HeritageQuote {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Liefert die Quote als Enum
+    /// </summary>
+    public HeritageQuote HeritageQuote {
+        get;
+        init;
     }
 
 }

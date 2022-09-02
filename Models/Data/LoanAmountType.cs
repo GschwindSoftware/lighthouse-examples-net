@@ -1,17 +1,15 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
+/// <summary>
+/// Nominalbetrag oder Restschuld
+/// </summary>
+public enum LoanAmountType {
     /// <summary>
-    /// Nominalbetrag oder Restschuld
+    /// Darlehensnominalbetrag
     /// </summary>
-    public enum LoanAmountType {
-        /// <summary>
-        /// Darlehensnominalbetrag
-        /// </summary>
-        Amount,
-        /// <summary>
-        /// Restschuld
-        /// </summary>
-        RemainingDept = 1
-    }
-
+    Amount,
+    /// <summary>
+    /// Restschuld
+    /// </summary>
+    RemainingDept = 1
 }

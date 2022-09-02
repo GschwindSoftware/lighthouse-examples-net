@@ -1,19 +1,16 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Vermögen
+/// </summary>
+public abstract record AssetBase : PlanData {
 
     /// <summary>
-    /// Vermögen
+    /// Risikostufe
     /// </summary>
-    public abstract record AssetBase : PlanData {
-
-        /// <summary>
-        /// Risikostufe
-        /// </summary>
-        public RiskLevel RiskLevel {
-            get;
-            init;
-        } = RiskLevel.NotCritical;
-
-    }
+    public RiskLevel RiskLevel {
+        get;
+        init;
+    } = RiskLevel.NotCritical;
 
 }

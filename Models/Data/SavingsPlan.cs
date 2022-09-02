@@ -1,38 +1,32 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Sparplan
+/// </summary>
+public record SavingsPlan : SavingDeposit {
 
     /// <summary>
-    /// Vorgang Sparplan
+    /// Fälligkeit
     /// </summary>
-    public record SavingsPlan : SavingDeposit {
+    public DateTime Maturity {
+        get;
+        init;
+    } = new(DateTime.Now.Year + 4, 12, 31);
 
-        /// <summary>
-        /// Fälligkeit
-        /// </summary>
-        public DateTime Maturity {
-            get;
-            init;
-        } = new(DateTime.Now.Year + 4, 12, 31);
+    /// <summary>
+    /// Wiederanlage nach Fälligkeit
+    /// </summary>
+    public bool DoReinvest {
+        get;
+        init;
+    } = true;
 
-        /// <summary>
-        /// Wiederanlage nach Fälligkeit
-        /// </summary>
-        public bool DoReinvest {
-            get;
-            init;
-        } = true;
-
-        /// <summary>
-        /// Bonus
-        /// </summary>
-        public ICollection<DateValue> Bonus {
-            get;
-            init;
-        } = new List<DateValue>();
-
-    }
+    /// <summary>
+    /// Bonus
+    /// </summary>
+    public ICollection<DateValue> Bonus {
+        get;
+        init;
+    } = new List<DateValue>();
 
 }

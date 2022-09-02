@@ -1,34 +1,31 @@
+namespace Gschwind.Lighthouse.Example.Models.Plans.Settings;
 
-namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
+/// <summary>
+/// Stellt die Einstellungen eines Finanzplans bereit
+/// </summary>
+public record PlanSettings {
 
     /// <summary>
-    /// Stellt die Einstellungen eines Finanzplans bereit
+    /// Allgemeine Einstellungen
     /// </summary>
-    public record PlanSettings {
-
-        /// <summary>
-        /// Allgemeine Einstellungen
-        /// </summary>
-        public SettingsGeneral? General {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Nachfolgeeinstellungen
-        /// </summary>
-        public SettingsEstate? Estate {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Währungseinstellungen
-        /// </summary>
-        public SettingsCurrency? Currency {
-            get;
-            init;
-        }
+    public SettingsGeneral? General {
+        get;
+        init;
     }
 
+    /// <summary>
+    /// Nachfolgeeinstellungen
+    /// </summary>
+    public SettingsEstate? Estate {
+        get;
+        init;
+    }
+
+    /// <summary>
+    /// Währungseinstellungen
+    /// </summary>
+    public SettingsCurrency? Currency {
+        get;
+        init;
+    }
 }

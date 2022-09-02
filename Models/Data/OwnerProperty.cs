@@ -1,20 +1,16 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Eigengenutzte Immobilie
+/// </summary>
+public record OwnerProperty : PropertyBase {
 
     /// <summary>
-    /// Eigengenutzte Immobilie
+    /// Haupt-Familienwohnheim
     /// </summary>
-    public record OwnerProperty : PropertyBase {
-
-        /// <summary>
-        /// Haupt-Familienwohnheim
-        /// </summary>
-        public bool MainFamilyResidential {
-            get;
-            init;
-        }
-
+    public bool MainFamilyResidential {
+        get;
+        init;
     }
 
 }

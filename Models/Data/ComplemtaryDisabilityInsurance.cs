@@ -1,78 +1,72 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Berufsunfähigkeitszusatzversicherung
+/// </summary>
+public record ComplementaryDisabilityInsurance {
 
     /// <summary>
-    /// Abfindung
+    /// Ende der Versicherung
     /// </summary>
+    public Moment InsuranceEnd {
+        get;
+        init;
+    } = new();
+
     /// <summary>
-    /// Berufsunfähigkeitszusatzversicherung
+    /// Ende der Leistungen
     /// </summary>
-    public record ComplementaryDisabilityInsurance {
+    public Moment PremiumEnd {
+        get;
+        init;
+    } = new();
 
-        /// <summary>
-        /// Ende der Versicherung
-        /// </summary>
-        public Moment InsuranceEnd {
-            get;
-            init;
-        } = new();
+    /// <summary>
+    /// Leistung erfolgt nach x Wochen
+    /// </summary>
+    public int PremiumWeeks {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Ende der Leistungen
-        /// </summary>
-        public Moment PremiumEnd {
-            get;
-            init;
-        } = new();
+    /// <summary>
+    /// Rente
+    /// </summary>
+    public double Pension {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Leistung erfolgt nach x Wochen
-        /// </summary>
-        public int PremiumWeeks {
-            get;
-            init;
-        }
+    /// <summary>
+    /// Rentensteigerung
+    /// </summary>
+    public double Increase {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Rente
-        /// </summary>
-        public double Pension {
-            get;
-            init;
-        }
+    /// <summary>
+    /// Weitere Beitragszahlungen
+    /// </summary>
+    public FurtherPremiumType FurtherPremiumType {
+        get;
+        init;
+    } = FurtherPremiumType.Continue;
 
-        /// <summary>
-        /// Rentensteigerung
-        /// </summary>
-        public double Increase {
-            get;
-            init;
-        }
+    /// <summary>
+    /// Reduzierte Rente
+    /// </summary>
+    public double ReducedPension {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Weitere Beitragszahlungen
-        /// </summary>
-        public FurtherPremiumType FurtherPremiumType {
-            get;
-            init;
-        } = FurtherPremiumType.Continue;
-
-        /// <summary>
-        /// Reduzierte Rente
-        /// </summary>
-        public double ReducedPension {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Reduzierte Kapitalleistung
-        /// </summary>
-        public double ReducedCapitalPayment {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Reduzierte Kapitalleistung
+    /// </summary>
+    public double ReducedCapitalPayment {
+        get;
+        init;
     }
 
 }

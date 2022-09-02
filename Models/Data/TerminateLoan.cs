@@ -1,20 +1,16 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Darlehen beenden
+/// </summary>
+public record TerminateLoan : Termination {
 
     /// <summary>
-    /// Darlehen beenden
+    /// Vorfälligkeitsentschädigung
     /// </summary>
-    public record TerminateLoan : Termination {
-
-        /// <summary>
-        /// Vorfälligkeitsentschädigung
-        /// </summary>
-        public double PrepaymentPenalty {
-            get;
-            init;
-        }
-
+    public double PrepaymentPenalty {
+        get;
+        init;
     }
 
 }

@@ -1,36 +1,32 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Erbbau-Bewertung
+/// </summary>
+public record LeaseholdValuation {
 
     /// <summary>
-    /// Erbbau-Bewertung
+    /// Gesamtlaufzeit Erbbau
     /// </summary>
-    public record LeaseholdValuation {
+    public int TotalDuration {
+        get;
+        init;
+    } = 99;
 
-        /// <summary>
-        /// Gesamtlaufzeit Erbbau
-        /// </summary>
-        public int TotalDuration {
-            get;
-            init;
-        } = 99;
-
-        /// <summary>
-        /// Jährlicher Erbbauzins
-        /// </summary>
-        public double GroundRent {
-            get;
-            init;
-        }
-
-        /// <summary>
-        /// Entschädigung in %
-        /// </summary>
-        public double Compensation {
-            get;
-            init;
-        } = 100;
-
+    /// <summary>
+    /// Jährlicher Erbbauzins
+    /// </summary>
+    public double GroundRent {
+        get;
+        init;
     }
+
+    /// <summary>
+    /// Entschädigung in %
+    /// </summary>
+    public double Compensation {
+        get;
+        init;
+    } = 100;
 
 }

@@ -1,36 +1,32 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Lebenshaltungskostenkategorie
+/// </summary>
+public record LivingCostsCategory {
 
     /// <summary>
-    /// Lebenshaltungskostenkategorie
+    /// Kategorie
     /// </summary>
-    public record LivingCostsCategory {
+    public LivingCostsType Category {
+        get;
+        init;
+    }
 
-        /// <summary>
-        /// Kategorie
-        /// </summary>
-        public LivingCostsType Category {
-            get;
-            init;
-        }
+    /// <summary>
+    /// Beschreibung
+    /// </summary>
+    public bool AutomaticCalculation {
+        get;
+        init;
+    } = true;
 
-        /// <summary>
-        /// Beschreibung
-        /// </summary>
-        public bool AutomaticCalculation {
-            get;
-            init;
-        } = true;
-
-        /// <summary>
-        /// Monatlicher Betrag
-        /// </summary>
-        public double MonthlyValue {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Monatlicher Betrag
+    /// </summary>
+    public double MonthlyValue {
+        get;
+        init;
     }
 
 }

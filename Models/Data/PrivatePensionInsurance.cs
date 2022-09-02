@@ -1,8 +1,6 @@
-namespace Gschwind.Lighthouse.Example.Models.Data {
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-    /// <summary>
-    /// Private Rentenversicherung
-    /// </summary>
-    public record PrivatePensionInsurance : PrivateCapitalInsurance { }
-
-}
+/// <summary>
+/// Private Rentenversicherung
+/// </summary>
+public record PrivatePensionInsurance : PrivateCapitalInsurance { }

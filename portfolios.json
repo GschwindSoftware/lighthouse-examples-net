@@ -1,0 +1,52 @@
+[
+  {
+    "clientId": "123456",
+    "accounts": [
+      {
+        "accountNumber": "1111111111",
+        "securities": [
+          {
+            "isin": "DE0009807016",
+            "quantity": 10,
+            "quote": 40.96
+          },
+          {
+            "isin": "DE000BAY0017",
+            "quantity": 23.5,
+            "quote": 54.80
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clientId": "654321",
+    "accounts": [
+      {
+        "accountNumber": "2222222222",
+        "securities": [
+          {
+            "isin": "IE00B4L5Y983",
+            "quantity": 12,
+            "quote": 77.284
+          },
+          {
+            "isin": "DE0009807016",
+            "quantity": 10,
+            "quote": 40.96
+          }
+        ]
+      },
+      {
+        "accountNumber": "3333333333",
+        "securities": [
+          {
+            "isin": "US88160R1014",
+            "quantity": 50,
+            "quote": 294.60
+          }
+        ]
+      }
+    ]
+  }
+]

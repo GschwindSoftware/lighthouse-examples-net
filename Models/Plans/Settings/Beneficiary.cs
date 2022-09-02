@@ -1,28 +1,24 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Plans.Settings;
 
-namespace Gschwind.Lighthouse.Example.Models.Plans.Settings {
+/// <summary>
+/// Der Begünstigte
+/// </summary>
+public record Beneficiary {
 
     /// <summary>
-    /// Der Begünstigte
+    /// ID der Person
     /// </summary>
-    public record Beneficiary {
+    public Guid PersonId {
+        get;
+        init;
+    } = Guid.Empty;
 
-        /// <summary>
-        /// ID der Person
-        /// </summary>
-        public Guid PersonId {
-            get;
-            init;
-        } = Guid.Empty;
-
-        /// <summary>
-        /// Name der begünstigten Person
-        /// </summary>
-        public string PersonName {
-            get;
-            init;
-        } = String.Empty;
-
-    }
+    /// <summary>
+    /// Name der begünstigten Person
+    /// </summary>
+    public string PersonName {
+        get;
+        init;
+    } = String.Empty;
 
 }

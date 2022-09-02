@@ -1,10 +1,7 @@
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
-
-    /// <summary>
-    /// Tagesgeld
-    /// </summary>
-    public record CallMoney : DemandDeposit {
-    }
-
+/// <summary>
+/// Tagesgeld
+/// </summary>
+public record CallMoney : DemandDeposit {
 }

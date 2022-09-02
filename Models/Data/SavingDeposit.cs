@@ -1,29 +1,24 @@
-using System.Collections.Generic;
-using System.Linq;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Spareinlage
+/// </summary>
+public abstract record SavingDeposit : CashValue {
 
     /// <summary>
-    /// Vorgang Spareinlage
+    /// Einzahlungen
     /// </summary>
-    public abstract record SavingDeposit : CashValue {
+    public CashFlows Savings {
+        get;
+        init;
+    } = new() { Period = Period.Yearly };
 
-        /// <summary>
-        /// Einzahlungen
-        /// </summary>
-        public CashFlows Savings {
-            get;
-            init;
-        } = new() { Period = Period.Yearly };
-
-        /// <summary>
-        /// Sondereinzahlungen
-        /// </summary>
-        public ICollection<DateValue> AdditionalSavings {
-            get;
-            init;
-        } = new List<DateValue>();
-
-    }
+    /// <summary>
+    /// Sondereinzahlungen
+    /// </summary>
+    public ICollection<DateValue> AdditionalSavings {
+        get;
+        init;
+    } = new List<DateValue>();
 
 }

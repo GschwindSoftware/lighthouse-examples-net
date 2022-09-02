@@ -1,28 +1,24 @@
-using System;
+namespace Gschwind.Lighthouse.Example.Models.Data;
 
-namespace Gschwind.Lighthouse.Example.Models.Data {
+/// <summary>
+/// Einzelner Cashflow
+/// </summary>
+public abstract record SingleCashFlow : PlanData {
 
     /// <summary>
-    /// Einzelner Cashflow
+    /// Datum
     /// </summary>
-    public abstract record SingleCashFlow : PlanData {
+    public DateTime Date {
+        get;
+        init;
+    } = new(DateTime.Now.Year, 1, 1);
 
-        /// <summary>
-        /// Datum
-        /// </summary>
-        public DateTime Date {
-            get;
-            init;
-        } = new(DateTime.Now.Year, 1, 1);
-
-        /// <summary>
-        /// Betrag
-        /// </summary>
-        public double Value {
-            get;
-            init;
-        }
-
+    /// <summary>
+    /// Betrag
+    /// </summary>
+    public double Value {
+        get;
+        init;
     }
 
 }
