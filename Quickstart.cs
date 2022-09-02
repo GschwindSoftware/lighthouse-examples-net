@@ -70,7 +70,7 @@ internal class Quickstart {
     /// 💡 Beispiel: Einen Status Quo aktualisieren.
     /// </summary>
     /// <remarks>
-    /// Hier wird die Vorgehensweise illustriert, um den Status Quo eines Kunden zu aksutalisieren. Der Status Quo
+    /// Hier wird die Vorgehensweise illustriert, um den Status Quo eines Kunden zu aktualisieren. Der Status Quo
     /// ist ein spezieller <see cref="Models.Plans.Plan">Finanzplan</see>, der die aktuelle Situation eines Kunden
     /// wie in der Kundenmappe der Oberfläche dargestellt festhält.
     ///
