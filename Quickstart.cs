@@ -173,11 +173,6 @@ internal class Quickstart {
                             return existing with {
                                 Quantity = external.Quantity,
                                 Quote = external.Quote,
-                                Savings = new() {
-                                    Increases = new PercentValue[] {
-                                        new()
-                                    }
-                                },
                                 Informations = existing.Informations with {
                                     LastChanged = DateTime.Now,
                                     LastUser = String.Empty
