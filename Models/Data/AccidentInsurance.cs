@@ -16,7 +16,7 @@ public record AccidentInsurance : PersonalInsurance {
     /// <summary>
     /// Progression bei der Invalidiät
     /// </summary>
-    public int InvalidityProgression {
+    public InvalidityProgression InvalidityProgression {
         get;
         init;
     }

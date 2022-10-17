@@ -20,12 +20,22 @@ public abstract record PlanData {
     } = Guid.NewGuid();
 
     /// <summary>
-    /// Die eindeutige Guid des Vorgangs
+    /// Ein eindeutiger Schlüssel, der einen externen Datensatz in Bezug bringt, falls der Vorgang importiert wurde
     /// </summary>
+    /// <seealso cref="ImportId"/>
     public string ImportId {
         get;
         init;
     } = String.Empty;
+
+    /// <summary>
+    /// Der Name des Synchronisations-Anbieters, der den Vorgang aus externen Daten importiert hat
+    /// </summary>
+    /// <seealso cref="ImportProvider"/>
+    public string? ImportProvider {
+        get;
+        init;
+    }
 
     /// <summary>
     /// Vorgangsname

@@ -123,8 +123,12 @@ internal class TestPlan {
                                     Value = 3.0
                                 }
                             },
-                            Buying = new() {
-                                PurchaseDate = new(2021, 01, 01)
+                            Orders = {
+                                new() {
+                                    Date = new(2020, 11, 11),
+                                    Price = 8.955,
+                                    Quantity = 500
+                                }
                             },
                             DividendPayout = new(2018, 12, 31),
                             Dividends = {

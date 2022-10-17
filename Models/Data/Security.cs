@@ -134,14 +134,6 @@ public record Security : SecurityBase {
     } = new(DateTime.Now.Year + 10, 12, 31);
 
     /// <summary>
-    /// Kauf
-    /// </summary>
-    public Buying Buying {
-        get;
-        init;
-    } = new();
-
-    /// <summary>
     /// Dividendenausschüttung
     /// </summary>
     public DateTime DividendPayout {
@@ -166,11 +158,26 @@ public record Security : SecurityBase {
     } = new List<DateValue>();
 
     /// <summary>
+    /// Ordern
+    /// </summary>
+    public ICollection<SecurityOrder> Orders {
+        get;
+        init;
+    } = new List<SecurityOrder>();
+
+    /// <summary>
     /// Bisherige Dividenden
     /// </summary>
-    public ICollection<DateValue> PreviousDividends {
+    public ICollection<DateValue> Earnings {
         get;
         init;
     } = new List<DateValue>();
+
+    /// <summary>
+    /// Ist das Wertpapier eine Anleihe?
+    /// </summary>
+    public bool IsBond =>
+        SecurityType == SecurityType.Bond ||
+        SecurityType == SecurityType.Zerobond;
 
 }
