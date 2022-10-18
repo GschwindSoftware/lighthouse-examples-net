@@ -49,7 +49,7 @@ internal class TestPlan {
     /// </summary>
     /// <returns>Der erzeugte <see cref="Plan"/></returns>
     internal Plan Programmatically() {
-        var client = new Customer {
+        var client = new Client {
             FirstName = "Max",
             LastName = "Mustermann",
             Birthday = new(1975, 05, 03),

@@ -1,9 +1,12 @@
+using Gschwind.Lighthouse.Example.Serialization;
+
 namespace Gschwind.Lighthouse.Example.Models.Family;
 
 /// <summary>
 /// Der Kunde innerhalb einer Familie. Jede Familie darf genau einen Kunden beinhalten
 /// </summary>
-public record Customer : ClientOrPartner {
+[SchemaId("Customer")]
+public record Client : ClientOrPartner {
 
     /// <summary>
     /// Gibt an, ob der Partner des Kunden der Ehepartner des Kunden ist

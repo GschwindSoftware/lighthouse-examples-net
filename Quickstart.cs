@@ -6,9 +6,11 @@ using Gschwind.Lighthouse.Example.Api;
 using Gschwind.Lighthouse.Example.Models;
 using Gschwind.Lighthouse.Example.Models.Crm;
 using Gschwind.Lighthouse.Example.Models.Data;
+using Gschwind.Lighthouse.Example.Models.Family;
 using Gschwind.Lighthouse.Example.Models.Report;
 using Gschwind.Lighthouse.Example.Models.Reports;
 using Microsoft.Extensions.Logging;
+using Refit;
 
 namespace Gschwind.Lighthouse.Example;
 
@@ -39,6 +41,7 @@ internal class Quickstart {
     internal async Task RunAsync() {
         await GenerateReport();
         await SynchronizeStatusQuo();
+        await UpdateStatusQuoFamily("654321");
     }
 
     /// <summary>
@@ -189,6 +192,90 @@ internal class Quickstart {
             };
 
             data.Add(entry);
+        }
+    }
+
+    /// <summary>
+    /// 💡 Beispiel: Familienstammbaum im Status Quo aktualisieren.
+    /// </summary>
+    /// <remarks>
+    /// Demonstriert das Speichern eines Stammbaums im Status Quo. Es werden die Angaben aus den Kontaktdaten herangezogen, um
+    /// einen Stammbaum in der Kundenmappe (Status Quo) zu konstruieren.
+    /// </remarks>
+    /// <seealso cref="SynchronizeStatusQuo"/>
+    async Task UpdateStatusQuoFamily(string clientNumber) {
+        var respQuery = await _api.Crm.QueryContactsAsync(new Query{
+            Filter = Term.Eq<Contact>(c => c.ClientNumber, clientNumber)
+        });
+
+        await respQuery.EnsureSuccessStatusCodeAsync();
+
+        if (respQuery.Content is { Count: 1 } matches && matches.Single() is Person p) {
+            var client = new Client {
+                Title = p.Title,
+                FirstName = p.FirstName,
+                LastName = p.LastName,
+                IsMarried = true,
+                Gender = p.Gender switch {
+                    Models.Crm.Gender.Male => Models.Family.Gender.Male,
+                    _ => Models.Family.Gender.Female
+                },
+            };
+
+            if (p.Birthday != null)
+                client = client with { Birthday = p.Birthday.Value };
+
+            var partner = new Partner {
+                FirstName = "Partner",
+                LastName = p.LastName,
+                Gender = p.Gender switch {
+                    Models.Crm.Gender.Male => Models.Family.Gender.Female,
+                    _ => Models.Family.Gender.Male
+                },
+            };
+
+            var child = new Child {
+                FirstName = "Kind",
+                LastName = p.LastName
+            };
+
+            var father = new Relative {
+                FirstName = "Vater",
+                IsDead = true,
+                LastName = p.LastName
+            };
+
+            var stepmother = new Relative {
+                FirstName = "Mutter",
+                LastName = p.LastName
+            };
+
+            /*
+                ☠ --- 👵 Eltern
+                |
+                👨 -+- 👩 Kunde / Partner
+                    |
+                   👶     Kinder
+            */
+
+            var family = new Family {
+                Members = { client, partner, child, father, stepmother },
+                Relationships = {
+                    client.IsPartnerOf(partner),
+                    child.IsChildOf(client),
+                    child.IsChildOf(partner),
+                    client.IsChildOf(father),
+                    father.IsPartnerOf(stepmother)
+                }
+            };
+
+            try {
+                var respUpdate = await _api.Plans.UpdateStatusQuoFamilyAsync(clientNumber, family);
+                await respUpdate.EnsureSuccessStatusCodeAsync();
+            } catch (ApiException e) {
+                var problem = e.GetContentAsAsync<ProblemDetails>();
+                _logger.LogError(e, "Fehler bei der Aktualisierung des Stammbaums {problem}", problem);
+            }
         }
     }
 
