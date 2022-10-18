@@ -22,7 +22,7 @@ public abstract record PlanData {
     /// <summary>
     /// Ein eindeutiger Schlüssel, der einen externen Datensatz in Bezug bringt, falls der Vorgang importiert wurde
     /// </summary>
-    /// <seealso cref="ImportId"/>
+    /// <seealso cref="ImportProvider"/>
     public string ImportId {
         get;
         init;
@@ -31,7 +31,7 @@ public abstract record PlanData {
     /// <summary>
     /// Der Name des Synchronisations-Anbieters, der den Vorgang aus externen Daten importiert hat
     /// </summary>
-    /// <seealso cref="ImportProvider"/>
+    /// <seealso cref="ImportId"/>
     public string? ImportProvider {
         get;
         init;
