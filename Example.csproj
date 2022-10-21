@@ -15,7 +15,7 @@
     <Authors>$(Company)</Authors>
     <Copyright>Copyright © $([System.DateTime]::Now.ToString(yyyy)) $(Company)</Copyright>
     <RepositoryUrl>https://github.com/GschwindSoftware/lighthouse-examples-net</RepositoryUrl>
-    <Version>6.0.0</Version>
+    <Version>7.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

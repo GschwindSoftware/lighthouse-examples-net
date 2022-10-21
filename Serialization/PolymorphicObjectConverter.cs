@@ -23,7 +23,7 @@ internal class PolymorphicObjectConverter<T> : JsonConverter<T> {
             typeof(T).IsAssignableFrom(t)
         )
         .ToDictionary(
-            t => t.Name,
+            t => SchemaIdAttribute.Apply(t),
             t => t,
             StringComparer.OrdinalIgnoreCase
         );

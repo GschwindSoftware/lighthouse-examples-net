@@ -46,14 +46,6 @@ public record Security : SecurityBase {
     }
 
     /// <summary>
-    /// Bisherige Dividenden
-    /// </summary>
-    public double PreviousDividends {
-        get;
-        init;
-    }
-
-    /// <summary>
     /// Name des Depots
     /// </summary>
     public string DepotName {
@@ -139,15 +131,7 @@ public record Security : SecurityBase {
     public DateTime MaturityDate {
         get;
         init;
-    } = new(DateTime.Now.Year+10, 12, 31);
-
-    /// <summary>
-    /// Kauf
-    /// </summary>
-    public Buying Buying {
-        get;
-        init;
-    } = new();
+    } = new(DateTime.Now.Year + 10, 12, 31);
 
     /// <summary>
     /// Dividendenausschüttung
@@ -172,5 +156,28 @@ public record Security : SecurityBase {
         get;
         init;
     } = new List<DateValue>();
+
+    /// <summary>
+    /// Ordern
+    /// </summary>
+    public ICollection<SecurityOrder> Orders {
+        get;
+        init;
+    } = new List<SecurityOrder>();
+
+    /// <summary>
+    /// Bisherige Dividenden
+    /// </summary>
+    public ICollection<DateValue> Earnings {
+        get;
+        init;
+    } = new List<DateValue>();
+
+    /// <summary>
+    /// Ist das Wertpapier eine Anleihe?
+    /// </summary>
+    public bool IsBond =>
+        SecurityType == SecurityType.Bond ||
+        SecurityType == SecurityType.Zerobond;
 
 }

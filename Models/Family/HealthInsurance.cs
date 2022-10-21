@@ -19,7 +19,7 @@ public record HealthInsurance {
     public double AdditionalRate {
         get;
         init;
-    } = 0.9;
+    } = 1.3;
 
     /// <summary>
     /// Gibt an, ob eine Krankentagegeld-Versicherung besteht

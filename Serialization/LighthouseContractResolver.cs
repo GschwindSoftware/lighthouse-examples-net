@@ -14,7 +14,7 @@ internal class LighthouseContractResolver : CamelCasePropertyNamesContractResolv
         /// <inheritdoc/>
         public object? GetValue(object target) =>
             target switch {
-                {} => target.GetType().Name,
+                {} => SchemaIdAttribute.Apply(target.GetType()),
                 _ => null
             };
 
