@@ -33,7 +33,7 @@ public class SchemaIdAttribute : Attribute {
             $"{Name(t)}Of{Apply(GetGenericArgument(t))}" : Name(t);
 
     static string Name(Type t) =>
-        SanitizeGenericName(t.GetCustomAttribute<SchemaIdAttribute>() is { Id: var id } a ? id : t.Name);
+        SanitizeGenericName(t.GetCustomAttribute<SchemaIdAttribute>() is { Id: {} id } ? id : t.Name);
 
     static string SanitizeGenericName(string name) {
         if (name.Contains('`'))
