@@ -141,7 +141,7 @@ internal class Quickstart {
             // Die vor Nutzern versteckte ImportId kann verwendet werden, um eine Korrelation zwischen dem Vorgang
             // und dem Datensatz im externen Datensatz herzustellen. Hier wird die Depotnummer als Schlüssel genutzt
             var entry = data
-                .OfType<Deposit>()
+                .OfType<SecuritiesAccount>()
                 .SingleOrDefault(d => account.AccountNumber.Equals(d.ImportId));
 
             if (entry != null)

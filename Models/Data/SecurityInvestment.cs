@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Wertpapieranlage
 /// </summary>
-public abstract record SecurityInvestment : SecurityBase {
+public abstract record SecurityInvestment : PlanData {
 
     /// <summary>
     /// Name des Instituts
@@ -52,5 +52,13 @@ public abstract record SecurityInvestment : SecurityBase {
         get;
         init;
     } = 50;
+
+    /// <summary>
+    /// Verkauf
+    /// </summary>
+    public Selling Selling {
+        get;
+        init;
+    } = new();
 
 }

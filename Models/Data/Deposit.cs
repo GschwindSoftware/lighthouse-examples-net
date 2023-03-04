@@ -1,16 +1,56 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Depot
+/// Bankeinlage
 /// </summary>
-public record Deposit : SecurityInvestment {
+public abstract record Deposit : PlanData {
 
     /// <summary>
-    /// Liste der Wertpapiere
+    /// Name des Instituts
     /// </summary>
-    public ICollection<Security> Securities {
+    public string Institute {
         get;
-        init;
-    } = new List<Security>();
+        set;
+    } = String.Empty;
+
+    /// <summary>
+    /// Kontonummer
+    /// </summary>
+    public string AccountNumber {
+        get;
+        set;
+    } = String.Empty;
+
+    /// <summary>
+    /// Jährliche Gebühr in %
+    /// </summary>
+    public double AnnualFeeRate {
+        get;
+        set;
+    }
+
+    /// <summary>
+    /// Maximale Jahresgebühr (EUR)
+    /// </summary>
+    public double AnnualFeeMaximum {
+        get;
+        set;
+    }
+
+    /// <summary>
+    /// Sind die Gebühren steuerlich relevant?
+    /// </summary>
+    public bool IsFeeTaxable {
+        get;
+        set;
+    }
+
+    /// <summary>
+    /// Steuerlich zu berücksichtigender Anteil der Gebühren in %
+    /// </summary>
+    public double TaxableFeeRate {
+        get;
+        set;
+    } = 50;
 
 }
