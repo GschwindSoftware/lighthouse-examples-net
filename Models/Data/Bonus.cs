@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Bonus
 /// </summary>
-public record Bonus : PlanData {
+public record Bonus {
 
     /// <summary>
     /// Bonuszahlungen

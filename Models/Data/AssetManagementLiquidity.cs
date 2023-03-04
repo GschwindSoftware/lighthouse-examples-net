@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Liquiditätskonto
 /// </summary>
-public record AssetManagementLiquidity : PlanData {
+public record AssetManagementLiquidity {
 
     /// <summary>
     /// Zuordnung zur Bilanz
