@@ -1,16 +1,16 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Wertpapier
+/// Stammdaten für geschlossene Fonds
 /// </summary>
-public record Security : SecurityBase {
+public record FundSecurity : SecurityBase {
 
     /// <summary>
     /// Ausschüttungen
     /// </summary>
     public ICollection<PercentValue> Dividends {
         get;
-        init;
+        set;
     } = new List<PercentValue>();
 
     /// <summary>
@@ -18,7 +18,7 @@ public record Security : SecurityBase {
     /// </summary>
     public ICollection<PercentValue> Appreciations {
         get;
-        init;
+        set;
     } = new List<PercentValue>();
 
     /// <summary>
@@ -26,7 +26,7 @@ public record Security : SecurityBase {
     /// </summary>
     public bool IsTaxable {
         get;
-        init;
+        set;
     } = true;
 
     /// <summary>
@@ -34,15 +34,15 @@ public record Security : SecurityBase {
     /// </summary>
     public bool ReinvestDividends {
         get;
-        init;
-    }
+        set;
+    } = true;
 
     /// <summary>
     /// Agio beim Kauf
     /// </summary>
     public double Agio {
         get;
-        init;
+        set;
     }
 
     /// <summary>
@@ -50,7 +50,7 @@ public record Security : SecurityBase {
     /// </summary>
     public DateTime MaturityDate {
         get;
-        init;
+        set;
     } = DateTime.Now.EndOfYear().AddYears(10);
 
     /// <summary>
@@ -58,23 +58,15 @@ public record Security : SecurityBase {
     /// </summary>
     public DateTime DividendPayout {
         get;
-        init;
+        set;
     } = DateTime.Now.EndOfYear();
 
     /// <summary>
-    /// Einzahlungen
+    /// Anteil am Kapitalbeitrag
     /// </summary>
-    public CashFlows Savings {
+    public double Share {
         get;
-        init;
-    } = new() { Period = Period.Yearly };
-
-    /// <summary>
-    /// Sondereinzahlungen
-    /// </summary>
-    public ICollection<DateValue> AdditionalSavings {
-        get;
-        init;
-    } = new List<DateValue>();
+        set;
+    }
 
 }

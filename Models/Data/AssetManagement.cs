@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Vermögensverwaltung
 /// </summary>
-public record AssetManagement : SecurityInvestment {
+public record AssetManagement : Deposit {
 
     /// <summary>
     /// Depotname
@@ -105,6 +105,14 @@ public record AssetManagement : SecurityInvestment {
     /// Liquiditätskonto
     /// </summary>
     public AssetManagementLiquidity AssetManagementLiquidity {
+        get;
+        init;
+    } = new();
+
+    /// <summary>
+    /// Verkauf
+    /// </summary>
+    public Selling Selling {
         get;
         init;
     } = new();

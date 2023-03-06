@@ -112,7 +112,7 @@ internal class TestPlan {
                     Owner = Owner.Both(),
                     Termination = Moment.AtDate(new(2065, 05, 02))
                 },
-                new Deposit() {
+                new SecuritiesAccount() {
                     Name = "Depot",
                     Securities = {
                         new() {

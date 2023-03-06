@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Betriebsdarlehen
 /// </summary>
-public record CompanyLoan : PlanData {
+public record CompanyLoan {
 
     /// <summary>
     /// Darlehensnominalbetrag
