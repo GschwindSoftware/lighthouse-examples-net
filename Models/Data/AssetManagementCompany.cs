@@ -40,10 +40,10 @@ public record AssetManagementCompany : CompanyBase {
     /// <summary>
     /// Depots
     /// </summary>
-    public ICollection<Deposit> Deposits {
+    public ICollection<SecuritiesAccount> Deposits {
         get;
         set;
-    } = new List<Deposit>();
+    } = new List<SecuritiesAccount>();
 
     /// <summary>
     /// Fremdgenutzte Immobilien

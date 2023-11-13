@@ -6,7 +6,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// Wertpapierdepot
 /// </summary>
 [SchemaId("Deposit")]
-public record SecuritiesAccount : Deposit {
+public record SecuritiesAccount : SecurityInvestment {
 
     /// <summary>
     /// Liste der Wertpapiere
@@ -15,13 +15,5 @@ public record SecuritiesAccount : Deposit {
         get;
         init;
     } = new List<Security>();
-
-    /// <summary>
-    /// Verkauf
-    /// </summary>
-    public Selling Selling {
-        get;
-        init;
-    } = new();
 
 }
