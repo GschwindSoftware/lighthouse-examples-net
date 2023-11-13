@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Geldwerter Vorteil
 /// </summary>
-public record MonetaryAdvantage {
+public record MonetaryAdvantage : PlanData {
 
     /// <summary>
     /// Bonuszahlungen

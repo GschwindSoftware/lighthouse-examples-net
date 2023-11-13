@@ -3,5 +3,5 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Betriebskosten
 /// </summary>
-public record OperatingCost {
+public record OperatingCost : PlanData {
 }

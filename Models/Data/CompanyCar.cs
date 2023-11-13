@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Dienstwagen
 /// </summary>
-public record CompanyCar {
+public record CompanyCar : PlanData {
 
     /// <summary>
     /// Neuwert

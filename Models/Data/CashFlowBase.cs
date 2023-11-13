@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Basisklasse für die Liquidität
 /// </summary>
-public abstract record CashFlowBase : PlanData {
+public abstract record CashFlowBase : SelfContainedPlanData {
 
     /// <summary>
     /// Zahlungen

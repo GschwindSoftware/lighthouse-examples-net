@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Bankeinlage
 /// </summary>
-public abstract record Deposit : PlanData {
+public abstract record Deposit : SelfContainedPlanData {
 
     /// <summary>
     /// Name des Instituts

@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Vermögen
 /// </summary>
-public abstract record AssetBase : PlanData {
+public abstract record AssetBase : SelfContainedPlanData {
 
     /// <summary>
     /// Risikostufe

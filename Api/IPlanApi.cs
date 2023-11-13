@@ -28,7 +28,7 @@ public interface IPlanApi {
     /// <param name="clientId">Die vom System vergebene Id des Kunden</param>
     /// <returns>Eine Aufgabe, die die Antwort der Abfrage enthält</returns>
     [Get("/plans/byClient/{clientId}/statusQuo/data")]
-    Task<ApiResponse<IReadOnlyCollection<PlanData>>> GetStatusQuoDataAsync(Guid clientId);
+    Task<ApiResponse<IReadOnlyCollection<SelfContainedPlanData>>> GetStatusQuoDataAsync(Guid clientId);
 
     /// <summary>
     /// Vorgänge des Status Quo abfragen
@@ -36,7 +36,7 @@ public interface IPlanApi {
     /// <param name="clientNumber">Die benutzerdefinierte Kundennummer des Kunden</param>
     /// <returns>Eine Aufgabe, die die Antwort der Abfrage enthält</returns>
     [Get("/plans/byClient/no:{clientNumber}/statusQuo/data")]
-    Task<ApiResponse<IReadOnlyCollection<PlanData>>> GetStatusQuoDataAsync(string clientNumber);
+    Task<ApiResponse<IReadOnlyCollection<SelfContainedPlanData>>> GetStatusQuoDataAsync(string clientNumber);
 
     /// <summary>
     /// Vorgänge des Status Quo aktualisieren
@@ -45,7 +45,7 @@ public interface IPlanApi {
     /// <param name="data">Die neuen Vorgangsdaten</param>
     /// <returns>Eine Aufgabe, die die Antwort der Abfrage enthält</returns>
     [Put("/plans/byClient/{clientId}/statusQuo/data")]
-    Task<IApiResponse> UpdateStatusQuoDataAsync(Guid clientId, IEnumerable<PlanData> data);
+    Task<IApiResponse> UpdateStatusQuoDataAsync(Guid clientId, IEnumerable<SelfContainedPlanData> data);
 
     /// <summary>
     /// Vorgänge des Status Quo aktualisieren
@@ -54,7 +54,7 @@ public interface IPlanApi {
     /// <param name="data">Die neuen Vorgangsdaten</param>
     /// <returns>Eine Aufgabe, die die Antwort der Abfrage enthält</returns>
     [Put("/plans/byClient/no:{clientNumber}/statusQuo/data")]
-    Task<IApiResponse> UpdateStatusQuoDataAsync(string clientNumber, IEnumerable<PlanData> data);
+    Task<IApiResponse> UpdateStatusQuoDataAsync(string clientNumber, IEnumerable<SelfContainedPlanData> data);
 
     #endregion
 

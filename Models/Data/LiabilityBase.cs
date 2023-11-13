@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Verbindlichkeit
 /// </summary>
-public abstract record LiabilityBase : PlanData {
+public abstract record LiabilityBase : SelfContainedPlanData {
 
     /// <summary>
     /// Zeitraum

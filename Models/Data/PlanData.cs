@@ -20,24 +20,6 @@ public abstract record PlanData {
     } = Guid.NewGuid();
 
     /// <summary>
-    /// Ein eindeutiger Schlüssel, der einen externen Datensatz in Bezug bringt, falls der Vorgang importiert wurde
-    /// </summary>
-    /// <seealso cref="ImportProvider"/>
-    public string ImportId {
-        get;
-        init;
-    } = String.Empty;
-
-    /// <summary>
-    /// Der Name des Synchronisations-Anbieters, der den Vorgang aus externen Daten importiert hat
-    /// </summary>
-    /// <seealso cref="ImportId"/>
-    public string? ImportProvider {
-        get;
-        init;
-    }
-
-    /// <summary>
     /// Vorgangsname
     /// </summary>
     public string Name {
@@ -52,21 +34,5 @@ public abstract record PlanData {
         get;
         init;
     } = Currency.EUR;
-
-    /// <summary>
-    /// Nachrichtliche Informationen
-    /// </summary>
-    public Informations Informations {
-        get;
-        init;
-    } = new();
-
-    /// <summary>
-    /// Besitzer
-    /// </summary>
-    public Owner Owner {
-        get;
-        init;
-    } = new();
 
 }

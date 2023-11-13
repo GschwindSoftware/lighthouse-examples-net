@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Gesetzliche Altersvorsorge
 /// </summary>
-public abstract record StatePension : PlanData {
+public abstract record StatePension : SelfContainedPlanData {
 
     /// <summary>
     /// Beginn der Rentenzahlungen

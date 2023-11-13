@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Wertpapierbasis
 /// </summary>
-public abstract record SecurityBase : PlanData {
+public abstract record SecurityBase : SelfContainedPlanData {
 
     /// <summary>
     /// Name des Depots

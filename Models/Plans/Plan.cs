@@ -35,9 +35,9 @@ public record Plan {
     /// <summary>
     /// Die Sammlung der Vorgänge
     /// </summary>
-    public ICollection<PlanData> Finances {
+    public ICollection<SelfContainedPlanData> Finances {
         get;
         init;
-    } = new List<PlanData>();
+    } = new List<SelfContainedPlanData>();
 
 }

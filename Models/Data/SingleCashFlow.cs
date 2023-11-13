@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Einzelner Cashflow
 /// </summary>
-public abstract record SingleCashFlow : PlanData {
+public abstract record SingleCashFlow : SelfContainedPlanData {
 
     /// <summary>
     /// Datum
