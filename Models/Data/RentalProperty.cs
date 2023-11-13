@@ -77,12 +77,4 @@ public record RentalProperty : PropertyBase {
         init;
     }
 
-    /// <summary>
-    /// Sanierungen
-    /// </summary>
-    public ICollection<Renovation> Renovations {
-        get;
-        init;
-    } = new List<Renovation>();
-
 }
