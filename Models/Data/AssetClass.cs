@@ -54,6 +54,14 @@ public record AssetClass : PlanData {
     } = new List<Industry>();
 
     /// <summary>
+    /// Der Instrumente des Wertpapieres.
+    /// </summary>
+    public ICollection<Instrument> Instruments {
+        get;
+        set;
+    } = new List<Instrument>();
+
+    /// <summary>
     /// Der Typ des Wertpapieres
     /// </summary>
     public SecurityType SecurityType {

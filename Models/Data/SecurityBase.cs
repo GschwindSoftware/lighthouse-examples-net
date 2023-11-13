@@ -86,6 +86,14 @@ public abstract record SecurityBase : SelfContainedPlanData {
     } = new List<Industry>();
 
     /// <summary>
+    /// Der Instrumente des Wertpapieres.
+    /// </summary>
+    public ICollection<Instrument> Instruments {
+        get;
+        set;
+    } = new List<Instrument>();
+
+    /// <summary>
     /// Ordern
     /// </summary>
     public ICollection<SecurityOrder> Orders {
