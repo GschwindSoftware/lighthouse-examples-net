@@ -32,7 +32,7 @@ public record AssetManagement : Deposit {
     /// <summary>
     /// Assetstruktur beibehalten
     /// </summary>
-    public bool Reallocation {
+    public bool Rebalancing {
         get;
         init;
     }
