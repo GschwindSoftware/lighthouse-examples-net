@@ -104,10 +104,10 @@ public record Loan : LiabilityBase {
     /// <summary>
     /// Ende der Zinsbindung
     /// </summary>
-    public DateTime EndOfFixedInterestRate {
+    public DateTime? EndOfFixedInterestRate {
         get;
         init;
-    } = DateTime.Now;
+    }
 
     /// <summary>
     /// Zinszuschüsse
