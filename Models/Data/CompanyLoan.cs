@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Betriebsdarlehen
 /// </summary>
-public record CompanyLoan {
+public record CompanyLoan : PlanData {
 
     /// <summary>
     /// Darlehensnominalbetrag
@@ -112,10 +112,10 @@ public record CompanyLoan {
     /// <summary>
     /// Ende der Zinsbindung
     /// </summary>
-    public DateTime EndOfFixedInterestRate {
+    public DateTime? EndOfFixedInterestRate {
         get;
         init;
-    } = DateTime.Now;
+    }
 
     /// <summary>
     /// Zinszuschüsse

@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Vorgang beenden
 /// </summary>
-public record Termination : PlanData {
+public record Termination : SelfContainedPlanData {
 
     /// <summary>
     /// Zeitpunkt der Beendigung

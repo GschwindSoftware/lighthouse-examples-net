@@ -3,5 +3,5 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Verrechnungskonto
 /// </summary>
-public record SicknessBenefit : PlanData {
+public record SicknessBenefit : SelfContainedPlanData {
 }

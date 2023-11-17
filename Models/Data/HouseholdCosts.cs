@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Ausgabe für Lebensführung
 /// </summary>
-public record HouseholdCosts : PlanData {
+public record HouseholdCosts : SelfContainedPlanData {
 
     /// <summary>
     /// Konsumgruppen

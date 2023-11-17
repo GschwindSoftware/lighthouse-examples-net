@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Geschlossener Fond
 /// </summary>
-public record ClosedEndFunds : PlanData {
+public record ClosedEndFunds : SelfContainedPlanData {
 
     /// <summary>
     /// Beteiligungssumme

@@ -85,4 +85,12 @@ public abstract record PropertyBase : RealValue {
         init;
     }
 
+    /// <summary>
+    /// Sanierungen
+    /// </summary>
+    public ICollection<Renovation> Renovations {
+        get;
+        set;
+    } = new List<Renovation>();
+
 }

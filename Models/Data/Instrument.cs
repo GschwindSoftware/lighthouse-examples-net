@@ -1,24 +1,24 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Dienstwagen
+/// Finanzinstrument
 /// </summary>
-public record CompanyCar : PlanData {
+public record Instrument {
 
     /// <summary>
-    /// Neuwert
+    /// Anteil am Portfolio.
     /// </summary>
-    public double OriginalValue {
+    public double Quote {
         get;
         init;
     }
 
     /// <summary>
-    /// Entfernung zum Arbeitsplatz in km
+    /// Name des Finanz-Instruments.
     /// </summary>
-    public int DistanceToWork {
+    public string Name {
         get;
         init;
-    }
+    } = String.Empty;
 
 }

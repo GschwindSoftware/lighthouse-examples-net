@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Wertpapierbasis
 /// </summary>
-public abstract record SecurityBase : PlanData {
+public abstract record SecurityBase : SelfContainedPlanData {
 
     /// <summary>
     /// Name des Depots
@@ -84,6 +84,14 @@ public abstract record SecurityBase : PlanData {
         get;
         init;
     } = new List<Industry>();
+
+    /// <summary>
+    /// Der Instrumente des Wertpapieres.
+    /// </summary>
+    public ICollection<Instrument> Instruments {
+        get;
+        set;
+    } = new List<Instrument>();
 
     /// <summary>
     /// Ordern

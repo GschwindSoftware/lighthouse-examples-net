@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Genossenschaftsanteil
 /// </summary>
-public record CooperativeShare : Deposit {
+public record CooperativeShare : SecurityInvestment {
 
     /// <summary>
     /// Risikostufe
@@ -68,13 +68,5 @@ public record CooperativeShare : Deposit {
         get;
         init;
     }
-
-    /// <summary>
-    /// Verkauf
-    /// </summary>
-    public Selling Selling {
-        get;
-        init;
-    } = new();
 
 }

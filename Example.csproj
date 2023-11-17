@@ -7,6 +7,7 @@
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <NoWarn>S2094,S6562</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -15,7 +16,7 @@
     <Authors>$(Company)</Authors>
     <Copyright>Copyright © $([System.DateTime]::Now.ToString(yyyy)) $(Company)</Copyright>
     <RepositoryUrl>https://github.com/GschwindSoftware/lighthouse-examples-net</RepositoryUrl>
-    <Version>8.0.0</Version>
+    <Version>10.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,17 +36,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ConsoleTables" Version="2.4.2" />
+    <PackageReference Include="ConsoleTables" Version="2.6.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
-    <PackageReference Include="Refit.HttpClientFactory" Version="6.3.2" />
-    <PackageReference Include="Refit.Newtonsoft.Json" Version="6.3.2" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="7.0.0" />
+    <PackageReference Include="Refit.Newtonsoft.Json" Version="7.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.27.0" />
-    <PackageReference Include="System.Net.Http.Json" Version="7.0.0" />
-    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.53.0.62665">
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
+    <PackageReference Include="System.Net.Http.Json" Version="7.0.1" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="9.12.0.78982">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>

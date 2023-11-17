@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Gesetzliche Witwenrente
 /// </summary>
-public record WidowsStatutoryPension : PlanData {
+public record WidowsStatutoryPension : SelfContainedPlanData {
 
     /// <summary>
     /// Start der Rentenzahlung

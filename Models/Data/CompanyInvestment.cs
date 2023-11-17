@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Investition bei Betriebsvermögen
 /// </summary>
-public record CompanyInvestment {
+public record CompanyInvestment : PlanData {
 
     /// <summary>
     /// Investition

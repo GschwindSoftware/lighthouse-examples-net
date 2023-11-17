@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Vermögensverwaltung
 /// </summary>
-public record AssetManagement : Deposit {
+public record AssetManagement : SecurityInvestment {
 
     /// <summary>
     /// Depotname
@@ -32,7 +32,7 @@ public record AssetManagement : Deposit {
     /// <summary>
     /// Assetstruktur beibehalten
     /// </summary>
-    public bool Reallocation {
+    public bool Rebalancing {
         get;
         init;
     }
@@ -105,14 +105,6 @@ public record AssetManagement : Deposit {
     /// Liquiditätskonto
     /// </summary>
     public AssetManagementLiquidity AssetManagementLiquidity {
-        get;
-        init;
-    } = new();
-
-    /// <summary>
-    /// Verkauf
-    /// </summary>
-    public Selling Selling {
         get;
         init;
     } = new();

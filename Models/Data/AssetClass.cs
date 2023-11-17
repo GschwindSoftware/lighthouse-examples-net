@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Anlageklasse
 /// </summary>
-public record AssetClass {
+public record AssetClass : PlanData {
 
     /// <summary>
     /// Ausschüttungen
@@ -52,6 +52,14 @@ public record AssetClass {
         get;
         init;
     } = new List<Industry>();
+
+    /// <summary>
+    /// Die Instrumente des Wertpapieres.
+    /// </summary>
+    public ICollection<Instrument> Instruments {
+        get;
+        set;
+    } = new List<Instrument>();
 
     /// <summary>
     /// Der Typ des Wertpapieres

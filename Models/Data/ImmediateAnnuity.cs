@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Sofortrente
 /// </summary>
-public record ImmediateAnnuity : PlanData {
+public record ImmediateAnnuity : SelfContainedPlanData {
 
     /// <summary>
     /// Versicherte Person

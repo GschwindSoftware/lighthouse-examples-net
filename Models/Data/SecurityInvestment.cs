@@ -3,7 +3,7 @@ namespace Gschwind.Lighthouse.Example.Models.Data;
 /// <summary>
 /// Wertpapieranlage
 /// </summary>
-public abstract record SecurityInvestment : PlanData {
+public abstract record SecurityInvestment : SelfContainedPlanData {
 
     /// <summary>
     /// Name des Instituts

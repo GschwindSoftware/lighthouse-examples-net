@@ -77,7 +77,7 @@ internal class Quickstart {
     /// ist ein spezieller <see cref="Models.Plans.Plan">Finanzplan</see>, der die aktuelle Situation eines Kunden
     /// wie in der Kundenmappe der Oberfläche dargestellt festhält.
     ///
-    /// Teil eines Finanzplans sind <see cref="Models.Data.PlanData">Vorgänge</see>, mit denen Berater die
+    /// Teil eines Finanzplans sind <see cref="Models.Data.SelfContainedPlanData">Vorgänge</see>, mit denen Berater die
     /// Finanzsituation des Kunden erfassen (Einkünfte, Ausgaben, Vermögenswerte usw.).
     ///
     /// In diesem Beispiel wird davon ausgegangen, dass die Werpapierdepots von Kunden und deren Inhalte in einem
@@ -136,7 +136,7 @@ internal class Quickstart {
     }
 
     /// <seealso cref="SynchronizeStatusQuo"/>
-    void EnrichSecurityAccount(List<PlanData> data, IEnumerable<ExternalSecuritiesAccount> externalSecurityAccounts) {
+    void EnrichSecurityAccount(List<SelfContainedPlanData> data, IEnumerable<ExternalSecuritiesAccount> externalSecurityAccounts) {
         foreach (var account in externalSecurityAccounts) {
             // Die vor Nutzern versteckte ImportId kann verwendet werden, um eine Korrelation zwischen dem Vorgang
             // und dem Datensatz im externen Datensatz herzustellen. Hier wird die Depotnummer als Schlüssel genutzt
