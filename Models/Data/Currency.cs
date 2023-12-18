@@ -135,5 +135,9 @@ public enum Currency {
     /// <summary>
     /// Thailändische Baht
     /// </summary>
-    THB
+    THB,
+    /// <summary>
+    /// VAE-Dirham
+    /// </summary>
+    AED
 }
