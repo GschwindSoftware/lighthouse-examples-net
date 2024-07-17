@@ -269,7 +269,7 @@ internal class Quickstart {
                 await respUpdate.EnsureSuccessStatusCodeAsync();
             } catch (ApiException e) {
                 var problem = e.GetContentAsAsync<ProblemDetails>();
-                _logger.LogError(e, "Fehler bei der Aktualisierung des Stammbaums {problem}", problem);
+                _logger.LogError(e, "Fehler bei der Aktualisierung des Stammbaums {Problem}", problem);
             }
         }
     }

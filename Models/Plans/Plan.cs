@@ -14,7 +14,7 @@ public record Plan {
     public int Id {
         get;
         private set;
-    }
+    } = default;
 
     /// <summary>
     /// Die Einstellungen des Plans

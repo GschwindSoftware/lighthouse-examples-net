@@ -19,7 +19,7 @@ public record HierarchicalDataSeries {
     public DataPointType Type {
         get;
         private set;
-    }
+    } = default;
 
     /// <summary>
     /// Die Datenpunkte der Reihe
