@@ -70,6 +70,14 @@ public abstract record PropertyBase : RealValue {
     } = new List<MaintenanceReserve>();
 
     /// <summary>
+    /// Nießbrauch
+    /// </summary>
+    public ICollection<DateValue> Usufruct {
+        get;
+        init;
+    } = new List<DateValue>();
+
+    /// <summary>
     /// Steuerliche Bewertung der Immobilie
     /// </summary>
     public PropertyValuation PropertyValuation {

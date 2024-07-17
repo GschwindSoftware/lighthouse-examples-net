@@ -62,6 +62,14 @@ public abstract record FamilyMember {
     }
 
     /// <summary>
+    /// Die Kundennummer der Person
+    /// </summary>
+    public string? ClientNumber {
+        get;
+        init;
+    }
+
+    /// <summary>
     /// Gibt an, ob ein Pflichtteilsverzicht vorliegt
     /// </summary>
     public bool MandatoryPartialWaiver {
