@@ -59,7 +59,7 @@ public record LoanGranted : AssetBase {
     public ICollection<DateValue> Repayments {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Tilgungsintervall
@@ -75,7 +75,7 @@ public record LoanGranted : AssetBase {
     public ICollection<DateValue> AdditionalRepayments {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Zinssätze in %
@@ -83,7 +83,7 @@ public record LoanGranted : AssetBase {
     public ICollection<PercentValue> InterestRates {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Einkunftsart

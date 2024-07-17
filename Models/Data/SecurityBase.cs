@@ -75,7 +75,7 @@ public abstract record SecurityBase : SelfContainedPlanData {
     public ICollection<Region> Regions {
         get;
         init;
-    } = new List<Region>();
+    } = [];
 
     /// <summary>
     /// Der Industriesektor des Wertpapieres
@@ -83,7 +83,7 @@ public abstract record SecurityBase : SelfContainedPlanData {
     public ICollection<Industry> Industries {
         get;
         init;
-    } = new List<Industry>();
+    } = [];
 
     /// <summary>
     /// Der Instrumente des Wertpapieres.
@@ -91,7 +91,7 @@ public abstract record SecurityBase : SelfContainedPlanData {
     public ICollection<Instrument> Instruments {
         get;
         set;
-    } = new List<Instrument>();
+    } = [];
 
     /// <summary>
     /// Ordern
@@ -99,7 +99,7 @@ public abstract record SecurityBase : SelfContainedPlanData {
     public ICollection<SecurityOrder> Orders {
         get;
         init;
-    } = new List<SecurityOrder>();
+    } = [];
 
     /// <summary>
     /// Bisherige Dividenden
@@ -107,7 +107,7 @@ public abstract record SecurityBase : SelfContainedPlanData {
     public ICollection<DateValue> Earnings {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Verkauf

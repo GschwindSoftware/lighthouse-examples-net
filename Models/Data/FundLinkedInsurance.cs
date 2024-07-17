@@ -19,6 +19,6 @@ public record FundLinkedInsurance : PrivateCapitalInsurance {
     public ICollection<FundSecurity> Funds {
         get;
         init;
-    } = new List<FundSecurity>();
+    } = [];
 
 }

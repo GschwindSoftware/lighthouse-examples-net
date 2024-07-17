@@ -19,7 +19,7 @@ public record RentalProperty : PropertyBase {
     public ICollection<RentalIncome> RentalIncomes {
         get;
         init;
-    } = new List<RentalIncome>();
+    } = [];
 
     /// <summary>
     /// Einkunftsart der Mieteinnahmen
@@ -51,7 +51,7 @@ public record RentalProperty : PropertyBase {
     public ICollection<PercentValue> ManualAmortizationValues {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Start der Abschreibung

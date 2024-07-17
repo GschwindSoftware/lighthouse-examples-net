@@ -35,6 +35,6 @@ public record Beneficiary {
     public ICollection<Legacy> Legacies {
         get;
         init;
-    } = new List<Legacy>();
+    } = [];
 
 }

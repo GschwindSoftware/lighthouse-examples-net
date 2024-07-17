@@ -38,6 +38,6 @@ public record Plan {
     public ICollection<SelfContainedPlanData> Finances {
         get;
         init;
-    } = new List<SelfContainedPlanData>();
+    } = [];
 
 }

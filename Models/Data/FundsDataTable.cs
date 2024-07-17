@@ -11,7 +11,7 @@ public record FundsDataTable {
     public ICollection<PercentValue> Payments {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Ausschüttungen in % der Beteiligungssumme
@@ -19,7 +19,7 @@ public record FundsDataTable {
     public ICollection<PercentValue> Distriubtions {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Besteuerung in % der Beteiligungssumme
@@ -27,7 +27,7 @@ public record FundsDataTable {
     public ICollection<PercentValue> Taxable {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Verkäufe in % der Beteiligungssumme
@@ -35,7 +35,7 @@ public record FundsDataTable {
     public ICollection<PercentValue> Sales {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Besteuerung des Verkäufe in % der Beteiligungssumme
@@ -43,7 +43,7 @@ public record FundsDataTable {
     public ICollection<PercentValue> TaxableSales {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Marktwert in % der Beteiligungssumme
@@ -51,6 +51,6 @@ public record FundsDataTable {
     public ICollection<PercentValue> MarketValues {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
 }

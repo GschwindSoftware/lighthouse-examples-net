@@ -11,6 +11,6 @@ public record RiesterPension : PrivatePension {
     public ICollection<DateValue> AlreadyReceivedBonus {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
 }

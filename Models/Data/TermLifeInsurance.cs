@@ -11,7 +11,7 @@ public record TermLifeInsurance : PersonalInsurance {
     public ICollection<DateValue> DeathBenefit {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Begünstiger im Todesfall

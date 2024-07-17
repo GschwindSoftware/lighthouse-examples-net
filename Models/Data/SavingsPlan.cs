@@ -27,6 +27,6 @@ public record SavingsPlan : SavingDeposit {
     public ICollection<PercentValue> Bonus {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
 }

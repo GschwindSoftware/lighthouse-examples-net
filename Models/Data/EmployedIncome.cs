@@ -27,7 +27,7 @@ public record EmployedIncome : CashFlowBase {
     public ICollection<CompanyCar> CompanyCars {
         get;
         init;
-    } = new List<CompanyCar>();
+    } = [];
 
     /// <summary>
     /// Bonuszahlungen
@@ -35,7 +35,7 @@ public record EmployedIncome : CashFlowBase {
     public ICollection<Bonus> Bonuses {
         get;
         init;
-    } = new List<Bonus>();
+    } = [];
 
     /// <summary>
     /// Geldwerter Vorteile
@@ -43,7 +43,7 @@ public record EmployedIncome : CashFlowBase {
     public ICollection<MonetaryAdvantage> MonetaryAdvantages {
         get;
         init;
-    } = new List<MonetaryAdvantage>();
+    } = [];
 
     /// <summary>
     /// Erzeugt eine neue Instanz der <see cref="EmployedIncome"/>-Klasse

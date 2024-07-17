@@ -59,7 +59,7 @@ public record AssetManagement : SecurityInvestment {
     public ICollection<DateValue> AdditionalSavings {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Entnahmen
@@ -75,7 +75,7 @@ public record AssetManagement : SecurityInvestment {
     public ICollection<DateValue> AdditionalWithdrawals {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Gebühren aus dem Bestand bezahlen
@@ -91,7 +91,7 @@ public record AssetManagement : SecurityInvestment {
     public ICollection<AssetClass> AssetClasses {
         get;
         init;
-    } = new List<AssetClass>();
+    } = [];
 
     /// <summary>
     /// Anlagedatum

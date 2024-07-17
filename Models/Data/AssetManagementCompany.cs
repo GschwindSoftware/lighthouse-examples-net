@@ -35,7 +35,7 @@ public record AssetManagementCompany : CompanyBase {
     public ICollection<CheckingAccount> CheckingAccounts {
         get;
         set;
-    } = new List<CheckingAccount>();
+    } = [];
 
     /// <summary>
     /// Depots
@@ -43,7 +43,7 @@ public record AssetManagementCompany : CompanyBase {
     public ICollection<SecuritiesAccount> Deposits {
         get;
         set;
-    } = new List<SecuritiesAccount>();
+    } = [];
 
     /// <summary>
     /// Fremdgenutzte Immobilien
@@ -51,7 +51,7 @@ public record AssetManagementCompany : CompanyBase {
     public ICollection<RentalProperty> RentalProperties {
         get;
         set;
-    } = new List<RentalProperty>();
+    } = [];
 
     /// <summary>
     /// Sonstiges Vermögen
@@ -59,7 +59,7 @@ public record AssetManagementCompany : CompanyBase {
     public ICollection<OtherAsset> OtherAssets {
         get;
         set;
-    } = new List<OtherAsset>();
+    } = [];
 
     /// <summary>
     /// Darlehen
@@ -67,6 +67,6 @@ public record AssetManagementCompany : CompanyBase {
     public ICollection<Loan> Loans {
         get;
         set;
-    } = new List<Loan>();
+    } = [];
 
 }

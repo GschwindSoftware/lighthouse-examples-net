@@ -67,7 +67,7 @@ public record Renovation : PlanData {
     public ICollection<PercentValue> Details {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Details für manuelle Eingaben in Währung
@@ -75,6 +75,6 @@ public record Renovation : PlanData {
     public ICollection<DateValue> ManualValues {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
 }

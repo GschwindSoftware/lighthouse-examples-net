@@ -19,6 +19,6 @@ public abstract record SavingDeposit : CashValue {
     public ICollection<DateValue> AdditionalSavings {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
 }

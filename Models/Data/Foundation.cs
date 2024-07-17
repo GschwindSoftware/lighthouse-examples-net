@@ -27,7 +27,7 @@ public record Foundation : SelfContainedPlanData {
     public ICollection<Beneficiary> Destinaries {
         get;
         init;
-    } = new List<Beneficiary>();
+    } = [];
 
     /// <summary>
     /// Stiftungsvermögen
@@ -35,6 +35,6 @@ public record Foundation : SelfContainedPlanData {
     public ICollection<PlanData> Assets {
         get;
         init;
-    } = new List<PlanData>();
+    } = [];
 
 }

@@ -83,7 +83,7 @@ public record CompanyLoan : PlanData {
     public ICollection<DateValue> Repayments {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Tilgungsintervall
@@ -99,7 +99,7 @@ public record CompanyLoan : PlanData {
     public ICollection<DateValue> AdditionalRepayments {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Zinssätze in %
@@ -107,7 +107,7 @@ public record CompanyLoan : PlanData {
     public ICollection<PercentValue> InterestRates {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Ende der Zinsbindung
@@ -123,7 +123,7 @@ public record CompanyLoan : PlanData {
     public ICollection<DateValue> InterestGrants {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Teilauszahlungen der Darlehenssumme
@@ -131,7 +131,7 @@ public record CompanyLoan : PlanData {
     public ICollection<DateValue> LoanPayouts {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Auszahlung zu Darlehensbeginn

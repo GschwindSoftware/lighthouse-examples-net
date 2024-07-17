@@ -27,7 +27,7 @@ public record TimeAccount : CashFlowBase {
     public ICollection<DateValue> InterestRate {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Auszahlungen

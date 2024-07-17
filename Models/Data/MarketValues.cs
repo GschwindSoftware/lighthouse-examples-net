@@ -11,7 +11,7 @@ public record MarketValues {
     public ICollection<DateValue> Values {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Wertsteigerung nach dem letzten eingetragenen Verkehrswert

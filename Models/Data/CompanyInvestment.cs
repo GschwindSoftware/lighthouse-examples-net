@@ -51,6 +51,6 @@ public record CompanyInvestment : PlanData {
     public ICollection<DateValue> ManualAmortization {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
 }

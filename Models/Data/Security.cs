@@ -11,7 +11,7 @@ public record Security : SecurityBase {
     public ICollection<PercentValue> Dividends {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Wertsteigerungen
@@ -19,7 +19,7 @@ public record Security : SecurityBase {
     public ICollection<PercentValue> Appreciations {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Muss Wertsteigerung und Dividende versteuert werden?
@@ -75,6 +75,6 @@ public record Security : SecurityBase {
     public ICollection<DateValue> AdditionalSavings {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
 }
