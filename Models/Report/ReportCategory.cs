@@ -13,7 +13,7 @@ public record ReportCategory {
     public ReportCategoryType Type {
         get;
         private set;
-    }
+    } = default;
 
     /// <summary>
     /// Der Startzeitpunkt der Kategorie für `ReportCategoryType.Date` oder `ReportCategoryType.Range`
@@ -21,7 +21,7 @@ public record ReportCategory {
     public DateTime? Start {
         get;
         private set;
-    }
+    } = default;
 
     /// <summary>
     /// Der Endzeitpunkt der Kategorie für `ReportCategoryType.Range`
@@ -29,7 +29,7 @@ public record ReportCategory {
     public DateTime? End {
         get;
         private set;
-    }
+    } = default;
 
     /// <summary>
     /// Der Name der Eigenschaft der Kategorie für `ReportCategoryType.DataMember`
@@ -37,7 +37,7 @@ public record ReportCategory {
     public string? DataMember {
         get;
         private set;
-    }
+    } = default;
 
     /// <summary>
     /// Der Begünstige
@@ -45,7 +45,7 @@ public record ReportCategory {
     public Heritage? Beneficiary {
         get;
         private set;
-    }
+    } = default;
 
     /// <inheritdoc/>
     public override string? ToString() =>

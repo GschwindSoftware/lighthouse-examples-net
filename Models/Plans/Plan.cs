@@ -14,7 +14,7 @@ public record Plan {
     public int Id {
         get;
         private set;
-    }
+    } = default;
 
     /// <summary>
     /// Die Einstellungen des Plans
@@ -38,6 +38,6 @@ public record Plan {
     public ICollection<SelfContainedPlanData> Finances {
         get;
         init;
-    } = new List<SelfContainedPlanData>();
+    } = [];
 
 }

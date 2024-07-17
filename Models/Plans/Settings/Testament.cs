@@ -11,7 +11,7 @@ public record Testament {
     public IEnumerable<Heritage> Heirs {
         get;
         init;
-    } = Enumerable.Empty<Heritage>();
+    } = [];
 
     /// <summary>
     /// Liste der Vermächtnisse
@@ -19,6 +19,6 @@ public record Testament {
     public List<Legacy> Legacies {
         get;
         init;
-    } = new List<Legacy>();
+    } = [];
 
 }

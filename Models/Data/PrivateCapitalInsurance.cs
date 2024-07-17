@@ -35,7 +35,7 @@ public abstract record PrivateCapitalInsurance : PrivatePension {
     public ICollection<DateValue> AdditionalPayments {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Bezug
@@ -59,7 +59,7 @@ public abstract record PrivateCapitalInsurance : PrivatePension {
     public ICollection<DateValue> DeathBenefit {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// 1. Begünstiger im Todesfall

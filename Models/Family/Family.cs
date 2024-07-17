@@ -11,7 +11,7 @@ public record Family {
     public ICollection<FamilyMember> Members {
         get;
         init;
-    } = new List<FamilyMember>();
+    } = [];
 
     /// <summary>
     /// Auflistung der Beziehungen zwischen Familienmitgliedern
@@ -19,6 +19,6 @@ public record Family {
     public ICollection<Relationship> Relationships {
         get;
         init;
-    } = new List<Relationship>();
+    } = [];
 
 }

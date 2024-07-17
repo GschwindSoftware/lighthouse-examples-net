@@ -59,7 +59,7 @@ public abstract record PropertyBase : RealValue {
     public ICollection<OperatingCost> OperatingCosts {
         get;
         init;
-    } = new List<OperatingCost>();
+    } = [];
 
     /// <summary>
     /// Rücklagen
@@ -67,7 +67,15 @@ public abstract record PropertyBase : RealValue {
     public ICollection<MaintenanceReserve> MaintenanceReserves {
         get;
         init;
-    } = new List<MaintenanceReserve>();
+    } = [];
+
+    /// <summary>
+    /// Nießbrauch
+    /// </summary>
+    public ICollection<DateValue> Usufruct {
+        get;
+        init;
+    } = [];
 
     /// <summary>
     /// Steuerliche Bewertung der Immobilie
@@ -91,6 +99,6 @@ public abstract record PropertyBase : RealValue {
     public ICollection<Renovation> Renovations {
         get;
         set;
-    } = new List<Renovation>();
+    } = [];
 
 }

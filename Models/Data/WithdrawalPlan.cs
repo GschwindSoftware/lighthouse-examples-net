@@ -19,6 +19,6 @@ public record WithdrawalPlan : CashValue {
     public ICollection<DateValue> AdditionalWithdrawals {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
 }

@@ -11,7 +11,7 @@ public record FundSecurity : SecurityBase {
     public ICollection<PercentValue> Dividends {
         get;
         set;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Wertsteigerungen
@@ -19,7 +19,7 @@ public record FundSecurity : SecurityBase {
     public ICollection<PercentValue> Appreciations {
         get;
         set;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Muss Wertsteigerung und Dividende versteuert werden?

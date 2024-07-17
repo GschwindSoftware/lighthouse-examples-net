@@ -11,7 +11,7 @@ public record HouseholdCosts : SelfContainedPlanData {
     public ICollection<LivingCostsCategory> Categories {
         get;
         init;
-    } = new List<LivingCostsCategory>();
+    } = [];
 
     /// <summary>
     /// Kinder mit in die Haushaltskostenberechnung einbeziehen

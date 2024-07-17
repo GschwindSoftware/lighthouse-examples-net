@@ -12,7 +12,7 @@ public record Report {
     public IEnumerable<ReportCategory> Categories {
         get;
         private set;
-    } = Array.Empty<ReportCategory>();
+    } = [];
 
     /// <summary>
     /// Die Reihe mit den Daten des Berichts
@@ -20,6 +20,6 @@ public record Report {
     public IEnumerable<HierarchicalDataSeries> Series {
         get;
         private set;
-    } = Array.Empty<HierarchicalDataSeries>();
+    } = [];
 
 }

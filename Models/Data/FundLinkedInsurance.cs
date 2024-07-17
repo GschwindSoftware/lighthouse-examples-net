@@ -1,7 +1,7 @@
 namespace Gschwind.Lighthouse.Example.Models.Data;
 
 /// <summary>
-/// Vorgang Lebensversicherung
+/// Fondsgebundene Versicherung
 /// </summary>
 public record FundLinkedInsurance : PrivateCapitalInsurance {
 
@@ -10,7 +10,7 @@ public record FundLinkedInsurance : PrivateCapitalInsurance {
     /// </summary>
     public double PensionFactor {
         get;
-        set;
+        init;
     }
 
     /// <summary>
@@ -18,7 +18,7 @@ public record FundLinkedInsurance : PrivateCapitalInsurance {
     /// </summary>
     public ICollection<FundSecurity> Funds {
         get;
-        set;
-    } = new List<FundSecurity>();
+        init;
+    } = [];
 
 }

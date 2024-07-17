@@ -14,6 +14,6 @@ public record SecuritiesAccount : SecurityInvestment {
     public ICollection<Security> Securities {
         get;
         init;
-    } = new List<Security>();
+    } = [];
 
 }

@@ -78,7 +78,9 @@ internal class TestPlan {
                         Period = Period.Yearly,
                         Values = {
                             new CashFlow() {
+                                #pragma warning disable S6588
                                 Date = new(1970, 01, 01),
+                                #pragma warning restore S6588
                                 Value = 3_400
                             }
                         }
@@ -90,7 +92,9 @@ internal class TestPlan {
                         Period = Period.Monthly,
                         Values = {
                             new CashFlow() {
+                                #pragma warning disable S6588
                                 Date = new(1970, 01, 01),
+                                #pragma warning restore S6588
                                 Value = 410.08
                             }
                         }
@@ -104,7 +108,9 @@ internal class TestPlan {
                         Period = Period.Yearly,
                         Values = {
                             new() {
+                                #pragma warning disable S6588
                                 Date = new(1970, 01, 01),
+                                #pragma warning restore S6588
                                 Value = 36_000
                             }
                         }

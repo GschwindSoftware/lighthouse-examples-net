@@ -11,7 +11,7 @@ namespace Gschwind.Lighthouse.Example.Models;
 public record QueryResult<T> : IReadOnlyCollection<T> {
 
     [JsonProperty("matches")]
-    IReadOnlyCollection<T> _matches = Array.Empty<T>();
+    IReadOnlyCollection<T> _matches = [];
 
     /// <summary>
     /// Die Anzahl der übersprungenen Suchtreffer

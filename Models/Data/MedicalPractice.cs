@@ -11,6 +11,6 @@ public record MedicalPractice : Partnership {
     public ICollection<StandardBenefit> StandardBenefits {
         get;
         init;
-    } = new List<StandardBenefit>();
+    } = [];
 
 }

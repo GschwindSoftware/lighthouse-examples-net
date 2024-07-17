@@ -51,7 +51,7 @@ public abstract record CashValue : AssetBase {
     public ICollection<PercentValue> CreditRates {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Sollzinsen
@@ -59,7 +59,7 @@ public abstract record CashValue : AssetBase {
     public ICollection<PercentValue> DebitRates {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Werden die Zinsen thesauriert?

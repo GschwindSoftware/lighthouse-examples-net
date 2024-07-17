@@ -59,7 +59,7 @@ public record CooperativeShare : SecurityInvestment {
     public ICollection<PercentValue> Dividend {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Wertsteigerung

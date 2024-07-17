@@ -91,7 +91,7 @@ public abstract record PrivateCompany : CompanyBase {
     public ICollection<CompanyIncome> Income {
         get;
         init;
-    } = new List<CompanyIncome>();
+    } = [];
 
     /// <summary>
     /// Ausgaben der Gesellschaft
@@ -99,7 +99,7 @@ public abstract record PrivateCompany : CompanyBase {
     public ICollection<CompanyExpense> Expenses {
         get;
         init;
-    } = new List<CompanyExpense>();
+    } = [];
 
     /// <summary>
     /// Investitionen
@@ -107,7 +107,7 @@ public abstract record PrivateCompany : CompanyBase {
     public ICollection<CompanyInvestment> Investments {
         get;
         init;
-    } = new List<CompanyInvestment>();
+    } = [];
 
     /// <summary>
     /// Darlehen
@@ -115,6 +115,6 @@ public abstract record PrivateCompany : CompanyBase {
     public ICollection<CompanyLoan> Loans {
         get;
         init;
-    } = new List<CompanyLoan>();
+    } = [];
 
 }

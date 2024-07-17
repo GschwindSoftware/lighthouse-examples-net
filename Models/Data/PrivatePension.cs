@@ -11,7 +11,7 @@ public abstract record PrivatePension : EndowmentInsurance {
     public ICollection<DateValue> AdditionalPremium {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Rentengarantiezeit in Jahren
@@ -99,6 +99,6 @@ public abstract record PrivatePension : EndowmentInsurance {
     public ICollection<DateValue> RepurchaseValues {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
 }

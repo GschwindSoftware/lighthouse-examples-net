@@ -19,7 +19,7 @@ public abstract record DemandDeposit : CashValue {
     public ICollection<DateValue> AdditionalSavings {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Auszahlungen
@@ -35,7 +35,7 @@ public abstract record DemandDeposit : CashValue {
     public ICollection<DateValue> AdditionalWithdrawals {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Gebühren
@@ -59,7 +59,7 @@ public abstract record DemandDeposit : CashValue {
     public ICollection<PercentValue> LiquidityBalancingRates {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Liquiditätsunterdeckung ausgleichen

@@ -19,7 +19,7 @@ public abstract record CompanyCapitalInsurance : CompanyPension {
     public ICollection<DateValue> AdditionalPremium {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Soll die Leistung automatisch berechnet werden?
@@ -43,7 +43,7 @@ public abstract record CompanyCapitalInsurance : CompanyPension {
     public ICollection<DateValue> RepurchaseValues {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Weitere Leistungen
@@ -51,7 +51,7 @@ public abstract record CompanyCapitalInsurance : CompanyPension {
     public ICollection<DateValue> AdditionalPayments {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Rentengarantiezeit in Jahren
@@ -91,7 +91,7 @@ public abstract record CompanyCapitalInsurance : CompanyPension {
     public ICollection<DateValue> DeathBenefit {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// 1. Begünstiger im Todesfall

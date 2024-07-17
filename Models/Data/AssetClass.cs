@@ -11,7 +11,7 @@ public record AssetClass : PlanData {
     public ICollection<PercentValue> Dividends {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Wertsteigerungen
@@ -19,7 +19,7 @@ public record AssetClass : PlanData {
     public ICollection<PercentValue> Appreciations {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Muss Wertsteigerung und Dividende versteuert werden?
@@ -43,7 +43,7 @@ public record AssetClass : PlanData {
     public ICollection<Region> Regions {
         get;
         init;
-    } = new List<Region>();
+    } = [];
 
     /// <summary>
     /// Die Branchen des Wertpapieres
@@ -51,7 +51,7 @@ public record AssetClass : PlanData {
     public ICollection<Industry> Industries {
         get;
         init;
-    } = new List<Industry>();
+    } = [];
 
     /// <summary>
     /// Die Instrumente des Wertpapieres.
@@ -59,7 +59,7 @@ public record AssetClass : PlanData {
     public ICollection<Instrument> Instruments {
         get;
         set;
-    } = new List<Instrument>();
+    } = [];
 
     /// <summary>
     /// Der Typ des Wertpapieres
@@ -75,7 +75,7 @@ public record AssetClass : PlanData {
     public ICollection<PercentValue> Rates {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
     /// <summary>
     /// Risikostufe

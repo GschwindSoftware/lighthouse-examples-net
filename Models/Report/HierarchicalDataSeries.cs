@@ -19,7 +19,7 @@ public record HierarchicalDataSeries {
     public DataPointType Type {
         get;
         private set;
-    }
+    } = default;
 
     /// <summary>
     /// Die Datenpunkte der Reihe
@@ -27,7 +27,7 @@ public record HierarchicalDataSeries {
     public IEnumerable<double> Data {
         get;
         private set;
-    } = System.Array.Empty<double>();
+    } = [];
 
     /// <summary>
     /// Untergeordnete Reihen, die zusammen die Daten dieser Reihe bilden
@@ -35,6 +35,6 @@ public record HierarchicalDataSeries {
     public IEnumerable<HierarchicalDataSeries> Series {
         get;
         private set;
-    } = System.Array.Empty<HierarchicalDataSeries>();
+    } = [];
 
 }

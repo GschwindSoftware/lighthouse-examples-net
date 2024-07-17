@@ -11,7 +11,7 @@ public record PeriodValues {
     public ICollection<DateValue> Values {
         get;
         init;
-    } = new List<DateValue>();
+    } = [];
 
     /// <summary>
     /// Zahlungsintervall

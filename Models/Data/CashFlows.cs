@@ -19,7 +19,7 @@ public record CashFlows {
     public ICollection<CashFlow> Values {
         get;
         init;
-    } = new List<CashFlow>();
+    } = [];
 
     /// <summary>
     /// Liste von Steigerungen
@@ -27,6 +27,6 @@ public record CashFlows {
     public ICollection<PercentValue> Increases {
         get;
         init;
-    } = new List<PercentValue>();
+    } = [];
 
 }
